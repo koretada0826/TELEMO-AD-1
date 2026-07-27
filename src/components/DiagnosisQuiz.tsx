@@ -1,0 +1,384 @@
+import { useState } from "react";
+
+type Question = {
+  q: string;
+  options: string[];
+};
+
+const QUESTIONS: Question[] = [
+  { q: "コールセンターはありますか？", options: ["はい", "いいえ"] },
+  {
+    q: "現在、新規開拓の営業はどうしていますか？",
+    options: ["自社で対応している", "外部に委託している", "ほとんど手付かず"],
+  },
+  {
+    q: "1ヶ月にどれくらい新規アプローチできていますか？",
+    options: ["〜500件", "500〜2,000件", "2,000件以上 / 把握していない"],
+  },
+  {
+    q: "営業における一番の課題は？",
+    options: [
+      "人手・リソース不足",
+      "成果（アポ・受注）が出ない",
+      "ノウハウ・仕組みがない",
+      "コストが高い",
+    ],
+  },
+  {
+    q: "営業にかけられる月の予算は？",
+    options: ["〜30万円", "30〜80万円", "80万円以上", "まだ決めていない"],
+  },
+  {
+    q: "いつ頃から始めたいですか？",
+    options: ["できるだけ早く", "1〜3ヶ月以内", "まずは情報収集から"],
+  },
+];
+
+const QCOUNT = QUESTIONS.length; // 6
+const FORM_STEPS = 2; // 入力2ステップ
+const TOTAL = QCOUNT + FORM_STEPS; // 8
+const STEP_PROFILE = QCOUNT; // step index 6
+const STEP_CONTACT = QCOUNT + 1; // step index 7
+const STEP_DONE = TOTAL; // step index 8
+
+const inputClass =
+  "w-full px-4 py-3.5 rounded-[10px] border-2 border-[#e5e5e5] text-[14px] text-black bg-[#fafafa] focus:outline-none focus:border-[#41ac86] focus:bg-white transition-colors placeholder:text-[#ccc]";
+
+const requiredBadge = (
+  <span className="text-[10px] font-bold text-white bg-[#41ac86] px-1.5 py-[1px] rounded-[3px]">
+    必須
+  </span>
+);
+const optionalBadge = (
+  <span className="text-[10px] font-bold text-[#999] bg-[#eee] px-1.5 py-[1px] rounded-[3px]">
+    任意
+  </span>
+);
+
+type FormState = {
+  name: string;
+  company: string;
+  dept: string;
+  phone: string;
+  email: string;
+  message: string;
+};
+
+const EMPTY_FORM: FormState = {
+  name: "",
+  company: "",
+  dept: "",
+  phone: "",
+  email: "",
+  message: "",
+};
+
+const ACCESS_KEY = "674fd906-41b2-43a7-b4ba-da680df31659";
+
+export default function DiagnosisQuiz() {
+  const [step, setStep] = useState(0);
+  const [answers, setAnswers] = useState<string[]>([]);
+  const [form, setForm] = useState<FormState>(EMPTY_FORM);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState("");
+
+  const selectAnswer = (option: string) => {
+    setAnswers((prev) => {
+      const next = [...prev];
+      next[step] = option;
+      return next;
+    });
+    setStep((s) => s + 1);
+  };
+
+  const back = () => setStep((s) => Math.max(0, s - 1));
+  const setField = (key: keyof FormState, value: string) =>
+    setForm((f) => ({ ...f, [key]: value }));
+
+  const reset = () => {
+    setAnswers([]);
+    setForm(EMPTY_FORM);
+    setError("");
+    setStep(0);
+  };
+
+  const profileValid = form.name.trim() !== "" && form.company.trim() !== "";
+  const contactValid = form.phone.trim() !== "" && form.email.trim() !== "";
+
+  const submit = async () => {
+    if (!contactValid || submitting) return;
+    setSubmitting(true);
+    setError("");
+
+    const qa: Record<string, string> = {};
+    QUESTIONS.forEach((q, i) => {
+      qa[`Q${i + 1}. ${q.q}`] = answers[i] ?? "（未回答）";
+    });
+
+    const payload = {
+      access_key: ACCESS_KEY,
+      subject: `【資料請求】${form.company} ${form.name} 様`,
+      from_name: "TELEMO LP",
+      お名前: form.name,
+      会社名: form.company,
+      "部署・役職": form.dept || "（未記入）",
+      電話番号: form.phone,
+      メールアドレス: form.email,
+      "ご質問・ご要望": form.message || "（なし）",
+      ...qa,
+    };
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+      const data = await res.json();
+      if (data.success) {
+        setStep(STEP_DONE);
+      } else {
+        setError("送信に失敗しました。お手数ですが時間をおいて再度お試しください。");
+      }
+    } catch {
+      setError("通信エラーが発生しました。ネットワークをご確認のうえ再度お試しください。");
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
+  const progress = ((Math.min(step, TOTAL) + (step >= STEP_DONE ? 0 : 1)) / TOTAL) * 100;
+  const stepLabel =
+    step >= STEP_DONE ? "完了" : `STEP ${step + 1} / ${TOTAL}`;
+
+  return (
+    <>
+      {/* progress */}
+      <div className="fade-in mb-8 visible">
+        <div className="flex items-center justify-between mb-1.5">
+          <p className="text-[11px] text-[#999]">{stepLabel}</p>
+        </div>
+        <div className="w-full h-[3px] bg-[#e5e5e5] rounded-full overflow-hidden">
+          <div
+            className="h-full bg-[#41ac86] rounded-full transition-all duration-500"
+            style={{ width: `${progress}%` }}
+          />
+        </div>
+      </div>
+
+      {/* 質問ステップ（STEP 1〜6） */}
+      {step < STEP_PROFILE && (
+        <div key={step} className="step-enter step-active">
+          <p className="text-[20px] sm:text-[24px] font-bold text-black leading-[1.4] mb-6">
+            {QUESTIONS[step].q}
+          </p>
+          <div className="space-y-2.5">
+            {QUESTIONS[step].options.map((option) => {
+              const selected = answers[step] === option;
+              return (
+                <button
+                  key={option}
+                  type="button"
+                  onClick={() => selectAnswer(option)}
+                  className={`w-full text-left px-5 py-4 rounded-[12px] border-2 text-[14px] font-medium transition-all cursor-pointer ${
+                    selected
+                      ? "border-[#41ac86] bg-[#eaf7f1] text-[#41ac86]"
+                      : "border-[#e5e5e5] bg-[#f7f7f7] text-black hover:border-[#41ac86]"
+                  }`}
+                >
+                  {option}
+                </button>
+              );
+            })}
+          </div>
+          {step > 0 && (
+            <button
+              type="button"
+              onClick={back}
+              className="mt-5 text-[13px] text-[#999] hover:text-[#41ac86] transition-colors cursor-pointer"
+            >
+              ← 前の質問にもどる
+            </button>
+          )}
+        </div>
+      )}
+
+      {/* 入力ステップ1（STEP 7）: お名前・会社名・部署 */}
+      {step === STEP_PROFILE && (
+        <div key="profile" className="step-enter step-active">
+          <p className="text-[20px] sm:text-[24px] font-bold text-black leading-[1.4] mb-2">
+            あと少しです。お送り先を教えてください
+          </p>
+          <p className="text-[13px] text-[#999] mb-6">
+            ご回答にあわせた資料をお送りします（所要1分）。
+          </p>
+          <div className="space-y-4">
+            <div>
+              <label className="flex items-center gap-2 text-[12px] font-bold text-black mb-1.5">
+                お名前{requiredBadge}
+              </label>
+              <input
+                type="text"
+                placeholder="例：山田 太郎"
+                value={form.name}
+                onChange={(e) => setField("name", e.target.value)}
+                className={inputClass}
+              />
+            </div>
+            <div>
+              <label className="flex items-center gap-2 text-[12px] font-bold text-black mb-1.5">
+                会社名{requiredBadge}
+              </label>
+              <input
+                type="text"
+                placeholder="例：株式会社○○○○"
+                value={form.company}
+                onChange={(e) => setField("company", e.target.value)}
+                className={inputClass}
+              />
+            </div>
+            <div>
+              <label className="flex items-center gap-2 text-[12px] font-bold text-black mb-1.5">
+                部署・役職{optionalBadge}
+              </label>
+              <input
+                type="text"
+                placeholder="例：営業部 部長"
+                value={form.dept}
+                onChange={(e) => setField("dept", e.target.value)}
+                className={inputClass}
+              />
+            </div>
+          </div>
+          <button
+            type="button"
+            onClick={() => profileValid && setStep(STEP_CONTACT)}
+            disabled={!profileValid}
+            className={`mt-6 w-full px-5 py-4 rounded-[12px] text-[15px] font-bold text-white transition-colors ${
+              profileValid
+                ? "bg-[#41ac86] hover:bg-[#2f8063] cursor-pointer"
+                : "bg-[#cbd5e0] cursor-not-allowed"
+            }`}
+          >
+            次へ
+          </button>
+          <button
+            type="button"
+            onClick={back}
+            className="mt-4 text-[13px] text-[#999] hover:text-[#41ac86] transition-colors cursor-pointer"
+          >
+            ← 前にもどる
+          </button>
+        </div>
+      )}
+
+      {/* 入力ステップ2（STEP 8）: 連絡先・送信 */}
+      {step === STEP_CONTACT && (
+        <div key="contact" className="step-enter step-active">
+          <p className="text-[20px] sm:text-[24px] font-bold text-black leading-[1.4] mb-6">
+            ご連絡先を入力してください
+          </p>
+          <div className="space-y-4">
+            <div>
+              <label className="flex items-center gap-2 text-[12px] font-bold text-black mb-1.5">
+                電話番号{requiredBadge}
+              </label>
+              <input
+                type="tel"
+                placeholder="例：09012345678"
+                value={form.phone}
+                onChange={(e) => setField("phone", e.target.value)}
+                className={inputClass}
+              />
+            </div>
+            <div>
+              <label className="flex items-center gap-2 text-[12px] font-bold text-black mb-1.5">
+                メールアドレス{requiredBadge}
+              </label>
+              <input
+                type="email"
+                placeholder="例：sample@example.com"
+                value={form.email}
+                onChange={(e) => setField("email", e.target.value)}
+                className={inputClass}
+              />
+            </div>
+            <div>
+              <label className="flex items-center gap-2 text-[12px] font-bold text-black mb-1.5">
+                ご質問・ご要望{optionalBadge}
+              </label>
+              <textarea
+                rows={3}
+                placeholder="導入時期・想定コール数・課題など、お気軽にご記入ください"
+                value={form.message}
+                onChange={(e) => setField("message", e.target.value)}
+                className={`${inputClass} resize-none`}
+              />
+            </div>
+          </div>
+          {error && (
+            <p className="mt-4 text-[13px] text-[#d33] leading-[1.6]">{error}</p>
+          )}
+          <button
+            type="button"
+            onClick={submit}
+            disabled={!contactValid || submitting}
+            className={`mt-6 w-full px-5 py-4 rounded-[12px] text-[15px] font-bold text-white transition-colors ${
+              contactValid && !submitting
+                ? "bg-[#41ac86] hover:bg-[#2f8063] cursor-pointer"
+                : "bg-[#cbd5e0] cursor-not-allowed"
+            }`}
+          >
+            {submitting ? "送信中…" : "資料を受け取る"}
+          </button>
+          <button
+            type="button"
+            onClick={back}
+            disabled={submitting}
+            className="mt-4 text-[13px] text-[#999] hover:text-[#41ac86] transition-colors cursor-pointer disabled:opacity-50"
+          >
+            ← 前にもどる
+          </button>
+        </div>
+      )}
+
+      {/* 完了画面 */}
+      {step >= STEP_DONE && (
+        <div className="step-enter step-active text-center">
+          <div className="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-[#eaf7f1]">
+            <svg
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#41ac86"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+          </div>
+          <p className="text-[20px] sm:text-[24px] font-bold text-black leading-[1.4] mb-3">
+            送信が完了しました
+          </p>
+          <p className="text-[14px] text-[#4d4d4d] leading-[1.8] mb-7">
+            ご入力ありがとうございます。担当者より、ご回答にあわせた資料を
+            <br className="hidden sm:block" />
+            メールにてお送りいたします。
+          </p>
+          <button
+            type="button"
+            onClick={reset}
+            className="block w-full text-[13px] text-[#999] hover:text-[#41ac86] transition-colors cursor-pointer"
+          >
+            最初からやり直す
+          </button>
+        </div>
+      )}
+    </>
+  );
+}
