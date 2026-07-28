@@ -62,11 +62,11 @@ export default function DocumentRequestForm() {
     setError("");
 
     const payload = {
-      _subject: `【資料請求】${form.company} ${form.name} 様`,
+      _subject: `【無料相談】${form.company} ${form.name} 様`,
       _template: "table",
       _captcha: "false",
       _replyto: form.email,
-      種別: "資料請求（TELEMO LP）",
+      種別: "無料相談（TELEMO LP）",
       お名前: form.name,
       会社名: form.company,
       "部署・役職": form.dept || "（未記入）",
@@ -118,9 +118,9 @@ export default function DocumentRequestForm() {
           送信が完了しました
         </p>
         <p className="text-[14px] text-[#4d4d4d] leading-[1.8]">
-          ご請求ありがとうございます。担当者より、ご記入のメールアドレス宛に
+          お問い合わせありがとうございます。担当者より、ご記入の連絡先へ
           <br className="hidden sm:block" />
-          資料をお送りいたします。
+          折り返しご連絡いたします。
         </p>
       </div>
     );
@@ -219,10 +219,10 @@ export default function DocumentRequestForm() {
           valid && !submitting ? "cursor-pointer" : "opacity-60 cursor-not-allowed"
         }`}
       >
-        {submitting ? "送信中…" : "資料を受け取る"}
+        {submitting ? "送信中…" : "無料相談を申し込む"}
       </button>
       <p className="text-[11px] text-[#999] mt-4 text-center leading-[1.7]">
-        入力情報は資料送付・サービスのご案内にのみ使用し、第三者に提供することはありません。
+        入力情報はご連絡・サービスのご案内にのみ使用し、第三者に提供することはありません。
       </p>
     </form>
   );

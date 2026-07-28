@@ -63,7 +63,7 @@ export default function Section2() {
             href="#document-request"
             className="flex-1 inline-flex items-center justify-center bg-black text-white text-[12px] font-bold py-3 rounded-[96px] no-underline"
           >
-            資料請求
+            無料相談
           </a>
           <a
             href="#contact-form"

@@ -840,7 +840,7 @@ export default function Section1() {
       <div className="fade-in flex flex-col sm:flex-row gap-4 visible">
       <a href="#contact-form" className="inline-flex items-center justify-center bg-[#41ac86] text-white text-[16px] sm:text-[18px] font-bold h-[60px] sm:h-[68px] px-10 sm:px-14 rounded-[96px] no-underline hover:bg-[#2f8063] transition-colors">無料相談を予約する
       </a>
-      <a href="#document-request" className="inline-flex items-center justify-center border-2 border-white/30 text-white text-[14px] sm:text-[16px] font-bold h-[60px] sm:h-[68px] px-8 sm:px-12 rounded-[96px] no-underline hover:bg-white/10 transition-colors">まずは資料だけ見る
+      <a href="#document-request" className="inline-flex items-center justify-center border-2 border-white/30 text-white text-[14px] sm:text-[16px] font-bold h-[60px] sm:h-[68px] px-8 sm:px-12 rounded-[96px] no-underline hover:bg-white/10 transition-colors">まずは無料で相談する
       </a>
       </div>
       </div>
@@ -897,11 +897,11 @@ export default function Section1() {
       <section id="document-request" className="py-16 sm:py-24 px-5 sm:px-10 bg-[#f7f7f7]">
       <div className="max-w-[720px] mx-auto">
       <div className="fade-in text-center mb-8 visible">
-      <p className="text-[12px] text-[#41ac86] tracking-[0.25em] font-bold mb-3">DOCUMENT REQUEST
+      <p className="text-[12px] text-[#41ac86] tracking-[0.25em] font-bold mb-3">CONTACT
       </p>
-      <h2 className="text-[28px] sm:text-[36px] lg:text-[40px] font-black text-black leading-[1.3] tracking-[0.02em] mb-3">資料請求
+      <h2 className="text-[28px] sm:text-[36px] lg:text-[40px] font-black text-black leading-[1.3] tracking-[0.02em] mb-3">無料相談・お問い合わせ
       </h2>
-      <p className="text-[14px] sm:text-[15px] text-[#4d4d4d] leading-[1.9]">サービス概要・料金・導入事例をまとめた資料をお送りします。<br className="hidden sm:block" />下記フォームにご入力ください（所要1分）。
+      <p className="text-[14px] sm:text-[15px] text-[#4d4d4d] leading-[1.9]">サービス内容・料金・導入について、お気軽にご相談ください。<br className="hidden sm:block" />下記フォームにご入力ください（所要1分）。
       </p>
       </div>
       <DocumentRequestForm />
@@ -922,7 +922,7 @@ export default function Section1() {
       <div className="fade-in flex flex-col sm:flex-row gap-3 justify-center visible">
       <a href="#contact-form" className="inline-flex items-center justify-center bg-[#41ac86] hover:bg-[#2f8063] text-white font-bold text-[15px] sm:text-[17px] px-8 sm:px-10 py-4 sm:py-5 rounded-full no-underline transition-colors shadow-[0_8px_24px_rgba(0,0,0,0.5)]">まずは10〜15分だけ話しましょう
       </a>
-      <a href="#document-request" className="inline-flex items-center justify-center bg-white/10 hover:bg-white/20 backdrop-blur-sm border-2 border-white text-white font-bold text-[15px] sm:text-[17px] px-8 sm:px-10 py-4 sm:py-5 rounded-full no-underline transition-colors">資料請求
+      <a href="#document-request" className="inline-flex items-center justify-center bg-white/10 hover:bg-white/20 backdrop-blur-sm border-2 border-white text-white font-bold text-[15px] sm:text-[17px] px-8 sm:px-10 py-4 sm:py-5 rounded-full no-underline transition-colors">無料相談
       </a>
       </div>
       </div>

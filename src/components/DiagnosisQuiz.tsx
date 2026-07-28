@@ -230,7 +230,7 @@ export default function DiagnosisQuiz() {
             あと少しです。お送り先を教えてください
           </p>
           <p className="text-[13px] text-[#999] mb-6">
-            ご回答にあわせた資料をお送りします（所要1分）。
+            ご回答にあわせた診断結果をお送りします（所要1分）。
           </p>
           <div className="space-y-4">
             <div>
@@ -349,7 +349,7 @@ export default function DiagnosisQuiz() {
                 : "bg-[#cbd5e0] cursor-not-allowed"
             }`}
           >
-            {submitting ? "送信中…" : "資料を受け取る"}
+            {submitting ? "送信中…" : "診断結果を受け取る"}
           </button>
           <button
             type="button"
@@ -383,7 +383,7 @@ export default function DiagnosisQuiz() {
             送信が完了しました
           </p>
           <p className="text-[14px] text-[#4d4d4d] leading-[1.8] mb-7">
-            ご入力ありがとうございます。担当者より、ご回答にあわせた資料を
+            ご入力ありがとうございます。担当者より、ご回答にあわせた診断結果を
             <br className="hidden sm:block" />
             メールにてお送りいたします。
           </p>
