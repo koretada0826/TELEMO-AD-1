@@ -1,6 +1,8 @@
 import { useState } from "react";
 
-const ACCESS_KEY = "674fd906-41b2-43a7-b4ba-da680df31659";
+// FormSubmit：送信先（有効化・確認はこのGmailで行う）／info_telemoにはCCでコピー配信
+const FORM_ENDPOINT = "https://formsubmit.co/ajax/koretada.i@gmail.com";
+const CC_EMAIL = "info_telemo@giguuu.jp";
 
 const inputClass =
   "w-full px-4 py-3.5 rounded-[10px] border-2 border-[#e5e5e5] text-[14px] text-black bg-[#fafafa] focus:outline-none focus:border-[#41ac86] focus:bg-white transition-colors placeholder:text-[#ccc]";
@@ -56,9 +58,12 @@ export default function DocumentRequestForm() {
     setError("");
 
     const payload = {
-      access_key: ACCESS_KEY,
-      subject: `【資料請求】${form.company} ${form.name} 様`,
-      from_name: "TELEMO LP（資料請求）",
+      _subject: `【資料請求】${form.company} ${form.name} 様`,
+      _cc: CC_EMAIL,
+      _template: "table",
+      _captcha: "false",
+      _replyto: form.email,
+      種別: "資料請求（TELEMO LP）",
       お名前: form.name,
       会社名: form.company,
       "部署・役職": form.dept || "（未記入）",
@@ -68,7 +73,7 @@ export default function DocumentRequestForm() {
     };
 
     try {
-      const res = await fetch("https://api.web3forms.com/submit", {
+      const res = await fetch(FORM_ENDPOINT, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -77,7 +82,7 @@ export default function DocumentRequestForm() {
         body: JSON.stringify(payload),
       });
       const data = await res.json();
-      if (data.success) {
+      if (data.success === "true" || data.success === true) {
         setDone(true);
       } else {
         setError("送信に失敗しました。お手数ですが時間をおいて再度お試しください。");

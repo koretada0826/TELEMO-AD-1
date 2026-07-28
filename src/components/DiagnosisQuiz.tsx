@@ -73,7 +73,9 @@ const EMPTY_FORM: FormState = {
   message: "",
 };
 
-const ACCESS_KEY = "674fd906-41b2-43a7-b4ba-da680df31659";
+// FormSubmit：送信先（有効化・確認はこのGmailで行う）／info_telemoにはCCでコピー配信
+const FORM_ENDPOINT = "https://formsubmit.co/ajax/koretada.i@gmail.com";
+const CC_EMAIL = "info_telemo@giguuu.jp";
 
 export default function DiagnosisQuiz() {
   const [step, setStep] = useState(0);
@@ -116,9 +118,12 @@ export default function DiagnosisQuiz() {
     });
 
     const payload = {
-      access_key: ACCESS_KEY,
-      subject: `【資料請求】${form.company} ${form.name} 様`,
-      from_name: "TELEMO LP",
+      _subject: `【無料診断】${form.company} ${form.name} 様`,
+      _cc: CC_EMAIL,
+      _template: "table",
+      _captcha: "false",
+      _replyto: form.email,
+      種別: "無料診断（TELEMO LP）",
       お名前: form.name,
       会社名: form.company,
       "部署・役職": form.dept || "（未記入）",
@@ -129,7 +134,7 @@ export default function DiagnosisQuiz() {
     };
 
     try {
-      const res = await fetch("https://api.web3forms.com/submit", {
+      const res = await fetch(FORM_ENDPOINT, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -138,7 +143,7 @@ export default function DiagnosisQuiz() {
         body: JSON.stringify(payload),
       });
       const data = await res.json();
-      if (data.success) {
+      if (data.success === "true" || data.success === true) {
         setStep(STEP_DONE);
       } else {
         setError("送信に失敗しました。お手数ですが時間をおいて再度お試しください。");
