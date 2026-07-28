@@ -50,7 +50,13 @@ export default function Section2() {
               </a>
             </nav>
           </div>
-          <div className="border-t border-[#e5e5e5] pt-6">
+          <div className="border-t border-[#e5e5e5] pt-6 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+            <a
+              href="/privacy.html"
+              className="text-[11px] text-[#666] no-underline hover:text-black transition-colors"
+            >
+              プライバシーポリシー
+            </a>
             <p className="text-[10px] text-[#999]">
               © GIGUUU Inc. All Rights Reserved.
             </p>
