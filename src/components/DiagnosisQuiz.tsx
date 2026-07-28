@@ -73,9 +73,13 @@ const EMPTY_FORM: FormState = {
   message: "",
 };
 
-// FormSubmit：送信先（有効化・確認はこのGmailで行う）／info_telemoにはCCでコピー配信
-const FORM_ENDPOINT = "https://formsubmit.co/ajax/koretada.i@gmail.com";
-const CC_EMAIL = "info_telemo@giguuu.jp";
+// FormSubmit：独立2通で送信（CCを使わないので互いのアドレスは相手に見えない）
+//  ・info_telemo@giguuu.jp … 会社用（有効化は会社側で1回）
+//  ・koretada.i@gmail.com … 個人用（有効化は本人が1回）
+const FORM_ENDPOINTS = [
+  "https://formsubmit.co/ajax/info_telemo@giguuu.jp",
+  "https://formsubmit.co/ajax/koretada.i@gmail.com",
+];
 
 export default function DiagnosisQuiz() {
   const [step, setStep] = useState(0);
@@ -119,7 +123,6 @@ export default function DiagnosisQuiz() {
 
     const payload = {
       _subject: `【無料診断】${form.company} ${form.name} 様`,
-      _cc: CC_EMAIL,
       _template: "table",
       _captcha: "false",
       _replyto: form.email,
@@ -134,16 +137,25 @@ export default function DiagnosisQuiz() {
     };
 
     try {
-      const res = await fetch(FORM_ENDPOINT, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify(payload),
-      });
-      const data = await res.json();
-      if (data.success === "true" || data.success === true) {
+      // 2つの宛先へ独立して送信（互いのアドレスは相手に見えない）
+      const results = await Promise.allSettled(
+        FORM_ENDPOINTS.map((url) =>
+          fetch(url, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Accept: "application/json",
+            },
+            body: JSON.stringify(payload),
+          }).then((r) => r.json())
+        )
+      );
+      const ok = results.some(
+        (r) =>
+          r.status === "fulfilled" &&
+          (r.value?.success === "true" || r.value?.success === true)
+      );
+      if (ok) {
         setStep(STEP_DONE);
       } else {
         setError("送信に失敗しました。お手数ですが時間をおいて再度お試しください。");
