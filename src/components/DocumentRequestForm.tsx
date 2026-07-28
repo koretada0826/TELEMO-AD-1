@@ -95,6 +95,8 @@ export default function DocumentRequestForm() {
           (r.value?.success === "true" || r.value?.success === true)
       );
       if (ok) {
+        // Meta Pixel：無料相談の送信をコンバージョン(Lead)として計測
+        window.fbq?.("track", "Lead", { content_name: "無料相談（資料請求フォーム）" });
         setDone(true);
       } else {
         setError("送信に失敗しました。お手数ですが時間をおいて再度お試しください。");

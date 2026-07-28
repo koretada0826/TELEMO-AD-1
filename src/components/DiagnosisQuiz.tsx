@@ -156,6 +156,8 @@ export default function DiagnosisQuiz() {
           (r.value?.success === "true" || r.value?.success === true)
       );
       if (ok) {
+        // Meta Pixel：無料診断の送信をコンバージョン(Lead)として計測
+        window.fbq?.("track", "Lead", { content_name: "無料診断クイズ" });
         setStep(STEP_DONE);
       } else {
         setError("送信に失敗しました。お手数ですが時間をおいて再度お試しください。");
