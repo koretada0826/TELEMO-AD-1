@@ -101,12 +101,12 @@ export default function Section1() {
       <div className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none rounded-full" style={{"top": "46%", "width": "62%", "height": "58%", "background": "radial-gradient(circle, rgba(255, 251, 238, 0.95) 0%, rgba(255, 248, 228, 0.7) 50%, rgba(255, 248, 228, 0) 78%)"}}>
       </div>
       <div className="absolute inset-0 flex items-center justify-center pb-[18%]">
-      <div className="flex items-baseline justify-center leading-none" style={{"fontFamily": "\"Noto Serif JP\", \"Times New Roman\", serif"}}><span className="text-[96px] lg:text-[124px] font-bold tracking-tight text-black" style={{"textShadow": "rgba(255, 255, 255, 0.95) 0px 1px 0px, rgba(255, 250, 235, 0.85) 0px 2px 10px, rgb(255, 255, 255) 0px 0px 3px"}}>97</span><span className="text-[38px] lg:text-[48px] font-bold ml-1 text-[#41ac86]" style={{"textShadow": "rgba(255, 255, 255, 0.95) 0px 1px 0px, rgba(255, 250, 235, 0.9) 0px 0px 6px"}}>%</span>
+      <div className="flex items-baseline justify-center leading-none" style={{"fontFamily": "\"Noto Serif JP\", \"Times New Roman\", serif"}}><span className="text-[96px] lg:text-[124px] font-bold tracking-tight text-black" style={{"textShadow": "rgba(255, 255, 255, 0.95) 0px 1px 0px, rgba(255, 250, 235, 0.85) 0px 2px 10px, rgb(255, 255, 255) 0px 0px 3px"}}>100</span><span className="text-[38px] lg:text-[48px] font-bold ml-1 text-[#41ac86]" style={{"textShadow": "rgba(255, 255, 255, 0.95) 0px 1px 0px, rgba(255, 250, 235, 0.9) 0px 0px 6px"}}>%</span>
       </div>
       </div>
       <div className="absolute left-1/2 -translate-x-1/2 pointer-events-none rounded-full" style={{"bottom": "27%", "width": "62%", "height": "40px", "background": "radial-gradient(rgba(30, 18, 4, 0.55) 0%, rgba(30, 18, 4, 0.25) 55%, transparent 82%)"}}>
       </div>
-      <div className="absolute left-0 right-0 flex justify-center" style={{"bottom": "29%"}}><span className="text-[18px] lg:text-[24px] font-black tracking-[0.1em] text-white" style={{"fontFamily": "\"Noto Serif JP\", \"Times New Roman\", serif", "textShadow": "rgba(0, 0, 0, 0.9) 0px 1px 2px, rgba(0, 0, 0, 0.7) 0px 0px 8px, rgb(0, 0, 0) 0px 0px 1px", "WebkitTextStroke": "0.4px rgba(0, 0, 0, 0.85)"}}>リピート率</span>
+      <div className="absolute left-0 right-0 flex justify-center" style={{"bottom": "29%"}}><span className="text-[18px] lg:text-[24px] font-black tracking-[0.1em] text-white" style={{"fontFamily": "\"Noto Serif JP\", \"Times New Roman\", serif", "textShadow": "rgba(0, 0, 0, 0.9) 0px 1px 2px, rgba(0, 0, 0, 0.7) 0px 0px 8px, rgb(0, 0, 0) 0px 0px 1px", "WebkitTextStroke": "0.4px rgba(0, 0, 0, 0.85)"}}>全通話開示</span>
       </div>
       </div>
       </div>
@@ -115,12 +115,12 @@ export default function Section1() {
       <div className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none rounded-full" style={{"top": "46%", "width": "62%", "height": "58%", "background": "radial-gradient(circle, rgba(255, 251, 238, 0.95) 0%, rgba(255, 248, 228, 0.7) 50%, rgba(255, 248, 228, 0) 78%)"}}>
       </div>
       <div className="absolute inset-0 flex items-center justify-center pb-[18%]">
-      <div className="flex items-baseline justify-center leading-none" style={{"fontFamily": "\"Noto Serif JP\", \"Times New Roman\", serif"}}><span className="text-[96px] lg:text-[124px] font-bold tracking-tight text-black" style={{"textShadow": "rgba(255, 255, 255, 0.95) 0px 1px 0px, rgba(255, 250, 235, 0.85) 0px 2px 10px, rgb(255, 255, 255) 0px 0px 3px"}}>15</span><span className="text-[38px] lg:text-[48px] font-bold ml-1 text-[#41ac86]" style={{"textShadow": "rgba(255, 255, 255, 0.95) 0px 1px 0px, rgba(255, 250, 235, 0.9) 0px 0px 6px"}}>%</span>
+      <div className="flex items-baseline justify-center leading-none" style={{"fontFamily": "\"Noto Serif JP\", \"Times New Roman\", serif"}}><span className="text-[96px] lg:text-[124px] font-bold tracking-tight text-black" style={{"textShadow": "rgba(255, 255, 255, 0.95) 0px 1px 0px, rgba(255, 250, 235, 0.85) 0px 2px 10px, rgb(255, 255, 255) 0px 0px 3px"}}>24</span><span className="text-[30px] lg:text-[40px] font-bold ml-1 text-[#41ac86]" style={{"textShadow": "rgba(255, 255, 255, 0.95) 0px 1px 0px, rgba(255, 250, 235, 0.9) 0px 0px 6px"}}>時間</span>
       </div>
       </div>
       <div className="absolute left-1/2 -translate-x-1/2 pointer-events-none rounded-full" style={{"bottom": "27%", "width": "62%", "height": "40px", "background": "radial-gradient(rgba(30, 18, 4, 0.55) 0%, rgba(30, 18, 4, 0.25) 55%, transparent 82%)"}}>
       </div>
-      <div className="absolute left-0 right-0 flex justify-center" style={{"bottom": "29%"}}><span className="text-[18px] lg:text-[24px] font-black tracking-[0.1em] text-white" style={{"fontFamily": "\"Noto Serif JP\", \"Times New Roman\", serif", "textShadow": "rgba(0, 0, 0, 0.9) 0px 1px 2px, rgba(0, 0, 0, 0.7) 0px 0px 8px, rgb(0, 0, 0) 0px 0px 1px", "WebkitTextStroke": "0.4px rgba(0, 0, 0, 0.85)"}}>最高アポイント率</span>
+      <div className="absolute left-0 right-0 flex justify-center" style={{"bottom": "29%"}}><span className="text-[18px] lg:text-[24px] font-black tracking-[0.1em] text-white" style={{"fontFamily": "\"Noto Serif JP\", \"Times New Roman\", serif", "textShadow": "rgba(0, 0, 0, 0.9) 0px 1px 2px, rgba(0, 0, 0, 0.7) 0px 0px 8px, rgb(0, 0, 0) 0px 0px 1px", "WebkitTextStroke": "0.4px rgba(0, 0, 0, 0.85)"}}>365日稼働</span>
       </div>
       </div>
       </div>
@@ -129,17 +129,17 @@ export default function Section1() {
       <div className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none rounded-full" style={{"top": "46%", "width": "62%", "height": "58%", "background": "radial-gradient(circle, rgba(255, 251, 238, 0.95) 0%, rgba(255, 248, 228, 0.7) 50%, rgba(255, 248, 228, 0) 78%)"}}>
       </div>
       <div className="absolute inset-0 flex items-center justify-center pb-[18%]">
-      <div className="flex items-baseline justify-center leading-none" style={{"fontFamily": "\"Noto Serif JP\", \"Times New Roman\", serif"}}><span className="text-[96px] lg:text-[124px] font-bold tracking-tight text-black" style={{"textShadow": "rgba(255, 255, 255, 0.95) 0px 1px 0px, rgba(255, 250, 235, 0.85) 0px 2px 10px, rgb(255, 255, 255) 0px 0px 3px"}}>88</span><span className="text-[38px] lg:text-[48px] font-bold ml-1 text-[#41ac86]" style={{"textShadow": "rgba(255, 255, 255, 0.95) 0px 1px 0px, rgba(255, 250, 235, 0.9) 0px 0px 6px"}}>%</span>
+      <div className="flex items-baseline justify-center leading-none" style={{"fontFamily": "\"Noto Serif JP\", \"Times New Roman\", serif"}}><span className="text-[96px] lg:text-[124px] font-bold tracking-tight text-black" style={{"textShadow": "rgba(255, 255, 255, 0.95) 0px 1px 0px, rgba(255, 250, 235, 0.85) 0px 2px 10px, rgb(255, 255, 255) 0px 0px 3px"}}>3</span><span className="text-[30px] lg:text-[40px] font-bold ml-1 text-[#41ac86]" style={{"textShadow": "rgba(255, 255, 255, 0.95) 0px 1px 0px, rgba(255, 250, 235, 0.9) 0px 0px 6px"}}>人分</span>
       </div>
       </div>
       <div className="absolute left-1/2 -translate-x-1/2 pointer-events-none rounded-full" style={{"bottom": "27%", "width": "62%", "height": "40px", "background": "radial-gradient(rgba(30, 18, 4, 0.55) 0%, rgba(30, 18, 4, 0.25) 55%, transparent 82%)"}}>
       </div>
-      <div className="absolute left-0 right-0 flex justify-center" style={{"bottom": "29%"}}><span className="text-[18px] lg:text-[24px] font-black tracking-[0.1em] text-white" style={{"fontFamily": "\"Noto Serif JP\", \"Times New Roman\", serif", "textShadow": "rgba(0, 0, 0, 0.9) 0px 1px 2px, rgba(0, 0, 0, 0.7) 0px 0px 8px, rgb(0, 0, 0) 0px 0px 1px", "WebkitTextStroke": "0.4px rgba(0, 0, 0, 0.85)"}}>決裁者商談率</span>
+      <div className="absolute left-0 right-0 flex justify-center" style={{"bottom": "29%"}}><span className="text-[18px] lg:text-[24px] font-black tracking-[0.1em] text-white" style={{"fontFamily": "\"Noto Serif JP\", \"Times New Roman\", serif", "textShadow": "rgba(0, 0, 0, 0.9) 0px 1px 2px, rgba(0, 0, 0, 0.7) 0px 0px 8px, rgb(0, 0, 0) 0px 0px 1px", "WebkitTextStroke": "0.4px rgba(0, 0, 0, 0.85)"}}>月13,200コール</span>
       </div>
       </div>
       </div>
       </div>
-      <div className="text-center mt-6 text-[#999] text-xs tracking-widest">※2023年度実績（自社調べに基づく）
+      <div className="text-center mt-6 text-[#999] text-xs tracking-widest">※TELEMOの提供仕様（保証内容）
       </div>
       </div>
       </section>
