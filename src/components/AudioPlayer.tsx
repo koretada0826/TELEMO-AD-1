@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 function formatTime(t: number) {
   if (!isFinite(t) || t < 0) return "0:00";
@@ -7,11 +7,31 @@ function formatTime(t: number) {
   return `${m}:${s.toString().padStart(2, "0")}`;
 }
 
-export default function AudioPlayer({ src }: { src: string }) {
+export default function AudioPlayer({ src, autoPlay }: { src: string; autoPlay?: boolean }) {
   const audioRef = useRef<HTMLAudioElement>(null);
   const [playing, setPlaying] = useState(false);
   const [current, setCurrent] = useState(0);
   const [duration, setDuration] = useState(0);
+
+  useEffect(() => {
+    if (!autoPlay) return;
+    const a = audioRef.current;
+    if (!a) return;
+    const tryPlay = () => {
+      void a.play().then(() => setPlaying(true)).catch(() => {
+        const start = () => {
+          void a.play().then(() => setPlaying(true));
+          document.removeEventListener("click", start);
+          document.removeEventListener("touchstart", start);
+          document.removeEventListener("scroll", start);
+        };
+        document.addEventListener("click", start, { once: true });
+        document.addEventListener("touchstart", start, { once: true });
+        document.addEventListener("scroll", start, { once: true });
+      });
+    };
+    tryPlay();
+  }, [autoPlay]);
 
   const toggle = () => {
     const a = audioRef.current;

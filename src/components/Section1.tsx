@@ -6,23 +6,46 @@ import DocumentRequestForm from "./DocumentRequestForm";
 export default function Section1() {
   return (
       <main>
-      <section className="relative bg-white pt-[70px] sm:pt-[76px] lg:pt-[84px] pb-4 sm:pb-6 overflow-hidden">
-      <div className="absolute inset-0 z-[1] pointer-events-none hidden lg:block" style={{"background": "radial-gradient(700px at 0px 0px, rgba(65, 172, 134, 0.08), transparent 60%)"}}>
-      </div>
-      <div className="absolute inset-0 z-0 opacity-[0.03]" style={{"backgroundImage": "radial-gradient(rgb(0, 0, 0) 1px, transparent 1px)", "backgroundSize": "24px 24px"}}>
-      </div>
-      <div className="absolute -top-[200px] -right-[200px] w-[600px] h-[600px] rounded-full z-0" style={{"background": "radial-gradient(circle, rgba(65, 172, 134, 0.08) 0%, transparent 70%)"}}>
-      </div>
+      <section className="relative bg-white pt-[90px] sm:pt-[110px] lg:pt-[130px] pb-16 sm:pb-24 overflow-hidden">
       <div className="relative z-10 max-w-[1240px] mx-auto px-5 sm:px-8 lg:px-10 w-full">
-      <div className="text-center mb-6 sm:mb-8 lg:mb-10">
-      <h1 className="fade-in mx-auto text-black visible" style={{"fontFamily": "\"M PLUS 1p\", \"Noto Sans JP\", sans-serif", "fontWeight": "900", "lineHeight": "1.25", "letterSpacing": "-0.02em", "fontSize": "clamp(26px, 4.5vw, 52px)"}}>結果が出ない営業代行に<br /><span className="text-[#41ac86]">もう払わなくていい。</span>
-      </h1>
-      <p className="fade-in mt-5 sm:mt-7 text-black leading-[1.5] visible" style={{"fontFamily": "\"M PLUS 1p\", \"Noto Sans JP\", sans-serif", "fontWeight": "900", "lineHeight": "1.5", "letterSpacing": "-0.01em", "fontSize": "clamp(17px, 2.6vw, 26px)"}}>雇わずに、<span className="text-[#41ac86]">&quot;辞めない営業チーム&quot;</span>を。<br />属人をやめ、<span className="text-[#41ac86]">&quot;仕組み&quot;</span>で、<br />新規開拓が止まらない。
-      </p>
-      <p className="fade-in mt-3 sm:mt-4 text-[14px] sm:text-[22px] lg:text-[26px] font-bold text-[#555] leading-[1.6] whitespace-nowrap visible">営業代行で失敗した人ほど違いが分かります。
-      </p>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center mb-14 sm:mb-20">
+      <div className="text-left">
+      <p className="fade-in text-[15px] sm:text-[18px] tracking-[0.08em] font-black text-[#41ac86] mb-8 visible">営業代行・AI営業をお探しの方へ</p>
+      <h1 className="fade-in text-black visible" style={{"fontFamily": "\"M PLUS 1p\", \"Noto Sans JP\", sans-serif", "fontWeight": "900", "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontSize": "clamp(28px, 5vw, 56px)"}}>営業会社がつくった<br /><span className="relative inline-block">AI営業システム<span className="absolute bottom-[2px] left-0 w-full h-[6px] sm:h-[8px] bg-[#41ac86]/30"></span></span></h1>
+      <p className="fade-in mt-8 sm:mt-10 text-[17px] sm:text-[22px] lg:text-[26px] font-bold text-[#333] leading-[1.6] visible">大企業の営業組織を率いたプロが設計し、<br className="hidden sm:inline" />AIで実行する営業代行サービス</p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5 lg:gap-6 mb-10 sm:mb-12">
+      <div className="flex flex-col justify-center">
+      <div className="bg-[#f7f7f7] rounded-[20px] p-6 sm:p-8">
+      <div className="flex items-center gap-3 mb-3">
+      <span className="inline-flex items-center justify-center w-[10px] h-[10px] rounded-full bg-[#41ac86] animate-pulse"></span>
+      <p className="text-[14px] sm:text-[16px] font-black text-black">実際の受注コールを聴いてみてください</p>
+      </div>
+      <AudioPlayer src="/demo-call.m4a" autoPlay />
+      <p className="mt-3 text-[12px] text-[#888]">※ 営業歴15年のプロが設計したトークツリーによる実際のコール音声です</p>
+      </div>
+      </div>
+      </div>
+
+      <div className="flex flex-col sm:flex-row gap-4 justify-center mt-4">
+      <a href="#contact-form" className="inline-flex items-center justify-center bg-[#41ac86] hover:bg-[#2f8063] text-white font-bold text-[16px] sm:text-[18px] w-full sm:w-[320px] h-[60px] sm:h-[72px] rounded-full no-underline transition-all hover:-translate-y-0.5 shadow-[0_4px_16px_rgba(65,172,134,0.3)] hover:shadow-[0_10px_28px_rgba(65,172,134,0.4)]">無料相談する（10〜15分）</a>
+      <a href="#document-request" className="inline-flex items-center justify-center border-2 border-[#333] text-[#333] font-bold text-[16px] sm:text-[18px] w-full sm:w-[320px] h-[60px] sm:h-[72px] rounded-full no-underline transition-all hover:-translate-y-0.5 hover:bg-[#333]/5">お問い合わせ</a>
+      </div>
+
+      <div className="mt-12 sm:mt-16 grid grid-cols-3 gap-4 sm:gap-6 max-w-[960px] mx-auto">
+      <div className="bg-[#f7f7f7] rounded-[16px] py-8 sm:py-10 px-4 text-center flex flex-col items-center justify-center">
+      <div className="flex items-baseline justify-center"><span className="text-[44px] sm:text-[64px] font-black text-[#41ac86] leading-none" style={{"fontFamily": "\"M PLUS 1p\", sans-serif"}}>100</span><span className="text-[18px] sm:text-[24px] font-black text-[#41ac86]">%</span></div>
+      <p className="text-[13px] sm:text-[16px] font-bold text-[#555] mt-3">全通話開示</p>
+      </div>
+      <div className="bg-[#f7f7f7] rounded-[16px] py-8 sm:py-10 px-4 text-center flex flex-col items-center justify-center">
+      <div className="flex items-baseline justify-center"><span className="text-[36px] sm:text-[56px] font-black text-[#41ac86] leading-none" style={{"fontFamily": "\"M PLUS 1p\", sans-serif"}}>13,200</span></div>
+      <p className="text-[13px] sm:text-[16px] font-bold text-[#555] mt-3">コール/月</p>
+      </div>
+      <div className="bg-[#f7f7f7] rounded-[16px] py-8 sm:py-10 px-4 text-center flex flex-col items-center justify-center">
+      <div className="flex items-baseline justify-center"><span className="text-[44px] sm:text-[64px] font-black text-[#41ac86] leading-none" style={{"fontFamily": "\"M PLUS 1p\", sans-serif"}}>24</span><span className="text-[16px] sm:text-[22px] font-black text-[#41ac86]">時間</span></div>
+      <p className="text-[13px] sm:text-[16px] font-bold text-[#555] mt-3">365日稼働</p>
+      </div>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6 mt-14 sm:mt-20 mb-0">
       <a href="#service-intro" className="fade-in group relative block overflow-hidden transition-all duration-500 bg-white text-black border-2 border-black hover:border-[#41ac86] visible" style={{"transitionDelay": "0s"}}>
       <div className="absolute inset-0 pointer-events-none transition-opacity duration-500 opacity-[0.04]" style={{"backgroundImage": "radial-gradient(circle at 80% 10%, rgb(65, 172, 134) 0%, transparent 50%)"}}>
       </div>
@@ -76,10 +99,141 @@ export default function Section1() {
       </div>
       </a>
       </div>
+      <div className="fade-in flex flex-col sm:flex-row gap-3 justify-center mt-10 sm:mt-12 visible">
+      <a href="#contact-form" className="inline-flex items-center justify-center bg-[#41ac86] hover:bg-[#2f8063] text-white font-bold text-[15px] sm:text-[17px] px-10 sm:px-14 py-4 sm:py-5 rounded-full no-underline transition-colors shadow-[0_4px_16px_rgba(65,172,134,0.3)] hover:shadow-[0_10px_28px_rgba(65,172,134,0.4)] hover:-translate-y-0.5 transition-all">無料相談する</a>
+      <a href="#document-request" className="inline-flex items-center justify-center border-2 border-black text-black font-bold text-[15px] sm:text-[17px] px-10 sm:px-14 py-4 sm:py-5 rounded-full no-underline hover:bg-black/5 transition-colors hover:-translate-y-0.5 transition-all">お問い合わせ</a>
+      </div>
       </div>
       </section>
-      <section id="experienced" className="pt-2 sm:pt-4 pb-10 sm:pb-14 px-5 sm:px-10 bg-white">
+      <section className="py-20 sm:py-28 px-5 sm:px-10 bg-white relative overflow-hidden">
+      <div className="absolute inset-0 opacity-[0.03]" style={{"backgroundImage": "radial-gradient(rgb(0, 0, 0) 1px, transparent 1px)", "backgroundSize": "20px 20px"}}></div>
+      <div className="relative z-10 max-w-[1240px] mx-auto">
+      <div id="pain-points" className="scroll-mt-[80px]">
+      <div className="fade-in text-center mb-14 sm:mb-20 visible">
+      <p className="text-[13px] sm:text-[15px] tracking-[0.2em] font-black text-[#41ac86] mb-4">PAIN POINTS</p>
+      <h2 className="text-[28px] sm:text-[40px] lg:text-[48px] font-black text-black leading-[1.3] tracking-[0.02em]">こんなお悩み、ありませんか？</h2>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+      <div className="fade-in group bg-white border-2 border-[#e5e5e5] hover:border-[#41ac86] rounded-[20px] p-8 sm:p-10 text-center transition-all duration-300 hover:shadow-[0_12px_40px_rgba(65,172,134,0.12)] hover:-translate-y-1 visible" style={{"transitionDelay": "0s"}}>
+      <div className="w-[80px] h-[80px] sm:w-[96px] sm:h-[96px] mx-auto mb-6 rounded-full bg-[#fff1f0] flex items-center justify-center">
+      <svg className="text-[#e74c3c]" width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="16" r="6" stroke="currentColor" strokeWidth="2.5" /><path d="M10 34 C10 28 14 24 20 24 C26 24 30 28 30 34" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" /><line x1="28" y1="8" x2="34" y2="14" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" /><line x1="34" y1="8" x2="28" y2="14" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" /></svg>
+      </div>
+      <p className="text-[13px] sm:text-[14px] font-black text-[#e74c3c] tracking-[0.1em] mb-3">COST</p>
+      <p className="text-[20px] sm:text-[24px] font-black text-black leading-[1.5] mb-3">成果が出ないのに<br /><span className="text-[#e74c3c]">高額な費用</span>だけ<br />取られる</p>
+      <p className="text-[13px] sm:text-[15px] text-[#888] leading-[1.8]">月額は高いのに、アポゼロ。<br />解約しても請求が届く。</p>
+      </div>
+      <div className="fade-in group bg-white border-2 border-[#e5e5e5] hover:border-[#41ac86] rounded-[20px] p-8 sm:p-10 text-center transition-all duration-300 hover:shadow-[0_12px_40px_rgba(65,172,134,0.12)] hover:-translate-y-1 visible" style={{"transitionDelay": "0.1s"}}>
+      <div className="w-[80px] h-[80px] sm:w-[96px] sm:h-[96px] mx-auto mb-6 rounded-full bg-[#fff8e1] flex items-center justify-center">
+      <svg className="text-[#f39c12]" width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="8" y="6" width="24" height="28" rx="3" stroke="currentColor" strokeWidth="2.5" /><line x1="14" y1="14" x2="26" y2="14" stroke="currentColor" strokeWidth="2" opacity="0.4" /><line x1="14" y1="20" x2="26" y2="20" stroke="currentColor" strokeWidth="2" opacity="0.4" /><line x1="14" y1="26" x2="20" y2="26" stroke="currentColor" strokeWidth="2" opacity="0.4" /><circle cx="28" cy="28" r="8" fill="white" stroke="currentColor" strokeWidth="2.5" /><path d="M26 28 L28 28 L28 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></svg>
+      </div>
+      <p className="text-[13px] sm:text-[14px] font-black text-[#f39c12] tracking-[0.1em] mb-3">BLACK BOX</p>
+      <p className="text-[20px] sm:text-[24px] font-black text-black leading-[1.5] mb-3">何をしているか<br /><span className="text-[#f39c12]">全く見えない</span></p>
+      <p className="text-[13px] sm:text-[15px] text-[#888] leading-[1.8]">月1回のPDFだけ。<br />誰に何を話したか不明。</p>
+      </div>
+      <div className="fade-in group bg-white border-2 border-[#e5e5e5] hover:border-[#41ac86] rounded-[20px] p-8 sm:p-10 text-center transition-all duration-300 hover:shadow-[0_12px_40px_rgba(65,172,134,0.12)] hover:-translate-y-1 visible" style={{"transitionDelay": "0.2s"}}>
+      <div className="w-[80px] h-[80px] sm:w-[96px] sm:h-[96px] mx-auto mb-6 rounded-full bg-[#f3e8ff] flex items-center justify-center">
+      <svg className="text-[#8e44ad]" width="40" height="40" viewBox="0 0 40 40" fill="none"><path d="M8 32 L14 18 L20 24 L26 12 L32 20" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /><circle cx="32" cy="20" r="3" stroke="currentColor" strokeWidth="2" /><line x1="32" y1="17" x2="32" y2="14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></svg>
+      </div>
+      <p className="text-[13px] sm:text-[14px] font-black text-[#8e44ad] tracking-[0.1em] mb-3">RESULT</p>
+      <p className="text-[20px] sm:text-[24px] font-black text-black leading-[1.5] mb-3">中々<span className="text-[#8e44ad]">成果</span>が<br />上がらない</p>
+      <p className="text-[13px] sm:text-[15px] text-[#888] leading-[1.8]">AI任せで営業素人が設計。<br />現場を知らないから売れない。</p>
+      </div>
+      </div>
+      <div className="flex justify-center mt-12 sm:mt-16">
+      <div className="flex flex-col items-center gap-2">
+      <svg width="56" height="56" viewBox="0 0 56 56" fill="none"><circle cx="28" cy="28" r="27" stroke="#41ac86" strokeWidth="2" /><path d="M18 22 L28 32 L38 22" stroke="#41ac86" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
+      <p className="text-[13px] font-black text-[#41ac86] tracking-[0.1em]">SOLUTION</p>
+      </div>
+      </div>
+      </div>
+      </div>
+      </section>
+      <section className="py-20 sm:py-28 px-5 sm:px-10 bg-[#41ac86] relative overflow-hidden">
+      <div className="absolute top-0 right-0 w-[60%] h-full opacity-10" style={{"background": "radial-gradient(at 80% 30%, white 0%, transparent 60%)"}}></div>
+      <div className="relative z-10 max-w-[1240px] mx-auto">
+      <div className="text-center mb-12 sm:mb-16">
+      <p className="text-[13px] sm:text-[15px] tracking-[0.2em] font-black text-white/60 mb-4">TELEMO ANSWER</p>
+      <p className="text-[20px] sm:text-[26px] font-bold text-white/80 mb-3">TELEMOは、</p>
+      <h3 className="text-[28px] sm:text-[40px] lg:text-[52px] font-black text-white leading-[1.3]">そんな営業課題を<br className="sm:hidden" /><span className="relative inline-block"><span className="relative z-10">早く</span><span className="absolute bottom-[4px] left-0 w-full h-[6px] bg-white/40"></span></span>・<span className="relative inline-block"><span className="relative z-10">着実に</span><span className="absolute bottom-[4px] left-0 w-full h-[6px] bg-white/40"></span></span>解決します。</h3>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+      <div className="fade-in bg-white rounded-[20px] p-8 sm:p-10 text-center shadow-[0_8px_30px_rgba(0,0,0,0.08)] visible" style={{"transitionDelay": "0s"}}>
+      <div className="w-[64px] h-[64px] mx-auto mb-5 rounded-full bg-[#eaf7f1] flex items-center justify-center">
+      <svg className="text-[#41ac86]" width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M5 16 L13 24 L27 8" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" /></svg>
+      </div>
+      <p className="text-[22px] sm:text-[26px] font-black text-black mb-3">全通話100%開示</p>
+      <p className="text-[14px] sm:text-[16px] text-[#555] leading-[1.8]">誰に何を話したか<br />いつでも即確認できます</p>
+      </div>
+      <div className="fade-in bg-white rounded-[20px] p-8 sm:p-10 text-center shadow-[0_8px_30px_rgba(0,0,0,0.08)] visible" style={{"transitionDelay": "0.1s"}}>
+      <div className="w-[64px] h-[64px] mx-auto mb-5 rounded-full bg-[#eaf7f1] flex items-center justify-center">
+      <svg className="text-[#41ac86]" width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M5 16 L13 24 L27 8" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" /></svg>
+      </div>
+      <p className="text-[22px] sm:text-[26px] font-black text-black mb-3">プロが設計</p>
+      <p className="text-[14px] sm:text-[16px] text-[#555] leading-[1.8]">営業歴15年のプロが<br />トークツリーを設計します</p>
+      </div>
+      <div className="fade-in bg-white rounded-[20px] p-8 sm:p-10 text-center shadow-[0_8px_30px_rgba(0,0,0,0.08)] visible" style={{"transitionDelay": "0.2s"}}>
+      <div className="w-[64px] h-[64px] mx-auto mb-5 rounded-full bg-[#eaf7f1] flex items-center justify-center">
+      <svg className="text-[#41ac86]" width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M5 16 L13 24 L27 8" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" /></svg>
+      </div>
+      <p className="text-[22px] sm:text-[26px] font-black text-black mb-3">月額35万円</p>
+      <p className="text-[14px] sm:text-[16px] text-[#555] leading-[1.8]">採用1人分の予算で<br />リスクゼロの営業力を</p>
+      </div>
+      </div>
+      </div>
+      </section>
+      <section className="pt-10 sm:pt-16 pb-10 sm:pb-14 px-5 sm:px-10 bg-white">
       <div className="max-w-[1240px] mx-auto">
+<div className="flex flex-col gap-3 sm:gap-4">
+      <div className="fade-in flex items-center gap-4 sm:gap-6 bg-white border-2 border-black p-4 sm:p-6 visible" style={{"transitionDelay": "0s", "boxShadow": "rgb(65, 172, 134) 6px 6px 0px 0px"}}><span className="shrink-0 inline-flex w-[48px] h-[48px] sm:w-[60px] sm:h-[60px] rounded-full bg-[#41ac86] items-center justify-center text-white text-[16px] sm:text-[20px] font-black">01</span>
+      <div className="flex-1 min-w-0">
+      <p className="text-[11px] sm:text-[12px] font-black text-[#41ac86] tracking-[0.2em] mb-1">契約の縛り
+      </p>
+      <p className="text-[15px] sm:text-[19px] lg:text-[22px] font-black text-black leading-[1.45]"><span>契約は6ヶ月・自動更新。<br className="sm:hidden" /></span><span>合理的なPDCA設計。</span>
+      </p>
+      </div>
+      <div className="hidden md:flex shrink-0 flex-col gap-1 pl-6 border-l border-[#eee] min-w-[180px]"><span className="inline-flex items-center gap-1.5 text-[12px] lg:text-[13px] text-[#333] font-bold"><svg className="w-3 h-3 text-[#41ac86]" viewBox="0 0 12 12" fill="none" aria-hidden={true}><path d="M2 6 L5 9 L10 3" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"></path></svg>6ヶ月契約</span><span className="inline-flex items-center gap-1.5 text-[12px] lg:text-[13px] text-[#333] font-bold"><svg className="w-3 h-3 text-[#41ac86]" viewBox="0 0 12 12" fill="none" aria-hidden={true}><path d="M2 6 L5 9 L10 3" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"></path></svg>自動更新</span><span className="inline-flex items-center gap-1.5 text-[12px] lg:text-[13px] text-[#333] font-bold"><svg className="w-3 h-3 text-[#41ac86]" viewBox="0 0 12 12" fill="none" aria-hidden={true}><path d="M2 6 L5 9 L10 3" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"></path></svg>解約料ゼロ</span>
+      </div>
+      </div>
+      <div className="fade-in flex items-center gap-4 sm:gap-6 bg-white border-2 border-black p-4 sm:p-6 visible" style={{"transitionDelay": "0.06s", "boxShadow": "rgb(65, 172, 134) 6px 6px 0px 0px"}}><span className="shrink-0 inline-flex w-[48px] h-[48px] sm:w-[60px] sm:h-[60px] rounded-full bg-[#41ac86] items-center justify-center text-white text-[16px] sm:text-[20px] font-black">02</span>
+      <div className="flex-1 min-w-0">
+      <p className="text-[11px] sm:text-[12px] font-black text-[#41ac86] tracking-[0.2em] mb-1">ブラックボックス
+      </p>
+      <p className="text-[15px] sm:text-[19px] lg:text-[22px] font-black text-black leading-[1.45]"><span>全録音を100%開示。<br className="sm:hidden" /></span><span>誰に何を話したか即確認可。</span>
+      </p>
+      </div>
+      <div className="hidden md:flex shrink-0 flex-col gap-1 pl-6 border-l border-[#eee] min-w-[180px]"><span className="inline-flex items-center gap-1.5 text-[12px] lg:text-[13px] text-[#333] font-bold"><svg className="w-3 h-3 text-[#41ac86]" viewBox="0 0 12 12" fill="none" aria-hidden={true}><path d="M2 6 L5 9 L10 3" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"></path></svg>全録音開示</span><span className="inline-flex items-center gap-1.5 text-[12px] lg:text-[13px] text-[#333] font-bold"><svg className="w-3 h-3 text-[#41ac86]" viewBox="0 0 12 12" fill="none" aria-hidden={true}><path d="M2 6 L5 9 L10 3" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"></path></svg>コール一覧</span><span className="inline-flex items-center gap-1.5 text-[12px] lg:text-[13px] text-[#333] font-bold"><svg className="w-3 h-3 text-[#41ac86]" viewBox="0 0 12 12" fill="none" aria-hidden={true}><path d="M2 6 L5 9 L10 3" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"></path></svg>ダッシュボード</span>
+      </div>
+      </div>
+      <div className="fade-in flex items-center gap-4 sm:gap-6 bg-white border-2 border-black p-4 sm:p-6 visible" style={{"transitionDelay": "0.12s", "boxShadow": "rgb(65, 172, 134) 6px 6px 0px 0px"}}><span className="shrink-0 inline-flex w-[48px] h-[48px] sm:w-[60px] sm:h-[60px] rounded-full bg-[#41ac86] items-center justify-center text-white text-[16px] sm:text-[20px] font-black">03</span>
+      <div className="flex-1 min-w-0">
+      <p className="text-[11px] sm:text-[12px] font-black text-[#41ac86] tracking-[0.2em] mb-1">ブランド毀損
+      </p>
+      <p className="text-[15px] sm:text-[19px] lg:text-[22px] font-black text-black leading-[1.45]"><span>15年のプロがスクリプト設計。<br className="sm:hidden" /></span><span>毎日の録音で品質管理。</span>
+      </p>
+      </div>
+      <div className="hidden md:flex shrink-0 flex-col gap-1 pl-6 border-l border-[#eee] min-w-[180px]"><span className="inline-flex items-center gap-1.5 text-[12px] lg:text-[13px] text-[#333] font-bold"><svg className="w-3 h-3 text-[#41ac86]" viewBox="0 0 12 12" fill="none" aria-hidden={true}><path d="M2 6 L5 9 L10 3" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"></path></svg>プロ設計</span><span className="inline-flex items-center gap-1.5 text-[12px] lg:text-[13px] text-[#333] font-bold"><svg className="w-3 h-3 text-[#41ac86]" viewBox="0 0 12 12" fill="none" aria-hidden={true}><path d="M2 6 L5 9 L10 3" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"></path></svg>毎日レビュー</span><span className="inline-flex items-center gap-1.5 text-[12px] lg:text-[13px] text-[#333] font-bold"><svg className="w-3 h-3 text-[#41ac86]" viewBox="0 0 12 12" fill="none" aria-hidden={true}><path d="M2 6 L5 9 L10 3" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"></path></svg>ブランド保全</span>
+      </div>
+      </div>
+      <div className="fade-in flex items-center gap-4 sm:gap-6 bg-white border-2 border-black p-4 sm:p-6 visible" style={{"transitionDelay": "0.18s", "boxShadow": "rgb(65, 172, 134) 6px 6px 0px 0px"}}><span className="shrink-0 inline-flex w-[48px] h-[48px] sm:w-[60px] sm:h-[60px] rounded-full bg-[#41ac86] items-center justify-center text-white text-[16px] sm:text-[20px] font-black">04</span>
+      <div className="flex-1 min-w-0">
+      <p className="text-[11px] sm:text-[12px] font-black text-[#41ac86] tracking-[0.2em] mb-1">営業知見ゼロ
+      </p>
+      <p className="text-[15px] sm:text-[19px] lg:text-[22px] font-black text-black leading-[1.45]"><span>15年のプロが設計から実行。<br className="sm:hidden" /></span><span>現場を知る人間が動かす。</span>
+      </p>
+      </div>
+      <div className="hidden md:flex shrink-0 flex-col gap-1 pl-6 border-l border-[#eee] min-w-[180px]"><span className="inline-flex items-center gap-1.5 text-[12px] lg:text-[13px] text-[#333] font-bold"><svg className="w-3 h-3 text-[#41ac86]" viewBox="0 0 12 12" fill="none" aria-hidden={true}><path d="M2 6 L5 9 L10 3" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"></path></svg>プロが運営</span><span className="inline-flex items-center gap-1.5 text-[12px] lg:text-[13px] text-[#333] font-bold"><svg className="w-3 h-3 text-[#41ac86]" viewBox="0 0 12 12" fill="none" aria-hidden={true}><path d="M2 6 L5 9 L10 3" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"></path></svg>15年の現場経験</span><span className="inline-flex items-center gap-1.5 text-[12px] lg:text-[13px] text-[#333] font-bold"><svg className="w-3 h-3 text-[#41ac86]" viewBox="0 0 12 12" fill="none" aria-hidden={true}><path d="M2 6 L5 9 L10 3" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"></path></svg>人による実行</span>
+      </div>
+      </div>
+      </div>
+      <div className="fade-in flex flex-col sm:flex-row gap-3 justify-center mt-12 sm:mt-16 visible">
+      <a href="#contact-form" className="inline-flex items-center justify-center bg-[#41ac86] hover:bg-[#2f8063] text-white font-bold text-[15px] sm:text-[17px] px-10 sm:px-14 py-4 sm:py-5 rounded-full no-underline transition-colors shadow-[0_4px_16px_rgba(65,172,134,0.3)]">無料相談する</a>
+      <a href="#document-request" className="inline-flex items-center justify-center border-2 border-black text-black font-bold text-[15px] sm:text-[17px] px-10 sm:px-14 py-4 sm:py-5 rounded-full no-underline hover:bg-black/5 transition-colors">お問い合わせ</a>
+      </div>
+      <div className="fade-in mt-14 sm:mt-20 bg-white text-black overflow-hidden relative border border-[#eee] visible">
+      <div className="pointer-events-none absolute inset-0 opacity-[0.06]" style={{"background": "radial-gradient(circle at 85% 20%, rgb(65, 172, 134) 0%, transparent 50%)"}}>
+      </div>
+      <div className="relative p-6 sm:p-10 lg:p-14">
+      <div className="text-center mb-5 sm:mb-10">
       <div id="service-intro" className="fade-in text-center mb-2 scroll-mt-[80px] visible">
       <p className="text-[22px] sm:text-[28px] lg:text-[32px] font-black text-[#41ac86] leading-[1.3] mb-3">TELEMOは
       </p>
@@ -159,107 +313,6 @@ export default function Section1() {
       </p>
       </div>
       </div>
-      <div id="pain-points" className="mb-16 sm:mb-20 scroll-mt-[80px]">
-      <div className="fade-in text-center mb-6 visible">
-      <h2 className="text-[28px] sm:text-[36px] lg:text-[42px] font-black text-black leading-[1.3] tracking-[0.02em]">こんな経験<span className="text-[#41ac86]">ありませんか？</span>
-      </h2>
-      </div>
-      <p className="fade-in text-center text-[16px] sm:text-[18px] text-[#4d4d4d] leading-[2] max-w-[760px] mx-auto mb-10 visible">営業代行を使ったことがある方なら、どれか1つは心当たりがあるはず。<br className="hidden sm:inline" />TELEMOは、これらすべてを起きないように設計されました。
-      </p>
-      <div className="relative grid grid-cols-1 md:grid-cols-12 gap-x-4 gap-y-0 mb-8 sm:mb-10">
-      <div className="fade-in md:col-span-6 md:col-start-1 md:mt-0 visible" style={{"transitionDelay": "0s"}}>
-      <div className="relative bg-white border-2 border-black rounded-[16px] p-4 sm:p-5 pt-8 sm:pt-9 shadow-[4px_4px_0_0_#41ac86]"><span className="absolute top-2 right-3 bg-[#41ac86] text-white text-[10px] sm:text-[11px] font-black tracking-[0.2em] px-3 py-1 rounded-full">契約の縛り</span><span className="absolute top-2 left-3 text-[46px] sm:text-[56px] leading-none text-[#41ac86]/20 select-none pointer-events-none" style={{"fontFamily": "\"Noto Serif JP\", serif"}}>“</span>
-      <p className="relative pl-5 sm:pl-6 pt-1 text-[15px] sm:text-[20px] lg:text-[22px] text-black leading-[1.75] font-bold whitespace-pre-line tracking-[0.01em] text-balance" style={{"fontFamily": "\"Noto Serif JP\", serif"}}>半年払ってもアポは片手で数えるほど。解約しても請求書だけ届き続けた。
-      </p><span className="absolute -bottom-[14px] left-9 w-0 h-0" style={{"borderLeft": "12px solid transparent", "borderRight": "12px solid transparent", "borderTop": "14px solid rgb(0, 0, 0)"}}></span><span className="absolute -bottom-[10px] left-[42px] w-0 h-0" style={{"borderLeft": "8px solid transparent", "borderRight": "8px solid transparent", "borderTop": "10px solid rgb(255, 255, 255)"}}></span>
-      </div>
-      <div className="flex items-center mt-3 pl-6 justify-start"><span className="text-[16px] sm:text-[18px] lg:text-[19px] font-black text-[#222]">製造業 / 取締役 様</span>
-      </div>
-      </div>
-      <div className="fade-in md:col-span-6 md:col-start-7 md:mt-14 visible" style={{"transitionDelay": "0.08s"}}>
-      <div className="relative bg-white border-2 border-black rounded-[16px] p-4 sm:p-5 pt-8 sm:pt-9 shadow-[4px_4px_0_0_#41ac86]"><span className="absolute top-2 right-3 bg-[#41ac86] text-white text-[10px] sm:text-[11px] font-black tracking-[0.2em] px-3 py-1 rounded-full">ブラックボックス</span><span className="absolute top-2 left-3 text-[46px] sm:text-[56px] leading-none text-[#41ac86]/20 select-none pointer-events-none" style={{"fontFamily": "\"Noto Serif JP\", serif"}}>“</span>
-      <p className="relative pl-5 sm:pl-6 pt-1 text-[15px] sm:text-[20px] lg:text-[22px] text-black leading-[1.75] font-bold whitespace-pre-line tracking-[0.01em] text-balance" style={{"fontFamily": "\"Noto Serif JP\", serif"}}>月1回のサマリーPDFだけ。
-      何を話したか全く見えない。
-      </p><span className="absolute -bottom-[14px] right-9 w-0 h-0" style={{"borderLeft": "12px solid transparent", "borderRight": "12px solid transparent", "borderTop": "14px solid rgb(0, 0, 0)"}}></span><span className="absolute -bottom-[10px] right-[42px] w-0 h-0" style={{"borderLeft": "8px solid transparent", "borderRight": "8px solid transparent", "borderTop": "10px solid rgb(255, 255, 255)"}}></span>
-      </div>
-      <div className="flex items-center mt-3 pr-6 justify-end"><span className="text-[16px] sm:text-[18px] lg:text-[19px] font-black text-[#222]">IT / マーケ責任者 様</span>
-      </div>
-      </div>
-      <div className="fade-in md:col-span-6 md:col-start-1 md:-mt-4 visible" style={{"transitionDelay": "0.16s"}}>
-      <div className="relative bg-white border-2 border-black rounded-[16px] p-4 sm:p-5 pt-8 sm:pt-9 shadow-[4px_4px_0_0_#41ac86]"><span className="absolute top-2 right-3 bg-[#41ac86] text-white text-[10px] sm:text-[11px] font-black tracking-[0.2em] px-3 py-1 rounded-full">ブランド毀損</span><span className="absolute top-2 left-3 text-[46px] sm:text-[56px] leading-none text-[#41ac86]/20 select-none pointer-events-none" style={{"fontFamily": "\"Noto Serif JP\", serif"}}>“</span>
-      <p className="relative pl-5 sm:pl-6 pt-1 text-[15px] sm:text-[20px] lg:text-[22px] text-black leading-[1.75] font-bold whitespace-pre-line tracking-[0.01em] text-balance" style={{"fontFamily": "\"Noto Serif JP\", serif"}}>後から録音を聞いて愕然。
-      粘る強引トークを、うちの名前で。
-      </p><span className="absolute -bottom-[14px] left-9 w-0 h-0" style={{"borderLeft": "12px solid transparent", "borderRight": "12px solid transparent", "borderTop": "14px solid rgb(0, 0, 0)"}}></span><span className="absolute -bottom-[10px] left-[42px] w-0 h-0" style={{"borderLeft": "8px solid transparent", "borderRight": "8px solid transparent", "borderTop": "10px solid rgb(255, 255, 255)"}}></span>
-      </div>
-      <div className="flex items-center mt-3 pl-6 justify-start"><span className="text-[16px] sm:text-[18px] lg:text-[19px] font-black text-[#222]">SaaS / 事業責任者 様</span>
-      </div>
-      </div>
-      <div className="fade-in md:col-span-6 md:col-start-7 md:mt-10 visible" style={{"transitionDelay": "0.24s"}}>
-      <div className="relative bg-white border-2 border-black rounded-[16px] p-4 sm:p-5 pt-8 sm:pt-9 shadow-[4px_4px_0_0_#41ac86]"><span className="absolute top-2 right-3 bg-[#41ac86] text-white text-[10px] sm:text-[11px] font-black tracking-[0.2em] px-3 py-1 rounded-full">営業知見ゼロ</span><span className="absolute top-2 left-3 text-[46px] sm:text-[56px] leading-none text-[#41ac86]/20 select-none pointer-events-none" style={{"fontFamily": "\"Noto Serif JP\", serif"}}>“</span>
-      <p className="relative pl-5 sm:pl-6 pt-1 text-[15px] sm:text-[20px] lg:text-[22px] text-black leading-[1.75] font-bold whitespace-pre-line tracking-[0.01em] text-balance" style={{"fontFamily": "\"Noto Serif JP\", serif"}}>AI営業を使ってみたら、
-      作ったのは営業素人のエンジニア。
-      </p><span className="absolute -bottom-[14px] right-9 w-0 h-0" style={{"borderLeft": "12px solid transparent", "borderRight": "12px solid transparent", "borderTop": "14px solid rgb(0, 0, 0)"}}></span><span className="absolute -bottom-[10px] right-[42px] w-0 h-0" style={{"borderLeft": "8px solid transparent", "borderRight": "8px solid transparent", "borderTop": "10px solid rgb(255, 255, 255)"}}></span>
-      </div>
-      <div className="flex items-center mt-3 pr-6 justify-end"><span className="text-[16px] sm:text-[18px] lg:text-[19px] font-black text-[#222]">スタートアップ / 代表 様</span>
-      </div>
-      </div>
-      </div>
-      <div className="fade-in relative text-center mt-12 sm:mt-16 mb-10 sm:mb-14 pt-10 sm:pt-14 pb-4 sm:pb-6 visible"><span className="pointer-events-none absolute inset-0 flex items-center justify-center text-[80px] sm:text-[140px] lg:text-[180px] font-black leading-none tracking-[-0.02em] text-[#41ac86]/5 select-none overflow-hidden" aria-hidden={true} style={{"fontFamily": "\"M PLUS 1p\", sans-serif"}}>ANSWER</span>
-      <div className="relative">
-      <p className="inline-flex items-center gap-3 text-[12px] sm:text-[14px] text-[#41ac86] tracking-[0.3em] font-black mb-4"><span className="w-8 h-[2px] bg-[#41ac86]"></span>TELEMO ANSWER<span className="w-8 h-[2px] bg-[#41ac86]"></span>
-      </p>
-      <h3 className="text-[30px] sm:text-[44px] lg:text-[56px] font-black leading-[1.2] tracking-[-0.01em]"><span className="text-[#41ac86]">私たちはこうします</span>
-      </h3>
-      <p className="mt-4 sm:mt-5 text-[14px] sm:text-[18px] text-[#555] font-bold">「よくある話」を、TELEMOは<br className="sm:hidden" /><span className="text-[#41ac86] font-black">起きない仕組みにした</span>のです。
-      </p>
-      </div>
-      </div>
-      <div className="flex flex-col gap-3 sm:gap-4">
-      <div className="fade-in flex items-center gap-4 sm:gap-6 bg-white border-2 border-black p-4 sm:p-6 visible" style={{"transitionDelay": "0s", "boxShadow": "rgb(65, 172, 134) 6px 6px 0px 0px"}}><span className="shrink-0 inline-flex w-[48px] h-[48px] sm:w-[60px] sm:h-[60px] rounded-full bg-[#41ac86] items-center justify-center text-white text-[16px] sm:text-[20px] font-black">01</span>
-      <div className="flex-1 min-w-0">
-      <p className="text-[11px] sm:text-[12px] font-black text-[#41ac86] tracking-[0.2em] mb-1">契約の縛り
-      </p>
-      <p className="text-[15px] sm:text-[19px] lg:text-[22px] font-black text-black leading-[1.45]"><span>契約は6ヶ月・自動更新。<br className="sm:hidden" /></span><span>合理的なPDCA設計。</span>
-      </p>
-      </div>
-      <div className="hidden md:flex shrink-0 flex-col gap-1 pl-6 border-l border-[#eee] min-w-[180px]"><span className="inline-flex items-center gap-1.5 text-[12px] lg:text-[13px] text-[#333] font-bold"><svg className="w-3 h-3 text-[#41ac86]" viewBox="0 0 12 12" fill="none" aria-hidden={true}><path d="M2 6 L5 9 L10 3" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"></path></svg>6ヶ月契約</span><span className="inline-flex items-center gap-1.5 text-[12px] lg:text-[13px] text-[#333] font-bold"><svg className="w-3 h-3 text-[#41ac86]" viewBox="0 0 12 12" fill="none" aria-hidden={true}><path d="M2 6 L5 9 L10 3" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"></path></svg>自動更新</span><span className="inline-flex items-center gap-1.5 text-[12px] lg:text-[13px] text-[#333] font-bold"><svg className="w-3 h-3 text-[#41ac86]" viewBox="0 0 12 12" fill="none" aria-hidden={true}><path d="M2 6 L5 9 L10 3" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"></path></svg>解約料ゼロ</span>
-      </div>
-      </div>
-      <div className="fade-in flex items-center gap-4 sm:gap-6 bg-white border-2 border-black p-4 sm:p-6 visible" style={{"transitionDelay": "0.06s", "boxShadow": "rgb(65, 172, 134) 6px 6px 0px 0px"}}><span className="shrink-0 inline-flex w-[48px] h-[48px] sm:w-[60px] sm:h-[60px] rounded-full bg-[#41ac86] items-center justify-center text-white text-[16px] sm:text-[20px] font-black">02</span>
-      <div className="flex-1 min-w-0">
-      <p className="text-[11px] sm:text-[12px] font-black text-[#41ac86] tracking-[0.2em] mb-1">ブラックボックス
-      </p>
-      <p className="text-[15px] sm:text-[19px] lg:text-[22px] font-black text-black leading-[1.45]"><span>全録音を100%開示。<br className="sm:hidden" /></span><span>誰に何を話したか即確認可。</span>
-      </p>
-      </div>
-      <div className="hidden md:flex shrink-0 flex-col gap-1 pl-6 border-l border-[#eee] min-w-[180px]"><span className="inline-flex items-center gap-1.5 text-[12px] lg:text-[13px] text-[#333] font-bold"><svg className="w-3 h-3 text-[#41ac86]" viewBox="0 0 12 12" fill="none" aria-hidden={true}><path d="M2 6 L5 9 L10 3" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"></path></svg>全録音開示</span><span className="inline-flex items-center gap-1.5 text-[12px] lg:text-[13px] text-[#333] font-bold"><svg className="w-3 h-3 text-[#41ac86]" viewBox="0 0 12 12" fill="none" aria-hidden={true}><path d="M2 6 L5 9 L10 3" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"></path></svg>コール一覧</span><span className="inline-flex items-center gap-1.5 text-[12px] lg:text-[13px] text-[#333] font-bold"><svg className="w-3 h-3 text-[#41ac86]" viewBox="0 0 12 12" fill="none" aria-hidden={true}><path d="M2 6 L5 9 L10 3" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"></path></svg>ダッシュボード</span>
-      </div>
-      </div>
-      <div className="fade-in flex items-center gap-4 sm:gap-6 bg-white border-2 border-black p-4 sm:p-6 visible" style={{"transitionDelay": "0.12s", "boxShadow": "rgb(65, 172, 134) 6px 6px 0px 0px"}}><span className="shrink-0 inline-flex w-[48px] h-[48px] sm:w-[60px] sm:h-[60px] rounded-full bg-[#41ac86] items-center justify-center text-white text-[16px] sm:text-[20px] font-black">03</span>
-      <div className="flex-1 min-w-0">
-      <p className="text-[11px] sm:text-[12px] font-black text-[#41ac86] tracking-[0.2em] mb-1">ブランド毀損
-      </p>
-      <p className="text-[15px] sm:text-[19px] lg:text-[22px] font-black text-black leading-[1.45]"><span>15年のプロがスクリプト設計。<br className="sm:hidden" /></span><span>毎日の録音で品質管理。</span>
-      </p>
-      </div>
-      <div className="hidden md:flex shrink-0 flex-col gap-1 pl-6 border-l border-[#eee] min-w-[180px]"><span className="inline-flex items-center gap-1.5 text-[12px] lg:text-[13px] text-[#333] font-bold"><svg className="w-3 h-3 text-[#41ac86]" viewBox="0 0 12 12" fill="none" aria-hidden={true}><path d="M2 6 L5 9 L10 3" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"></path></svg>プロ設計</span><span className="inline-flex items-center gap-1.5 text-[12px] lg:text-[13px] text-[#333] font-bold"><svg className="w-3 h-3 text-[#41ac86]" viewBox="0 0 12 12" fill="none" aria-hidden={true}><path d="M2 6 L5 9 L10 3" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"></path></svg>毎日レビュー</span><span className="inline-flex items-center gap-1.5 text-[12px] lg:text-[13px] text-[#333] font-bold"><svg className="w-3 h-3 text-[#41ac86]" viewBox="0 0 12 12" fill="none" aria-hidden={true}><path d="M2 6 L5 9 L10 3" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"></path></svg>ブランド保全</span>
-      </div>
-      </div>
-      <div className="fade-in flex items-center gap-4 sm:gap-6 bg-white border-2 border-black p-4 sm:p-6 visible" style={{"transitionDelay": "0.18s", "boxShadow": "rgb(65, 172, 134) 6px 6px 0px 0px"}}><span className="shrink-0 inline-flex w-[48px] h-[48px] sm:w-[60px] sm:h-[60px] rounded-full bg-[#41ac86] items-center justify-center text-white text-[16px] sm:text-[20px] font-black">04</span>
-      <div className="flex-1 min-w-0">
-      <p className="text-[11px] sm:text-[12px] font-black text-[#41ac86] tracking-[0.2em] mb-1">営業知見ゼロ
-      </p>
-      <p className="text-[15px] sm:text-[19px] lg:text-[22px] font-black text-black leading-[1.45]"><span>15年のプロが設計から実行。<br className="sm:hidden" /></span><span>現場を知る人間が動かす。</span>
-      </p>
-      </div>
-      <div className="hidden md:flex shrink-0 flex-col gap-1 pl-6 border-l border-[#eee] min-w-[180px]"><span className="inline-flex items-center gap-1.5 text-[12px] lg:text-[13px] text-[#333] font-bold"><svg className="w-3 h-3 text-[#41ac86]" viewBox="0 0 12 12" fill="none" aria-hidden={true}><path d="M2 6 L5 9 L10 3" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"></path></svg>プロが運営</span><span className="inline-flex items-center gap-1.5 text-[12px] lg:text-[13px] text-[#333] font-bold"><svg className="w-3 h-3 text-[#41ac86]" viewBox="0 0 12 12" fill="none" aria-hidden={true}><path d="M2 6 L5 9 L10 3" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"></path></svg>15年の現場経験</span><span className="inline-flex items-center gap-1.5 text-[12px] lg:text-[13px] text-[#333] font-bold"><svg className="w-3 h-3 text-[#41ac86]" viewBox="0 0 12 12" fill="none" aria-hidden={true}><path d="M2 6 L5 9 L10 3" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"></path></svg>人による実行</span>
-      </div>
-      </div>
-      </div>
-      <div className="fade-in mt-14 sm:mt-20 bg-white text-black overflow-hidden relative border border-[#eee] visible">
-      <div className="pointer-events-none absolute inset-0 opacity-[0.06]" style={{"background": "radial-gradient(circle at 85% 20%, rgb(65, 172, 134) 0%, transparent 50%)"}}>
-      </div>
-      <div className="relative p-6 sm:p-10 lg:p-14">
-      <div className="text-center mb-5 sm:mb-10">
       <p className="inline-flex items-center gap-3 text-[11px] sm:text-[13px] text-[#41ac86] tracking-[0.3em] font-black mb-3"><span className="w-8 h-[2px] bg-[#41ac86]"></span>HUMAN × AI<span className="w-8 h-[2px] bg-[#41ac86]"></span>
       </p>
       <h3 className="text-[24px] sm:text-[36px] lg:text-[46px] font-black leading-[1.25] tracking-[-0.01em] text-black">営業歴<span className="text-[#41ac86]">15年</span>のプロが、<br className="hidden sm:inline" /><span className="text-[#41ac86]">AI</span>と融合したらどうなるか。
@@ -369,100 +422,48 @@ export default function Section1() {
       </p>
       </div>
       </div>
-      <div className="fade-in mt-12 sm:mt-16 bg-white border-2 border-black p-6 sm:p-10 lg:p-12 visible" style={{"boxShadow": "rgb(65, 172, 134) 8px 8px 0px 0px"}}>
-      <p className="inline-flex items-center gap-3 text-[11px] sm:text-[13px] text-[#41ac86] tracking-[0.3em] font-black mb-4"><span className="w-8 h-[2px] bg-[#41ac86]"></span>TALK TREE DESIGN
-      </p>
-      <h4 className="text-[22px] sm:text-[30px] lg:text-[38px] font-black text-black leading-[1.3] mb-6 sm:mb-8">この仕組みの肝は「<span className="text-[#41ac86]">トークツリーの設計</span>」にすべてある
-      </h4>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 mb-8">
-      <div className="flex gap-4 items-start"><span className="shrink-0 inline-flex w-[40px] h-[40px] sm:w-[48px] sm:h-[48px] rounded-full bg-[#41ac86] items-center justify-center text-white text-[14px] sm:text-[16px] font-black">01</span>
+      <div className="fade-in mt-16 sm:mt-24 visible">
+      <div className="text-center mb-12 sm:mb-16">
+      <h4 className="text-[26px] sm:text-[36px] lg:text-[44px] font-black text-black leading-[1.3]">TELEMOが選ばれる <span className="text-[#41ac86] text-[40px] sm:text-[56px] lg:text-[64px]" style={{"fontFamily": "\"M PLUS 1p\", sans-serif"}}>4</span><span className="text-black">つの理由</span></h4>
+      </div>
+      <div className="flex flex-col gap-0">
+      <div className="fade-in bg-[#f7f7f7] border-l-4 border-[#41ac86] p-8 sm:p-10 lg:p-12 visible">
+      <div className="flex items-start gap-5 sm:gap-8">
+      <span className="text-[36px] sm:text-[48px] font-black text-[#41ac86] leading-none shrink-0" style={{"fontFamily": "\"M PLUS 1p\", sans-serif"}}>1.</span>
       <div>
-      <p className="text-[16px] sm:text-[20px] font-black text-black mb-1">設計思想
-      </p>
-      <p className="text-[14px] sm:text-[17px] text-[#333] leading-[1.9] font-medium">営業のプロレベルの<span className="font-black text-black">"無駄のない会話構成"</span>を再現。<br />余計な前置き・曖昧な質問は一切排除しています。
-      </p>
+      <h5 className="text-[20px] sm:text-[26px] font-black text-black leading-[1.4] mb-3"><span className="relative inline-block"><span className="relative z-10">プロが設計した</span><span className="absolute bottom-[2px] left-0 w-full h-[6px] bg-[#41ac86]/20"></span></span> トークツリー</h5>
+      <p className="text-[14px] sm:text-[17px] text-[#555] leading-[1.9]">営業歴15年のプロが、無駄のない会話構成を設計。余計な前置き・曖昧な質問は一切排除。トップ営業マンの"間・語尾・テンション"を徹底研究し、自然で説得力のある会話を実現します。</p>
       </div>
       </div>
-      <div className="flex gap-4 items-start"><span className="shrink-0 inline-flex w-[40px] h-[40px] sm:w-[48px] sm:h-[48px] rounded-full bg-[#41ac86] items-center justify-center text-white text-[14px] sm:text-[16px] font-black">02</span>
+      </div>
+      <div className="fade-in bg-white border-l-4 border-[#41ac86] p-8 sm:p-10 lg:p-12 visible">
+      <div className="flex items-start gap-5 sm:gap-8">
+      <span className="text-[36px] sm:text-[48px] font-black text-[#41ac86] leading-none shrink-0" style={{"fontFamily": "\"M PLUS 1p\", sans-serif"}}>2.</span>
       <div>
-      <p className="text-[16px] sm:text-[20px] font-black text-black mb-1">話し方
-      </p>
-      <p className="text-[14px] sm:text-[17px] text-[#333] leading-[1.9] font-medium">トップ営業マンの<span className="font-black text-black">"間・語尾・テンション"</span>を徹底研究。<br />機械的ではない、自然で説得力のある会話を実現します。
-      </p>
+      <h5 className="text-[20px] sm:text-[26px] font-black text-black leading-[1.4] mb-3"><span className="relative inline-block"><span className="relative z-10">YESを積み重ねる</span><span className="absolute bottom-[2px] left-0 w-full h-[6px] bg-[#41ac86]/20"></span></span> 会話設計</h5>
+      <p className="text-[14px] sm:text-[17px] text-[#555] leading-[1.9]">相手が「はい」と言いやすい質問を設計。小さなYESを積み重ねて商談へ導きます。目的のない雑談・回りくどい説明はゼロ。必要な情報だけを、必要な順番で。</p>
       </div>
       </div>
       </div>
-      <div className="pt-5 sm:pt-6 border-t border-[#eee]">
-      <p className="text-[18px] sm:text-[24px] lg:text-[30px] font-black text-black leading-[1.6]">誰でも成果に近づく会話を<span className="text-[#41ac86]">仕組み化</span>しました。
-      </p>
+      <div className="fade-in bg-[#f7f7f7] border-l-4 border-[#41ac86] p-8 sm:p-10 lg:p-12 visible">
+      <div className="flex items-start gap-5 sm:gap-8">
+      <span className="text-[36px] sm:text-[48px] font-black text-[#41ac86] leading-none shrink-0" style={{"fontFamily": "\"M PLUS 1p\", sans-serif"}}>3.</span>
+      <div>
+      <h5 className="text-[20px] sm:text-[26px] font-black text-black leading-[1.4] mb-3"><span className="relative inline-block"><span className="relative z-10">温度感を見極め</span><span className="absolute bottom-[2px] left-0 w-full h-[6px] bg-[#41ac86]/20"></span></span> リソースを集中</h5>
+      <p className="text-[14px] sm:text-[17px] text-[#555] leading-[1.9]">相手の反応から興味度を即座に判定。見込みのある先だけにリソースを集中させ、効率的にアポイントを獲得します。</p>
       </div>
       </div>
-      <div className="fade-in mt-12 sm:mt-16 visible">
-      <div className="text-center mb-8 sm:mb-10">
-      <p className="inline-flex items-center gap-3 text-[11px] sm:text-[13px] text-[#41ac86] tracking-[0.3em] font-black mb-3"><span className="w-8 h-[2px] bg-[#41ac86]"></span>WHY IT WORKS<span className="w-8 h-[2px] bg-[#41ac86]"></span>
-      </p>
-      <h4 className="text-[24px] sm:text-[36px] lg:text-[42px] font-black text-black leading-[1.3]">営業の本質だけを<span className="text-[#41ac86]">抽出した設計</span>
-      </h4>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-      <div className="flex gap-4 items-center bg-white border-2 border-black py-5 pr-5 pl-5 sm:py-6 sm:pr-6 sm:pl-20" style={{"boxShadow": "rgb(65, 172, 134) 4px 4px 0px 0px", "transitionDelay": "0s"}}><span className="shrink-0 inline-flex w-[44px] h-[44px] sm:w-[52px] sm:h-[52px] rounded-full bg-black items-center justify-center text-[#41ac86] text-[15px] sm:text-[17px] font-black">01</span>
-      <div className="flex-1 text-center">
-      <p className="text-[19px] sm:text-[24px] font-black text-black mb-2">余計な会話は一切しない
-      </p>
-      <p className="sm:hidden text-[15px] text-[#4d4d4d] leading-[1.8]"><span>無駄な雑談・説明はゼロ<br /></span><span>必要な話だけを最短で</span>
-      </p>
-      <p className="hidden sm:block text-[18px] text-[#4d4d4d] leading-[1.8]"><span>目的のない雑談・回りくどい説明はゼロ。<br /></span><span>必要な情報だけを、必要な順番で。</span>
-      </p>
-      </div>
-      </div>
-      <div className="flex gap-4 items-center bg-white border-2 border-black py-5 pr-5 pl-5 sm:py-6 sm:pr-6 sm:pl-20" style={{"boxShadow": "rgb(65, 172, 134) 4px 4px 0px 0px", "transitionDelay": "0.06s"}}><span className="shrink-0 inline-flex w-[44px] h-[44px] sm:w-[52px] sm:h-[52px] rounded-full bg-black items-center justify-center text-[#41ac86] text-[15px] sm:text-[17px] font-black">02</span>
-      <div className="flex-1 text-center">
-      <p className="text-[19px] sm:text-[24px] font-black text-black mb-2">YESを取るための流れ
-      </p>
-      <p className="sm:hidden text-[15px] text-[#4d4d4d] leading-[1.8]"><span>YESを取る質問設計<br /></span><span>小さなYESを積み重ねる</span>
-      </p>
-      <p className="hidden sm:block text-[18px] text-[#4d4d4d] leading-[1.8]"><span>相手が「はい」と言いやすい質問設計。<br /></span><span>小さなYESを積み重ねて商談へ導きます。</span>
-      </p>
-      </div>
-      </div>
-      <div className="flex gap-4 items-center bg-white border-2 border-black py-5 pr-5 pl-5 sm:py-6 sm:pr-6 sm:pl-20" style={{"boxShadow": "rgb(65, 172, 134) 4px 4px 0px 0px", "transitionDelay": "0.12s"}}><span className="shrink-0 inline-flex w-[44px] h-[44px] sm:w-[52px] sm:h-[52px] rounded-full bg-black items-center justify-center text-[#41ac86] text-[15px] sm:text-[17px] font-black">03</span>
-      <div className="flex-1 text-center">
-      <p className="text-[19px] sm:text-[24px] font-black text-black mb-2">温度感の見極め
-      </p>
-      <p className="sm:hidden text-[15px] text-[#4d4d4d] leading-[1.8]"><span>反応から興味度を即判定<br /></span><span>見込み先にだけ集中</span>
-      </p>
-      <p className="hidden sm:block text-[18px] text-[#4d4d4d] leading-[1.8]"><span>相手の反応から興味度を即座に判定。<br /></span><span>見込みのある先だけにリソースを集中。</span>
-      </p>
-      </div>
-      </div>
-      <div className="flex gap-4 items-center bg-white border-2 border-black py-5 pr-5 pl-5 sm:py-6 sm:pr-6 sm:pl-20" style={{"boxShadow": "rgb(65, 172, 134) 4px 4px 0px 0px", "transitionDelay": "0.18s"}}><span className="shrink-0 inline-flex w-[44px] h-[44px] sm:w-[52px] sm:h-[52px] rounded-full bg-black items-center justify-center text-[#41ac86] text-[15px] sm:text-[17px] font-black">04</span>
-      <div className="flex-1 text-center">
-      <p className="text-[19px] sm:text-[24px] font-black text-black mb-2">トスまでの最短導線
-      </p>
-      <p className="sm:hidden text-[15px] text-[#4d4d4d] leading-[1.8]"><span>無駄な工程は排除<br /></span><span>最短で商談の場へ</span>
-      </p>
-      <p className="hidden sm:block text-[18px] text-[#4d4d4d] leading-[1.8]"><span>アポイント獲得までの無駄なステップを排除。<br /></span><span>最短ルートで商談の場を作ります。</span>
-      </p>
+      <div className="fade-in bg-white border-l-4 border-[#41ac86] p-8 sm:p-10 lg:p-12 visible">
+      <div className="flex items-start gap-5 sm:gap-8">
+      <span className="text-[36px] sm:text-[48px] font-black text-[#41ac86] leading-none shrink-0" style={{"fontFamily": "\"M PLUS 1p\", sans-serif"}}>4.</span>
+      <div>
+      <h5 className="text-[20px] sm:text-[26px] font-black text-black leading-[1.4] mb-3"><span className="relative inline-block"><span className="relative z-10">トスまでの最短導線</span><span className="absolute bottom-[2px] left-0 w-full h-[6px] bg-[#41ac86]/20"></span></span></h5>
+      <p className="text-[14px] sm:text-[17px] text-[#555] leading-[1.9]">アポイント獲得までの無駄なステップを排除。最短ルートで商談の場を作ります。誰でも成果に近づく会話を仕組み化しました。</p>
       </div>
       </div>
       </div>
       </div>
-      <div className="fade-in mt-10 sm:mt-14 text-center visible">
-      <p className="text-[18px] sm:text-[26px] lg:text-[32px] font-black text-black leading-[1.4]">「<span className="text-[#41ac86]">払ったのに成果ゼロ</span>」も、<br />「<span className="text-[#41ac86]">何してるかわからない</span>」も、<br />TELEMOでは、<span className="text-[#41ac86]">起きません。</span>
-      </p>
-      </div>
-      </div>
-      </div>
-      </section>
-      <section id="demo-voice" className="py-16 sm:py-24 px-5 sm:px-10 bg-white scroll-mt-[80px]">
-      <div className="max-w-[680px] mx-auto">
-      <div className="fade-in text-center mb-8 visible">
-      <p className="text-[12px] text-[#41ac86] tracking-[0.2em] font-bold mb-3">DEMO VOICE</p>
-      <h2 className="text-[24px] sm:text-[32px] lg:text-[38px] font-black text-black leading-[1.4] tracking-[0.02em] mb-3">実際のコール音声はこんな感じです</h2>
-      <p className="text-[14px] sm:text-[16px] text-[#4d4d4d] leading-[1.9]">設計したトークツリーをもとにした、実際の受注コールの一部です。<br className="hidden sm:block" />ぜひ再生してお聴きください。</p>
-      </div>
-      <div className="fade-in visible">
-      <AudioPlayer src="/demo-call.m4a" />
       </div>
       </div>
       </section>
@@ -755,8 +756,8 @@ export default function Section1() {
       </div>
       <div className="flex lg:hidden items-center justify-center py-2"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 6V22M14 22L8 16M14 22L20 16" stroke="#41ac86" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"></path></svg>
       </div>
-      <div className="fade-in text-left flex flex-col transition-all duration-300 visible" style={{"transitionDelay": "0.15s", "transform": "scale(1.05)", "boxShadow": "rgba(65, 172, 134, 0.25) 0px 8px 30px", "zIndex": "10", "position": "relative"}}>
-      <div className="px-6 py-4 flex items-center gap-3 transition-all duration-300" style={{"background": "rgb(47, 128, 99)"}}><span className="text-[36px] sm:text-[42px] font-bold text-white leading-none">02</span><span className="text-[14px] sm:text-[15px] font-bold text-white/80 tracking-[0.1em]">STEP</span>
+      <div className="fade-in text-left flex flex-col transition-all duration-300 visible" style={{"transitionDelay": "0.15s", "transform": "scale(1)", "boxShadow": "rgba(0, 0, 0, 0.03) 0px 2px 8px", "zIndex": "1", "position": "relative"}}>
+      <div className="px-6 py-4 flex items-center gap-3 transition-all duration-300" style={{"background": "rgb(65, 172, 134)"}}><span className="text-[36px] sm:text-[42px] font-bold text-white leading-none">02</span><span className="text-[14px] sm:text-[15px] font-bold text-white/80 tracking-[0.1em]">STEP</span>
       </div>
       <div className="bg-[#f2fbf7] border border-[#e5e0d8] border-t-0 px-6 py-6 sm:py-8 flex-1">
       <h3 className="text-[19px] sm:text-[22px] font-bold text-[#333] mb-4 leading-[1.4]">ご提案・お見積り
@@ -807,6 +808,76 @@ export default function Section1() {
       50% { transform: scale(1.05); box-shadow: 0 12px 32px rgba(65, 172, 134, 0.5); }
         }
       ` }} />
+      <div className="fade-in text-center mt-14 sm:mt-16 visible">
+      <a href="#contact-form" className="inline-flex items-center justify-center bg-[#41ac86] hover:bg-[#2f8063] text-white font-bold text-[15px] sm:text-[17px] px-10 sm:px-14 py-4 sm:py-5 rounded-full no-underline transition-colors shadow-[0_4px_16px_rgba(65,172,134,0.3)]">まずは無料相談する</a>
+      </div>
+      </section>
+      <section className="py-16 sm:py-24 px-5 sm:px-10 bg-[#f7f7f7]">
+      <div className="max-w-[960px] mx-auto">
+      <div className="fade-in text-center mb-10 sm:mb-14 visible">
+      <p className="inline-flex items-center gap-3 text-[11px] sm:text-[13px] text-[#41ac86] tracking-[0.3em] font-black mb-3"><span className="w-8 h-[2px] bg-[#41ac86]"></span>FOUNDER<span className="w-8 h-[2px] bg-[#41ac86]"></span></p>
+      <h2 className="text-[28px] sm:text-[40px] lg:text-[44px] font-black text-black leading-[1.3] tracking-[0.02em]">TELEMOを<span className="text-[#41ac86]">つくったひと。</span></h2>
+      </div>
+      <div className="fade-in visible mb-10 sm:mb-14">
+      <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-10 bg-white border-2 border-black p-6 sm:p-10" style={{"boxShadow": "rgb(65, 172, 134) 8px 8px 0px 0px"}}>
+      <img src="/img/aoki.png" alt="青木 一平" className="w-[180px] h-[180px] sm:w-[220px] sm:h-[220px] rounded-full object-cover shrink-0" />
+      <div className="text-center sm:text-left">
+      <p className="text-[13px] text-[#888] tracking-[0.1em] mb-1">アオキ イッペイ</p>
+      <p className="text-[32px] sm:text-[40px] font-black text-black leading-[1.2]">青木 一平</p>
+      <p className="text-[13px] text-[#888] mt-1 mb-3">出身：神奈川県横浜市</p>
+      <p className="text-[14px] sm:text-[16px] text-[#41ac86] font-black">株式会社Everエフォート 代表 / TELEMO開発者</p>
+      </div>
+      </div>
+      </div>
+      <div className="max-w-[720px] mx-auto flex flex-col gap-0">
+      <div className="flex gap-6 sm:gap-8">
+      <div className="flex flex-col items-center shrink-0">
+      <span className="w-[40px] h-[40px] rounded-full bg-[#41ac86] text-white text-[14px] font-black flex items-center justify-center">01</span>
+      <div className="w-[2px] flex-1 bg-[#41ac86]/20 mt-2"></div>
+      </div>
+      <div className="pb-10 sm:pb-12">
+      <h3 className="text-[18px] sm:text-[22px] font-black text-black leading-[1.4] mb-3">自由奔放に、遊び呆けていた25歳。</h3>
+      <p className="text-[14px] sm:text-[16px] text-[#555] leading-[2]">玉川学園中学部・高等部を卒業後、自由奔放に遊び呆ける日々。気づけば、あっという間に25歳に。<span className="font-black text-black">「このままでは人生終わる！」</span>そう思い、株式会社光通信に中途入社。そこから、人生が大きく変わります。</p>
+      </div>
+      </div>
+      <div className="flex gap-6 sm:gap-8">
+      <div className="flex flex-col items-center shrink-0">
+      <span className="w-[40px] h-[40px] rounded-full bg-[#41ac86] text-white text-[14px] font-black flex items-center justify-center">02</span>
+      <div className="w-[2px] flex-1 bg-[#41ac86]/20 mt-2"></div>
+      </div>
+      <div className="pb-10 sm:pb-12">
+      <h3 className="text-[18px] sm:text-[22px] font-black text-black leading-[1.4] mb-3">営業マンとして、強烈に開花。</h3>
+      <p className="text-[14px] sm:text-[16px] text-[#555] leading-[2]">個人営業として実績を残し、責任者としても営業組織を率い、最終的には統括部長へ昇進。<span className="bg-[#fff3b0] px-1 font-bold text-black">数字も鋭さも、当時はかなり尖ってました。</span><span className="bg-[#fff3b0] px-1 font-bold text-black">当時の&quot;光戦士&quot;で、僕を知らない人は、たぶんあんまりいないと思いますw</span> ……たぶん。</p>
+      </div>
+      </div>
+      <div className="flex gap-6 sm:gap-8">
+      <div className="flex flex-col items-center shrink-0">
+      <span className="w-[40px] h-[40px] rounded-full bg-[#41ac86] text-white text-[14px] font-black flex items-center justify-center">03</span>
+      <div className="w-[2px] flex-1 bg-[#41ac86]/20 mt-2"></div>
+      </div>
+      <div className="pb-10 sm:pb-12">
+      <h3 className="text-[18px] sm:text-[22px] font-black text-black leading-[1.4] mb-3">営業会社をつくり、全国へ。</h3>
+      <p className="text-[14px] sm:text-[16px] text-[#555] leading-[2]">その後、株式会社Everエフォートを設立。現在も営業会社として、コールセンターを運営しながら、toB商材を全国のお客様へ販売しています。</p>
+      </div>
+      </div>
+      <div className="flex gap-6 sm:gap-8">
+      <div className="flex flex-col items-center shrink-0">
+      <span className="w-[40px] h-[40px] rounded-full bg-[#41ac86] text-white text-[14px] font-black flex items-center justify-center">04</span>
+      </div>
+      <div>
+      <h3 className="text-[18px] sm:text-[22px] font-black text-black leading-[1.4] mb-3">そして、TELEMOが生まれました。</h3>
+      <p className="text-[14px] sm:text-[16px] text-[#555] leading-[2]">もともとTELEMOは、「AIサービスをつくろう！」と思って始めたものではありません。毎日営業をしている自分たちが、「もっと営業を効率化できないか？」「人だけに頼らず、営業を仕組みにできないか？」そう考えて、自社の営業現場で使うためにつくったシステムが始まりです。</p>
+      <p className="text-[14px] sm:text-[16px] text-[#555] leading-[2] mt-3">実際のコールセンターで使い、営業マンたちと試行錯誤しながら改善を繰り返していくうちに、「あれ？これ、他の業種でも使えるんじゃない？」そこからサービスとして本格的に開発を進め、2026年4月、TELEMOとして販売開始。</p>
+      </div>
+      </div>
+      </div>
+      <div className="fade-in visible mt-10 sm:mt-14 bg-white border-2 border-black p-6 sm:p-10 lg:p-12" style={{"boxShadow": "rgb(65, 172, 134) 8px 8px 0px 0px"}}>
+      <h4 className="text-[22px] sm:text-[28px] lg:text-[32px] font-black text-black leading-[1.5] mb-4">営業マンが、営業現場のためにつくった。</h4>
+      <p className="text-[15px] sm:text-[17px] text-[#333] leading-[1.9]">AIの専門家から始まったサービスではありません。営業をやって、営業組織をつくって、今も自分たちでコールセンターを運営している会社がつくった営業AI。</p>
+      <p className="text-[15px] sm:text-[17px] text-[#333] leading-[1.9] mt-3">だからTELEMOは、「人をなくすためのAI」ではなく、<span className="font-black text-[#41ac86]">営業をもっと強くするための仕組み</span>でありたいと思っています。</p>
+      <p className="text-right mt-6 text-[15px] sm:text-[17px] text-[#555]">TELEMOをつくったひと　<span className="font-black text-black text-[18px] sm:text-[20px]">アオキ イッペイ</span></p>
+      </div>
+      </div>
       </section>
       <section id="faq" className="py-16 sm:py-24 px-5 sm:px-10 bg-white">
       <div className="max-w-[1240px] mx-auto">
