@@ -11,39 +11,42 @@ export default function Section1() {
       <div className="relative z-10 max-w-[1240px] mx-auto px-5 sm:px-8 lg:px-10 w-full">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center mb-14 sm:mb-20">
       <div className="text-left">
-      <p className="fade-in text-[15px] sm:text-[18px] tracking-[0.08em] font-black text-[#41ac86] mb-8 visible">営業代行・AI営業をお探しの方へ</p>
+      <p className="fade-in text-[15px] sm:text-[18px] tracking-[0.08em] font-black text-[#41ac86] mb-8 visible">元・光通信 統括部長がつくった営業AI</p>
       <h1 className="fade-in text-black visible" style={{"fontFamily": "\"M PLUS 1p\", \"Noto Sans JP\", sans-serif", "fontWeight": "900", "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontSize": "clamp(28px, 5vw, 56px)"}}>営業会社がつくった<br /><span className="relative inline-block">AI営業システム<span className="absolute bottom-[2px] left-0 w-full h-[6px] sm:h-[8px] bg-[#41ac86]/30"></span></span></h1>
-      <p className="fade-in mt-8 sm:mt-10 text-[17px] sm:text-[22px] lg:text-[26px] font-bold text-[#333] leading-[1.6] visible">大企業の営業組織を率いたプロが設計し、<br className="hidden sm:inline" />AIで実行する営業代行サービス</p>
+      <p className="fade-in mt-8 sm:mt-10 text-[17px] sm:text-[22px] lg:text-[26px] font-bold text-[#333] leading-[1.6] visible">光通信で数千人の営業組織を率いた男が、<br className="hidden sm:inline" />15年の現場経験をAIに詰め込んだ営業代行</p>
       </div>
       <div className="flex flex-col justify-center">
-      <div className="bg-[#f7f7f7] rounded-[20px] p-6 sm:p-8">
+      <div className="bg-[#f7f7f7] rounded-[20px] p-6 sm:p-8 border-2 border-[#41ac86]/30">
       <div className="flex items-center gap-3 mb-3">
       <span className="inline-flex items-center justify-center w-[10px] h-[10px] rounded-full bg-[#41ac86] animate-pulse"></span>
-      <p className="text-[14px] sm:text-[16px] font-black text-black">実際の受注コールを聴いてみてください</p>
+      <p className="text-[16px] sm:text-[20px] font-black text-black">実際の受注コールを聴いてみてください</p>
       </div>
       <AudioPlayer src="/demo-call.m4a" autoPlay />
-      <p className="mt-3 text-[12px] text-[#888]">※ 営業歴15年のプロが設計したトークツリーによる実際のコール音声です</p>
+      <p className="mt-3 text-[12px] text-[#888]">※ 光通信出身のプロが設計した営業トークによる実際の受注コール音声です</p>
       </div>
       </div>
       </div>
 
       <div className="flex flex-col sm:flex-row gap-4 justify-center mt-4">
-      <a href="#contact-form" className="inline-flex items-center justify-center bg-[#41ac86] hover:bg-[#2f8063] text-white font-bold text-[16px] sm:text-[18px] w-full sm:w-[320px] h-[60px] sm:h-[72px] rounded-full no-underline transition-all hover:-translate-y-0.5 shadow-[0_4px_16px_rgba(65,172,134,0.3)] hover:shadow-[0_10px_28px_rgba(65,172,134,0.4)]">無料相談する（10〜15分）</a>
-      <a href="#document-request" className="inline-flex items-center justify-center border-2 border-[#333] text-[#333] font-bold text-[16px] sm:text-[18px] w-full sm:w-[320px] h-[60px] sm:h-[72px] rounded-full no-underline transition-all hover:-translate-y-0.5 hover:bg-[#333]/5">お問い合わせ</a>
+      <a href="#contact-form" className="inline-flex items-center justify-center bg-[#41ac86] hover:bg-[#2f8063] text-white font-bold text-[16px] sm:text-[18px] w-full sm:w-[320px] h-[60px] sm:h-[72px] rounded-full no-underline transition-all hover:-translate-y-0.5 shadow-[0_4px_16px_rgba(65,172,134,0.3)] hover:shadow-[0_10px_28px_rgba(65,172,134,0.4)]">営業のプロに相談する</a>
+      <a href="#document-request" className="inline-flex items-center justify-center border-2 border-[#333] text-[#333] font-bold text-[16px] sm:text-[18px] w-full sm:w-[320px] h-[60px] sm:h-[72px] rounded-full no-underline transition-all hover:-translate-y-0.5 hover:bg-[#333]/5">30秒で簡単 資料ダウンロード</a>
       </div>
 
       <div className="mt-12 sm:mt-16 grid grid-cols-3 gap-4 sm:gap-6 max-w-[960px] mx-auto">
       <div className="bg-[#f7f7f7] rounded-[16px] py-8 sm:py-10 px-4 text-center flex flex-col items-center justify-center">
       <div className="flex items-baseline justify-center"><span className="text-[44px] sm:text-[64px] font-black text-[#41ac86] leading-none" style={{"fontFamily": "\"M PLUS 1p\", sans-serif"}}>100</span><span className="text-[18px] sm:text-[24px] font-black text-[#41ac86]">%</span></div>
       <p className="text-[13px] sm:text-[16px] font-bold text-[#555] mt-3">全通話開示</p>
+      <p className="text-[11px] sm:text-[12px] text-[#999] mt-1">何を話したか全て確認可能</p>
       </div>
       <div className="bg-[#f7f7f7] rounded-[16px] py-8 sm:py-10 px-4 text-center flex flex-col items-center justify-center">
       <div className="flex items-baseline justify-center"><span className="text-[36px] sm:text-[56px] font-black text-[#41ac86] leading-none" style={{"fontFamily": "\"M PLUS 1p\", sans-serif"}}>13,200</span></div>
       <p className="text-[13px] sm:text-[16px] font-bold text-[#555] mt-3">コール/月</p>
+      <p className="text-[11px] sm:text-[12px] text-[#999] mt-1">営業マン約3人分の稼働量</p>
       </div>
       <div className="bg-[#f7f7f7] rounded-[16px] py-8 sm:py-10 px-4 text-center flex flex-col items-center justify-center">
       <div className="flex items-baseline justify-center"><span className="text-[44px] sm:text-[64px] font-black text-[#41ac86] leading-none" style={{"fontFamily": "\"M PLUS 1p\", sans-serif"}}>24</span><span className="text-[16px] sm:text-[22px] font-black text-[#41ac86]">時間</span></div>
       <p className="text-[13px] sm:text-[16px] font-bold text-[#555] mt-3">365日稼働</p>
+      <p className="text-[11px] sm:text-[12px] text-[#999] mt-1">休まず、ブレず、辞めない</p>
       </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6 mt-14 sm:mt-20 mb-0">
@@ -59,16 +62,7 @@ export default function Section1() {
       </p>
       <h2 className="text-[18px] sm:text-[22px] lg:text-[24px] font-black leading-[1.3] mb-3 whitespace-nowrap" style={{"fontFamily": "\"M PLUS 1p\", \"Noto Sans JP\", sans-serif"}}>そもそも営業代行って何？
       </h2>
-      <p className="text-[13px] sm:text-[14px] leading-[1.8] mb-4 text-[#4d4d4d]">人を雇うより安く・多く・全部見える営業代行です。
-      </p>
-      <ul className="flex-1 grid grid-cols-1 sm:grid-cols-3 gap-x-3 gap-y-2 mb-4 sm:mb-5">
-      <li className="flex items-center gap-2 text-[15px] sm:text-[13px] font-bold text-black"><span className="inline-block w-[4px] h-[4px] rounded-full bg-[#41ac86] shrink-0"></span>13,200コール保証
-      </li>
-      <li className="flex items-center gap-2 text-[15px] sm:text-[13px] font-bold text-black"><span className="inline-block w-[4px] h-[4px] rounded-full bg-[#41ac86] shrink-0"></span>営業約3人分
-      </li>
-      <li className="flex items-center gap-2 text-[15px] sm:text-[13px] font-bold text-black"><span className="inline-block w-[4px] h-[4px] rounded-full bg-[#41ac86] shrink-0"></span>スクリプト込み
-      </li>
-      </ul>
+      <p className="text-[14px] sm:text-[15px] leading-[1.8] mb-4 text-[#4d4d4d] flex-1">採用コスト・リスクゼロで、月13,200コールの営業力を手に入れる方法をご紹介します。</p>
       <div className="flex items-center justify-between pt-3 border-t border-black/15"><span className="text-[13px] sm:text-[15px] font-black">初めての方向けに見る</span><span className="inline-flex items-center justify-center w-[38px] h-[38px] rounded-full transition-all duration-300 bg-black text-white group-hover:bg-[#41ac86] group-hover:scale-110"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden={true}><path d="M3 9 H14 M10 5 L14 9 L10 13" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"></path></svg></span>
       </div>
       </div>
@@ -85,24 +79,26 @@ export default function Section1() {
       </p>
       <h2 className="text-[18px] sm:text-[22px] lg:text-[24px] font-black leading-[1.3] mb-3 whitespace-nowrap" style={{"fontFamily": "\"M PLUS 1p\", \"Noto Sans JP\", sans-serif"}}>「成果ゼロ」で悩んでいませんか
       </h2>
-      <p className="text-[13px] sm:text-[14px] leading-[1.8] mb-4 text-white/75">高額・不透明・長期縛り。全部逆に設計しました。
-      </p>
-      <ul className="flex-1 grid grid-cols-1 sm:grid-cols-3 gap-x-3 gap-y-2 mb-4 sm:mb-5">
-      <li className="flex items-center gap-2 text-[15px] sm:text-[13px] font-bold text-white/90"><span className="inline-block w-[4px] h-[4px] rounded-full bg-[#41ac86] shrink-0"></span>全ログ開示
-      </li>
-      <li className="flex items-center gap-2 text-[15px] sm:text-[13px] font-bold text-white/90"><span className="inline-block w-[4px] h-[4px] rounded-full bg-[#41ac86] shrink-0"></span>月額35万円
-      </li>
-      <li className="flex items-center gap-2 text-[15px] sm:text-[13px] font-bold text-white/90"><span className="inline-block w-[4px] h-[4px] rounded-full bg-[#41ac86] shrink-0"></span>13,200コール
-      </li>
-      </ul>
+      <p className="text-[14px] sm:text-[15px] leading-[1.8] mb-4 text-white/75 flex-1">全コール録音開示・月額35万円。「前の営業代行で失敗した」方ほど違いがわかります。</p>
       <div className="flex items-center justify-between pt-3 border-t border-white/15"><span className="text-[13px] sm:text-[15px] font-black">経験者向けに見る</span><span className="inline-flex items-center justify-center w-[38px] h-[38px] rounded-full transition-all duration-300 bg-[#41ac86] text-white group-hover:scale-110"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden={true}><path d="M3 9 H14 M10 5 L14 9 L10 13" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"></path></svg></span>
       </div>
       </div>
       </a>
       </div>
       <div className="fade-in flex flex-col sm:flex-row gap-3 justify-center mt-10 sm:mt-12 visible">
-      <a href="#contact-form" className="inline-flex items-center justify-center bg-[#41ac86] hover:bg-[#2f8063] text-white font-bold text-[15px] sm:text-[17px] px-10 sm:px-14 py-4 sm:py-5 rounded-full no-underline transition-colors shadow-[0_4px_16px_rgba(65,172,134,0.3)] hover:shadow-[0_10px_28px_rgba(65,172,134,0.4)] hover:-translate-y-0.5 transition-all">無料相談する</a>
-      <a href="#document-request" className="inline-flex items-center justify-center border-2 border-black text-black font-bold text-[15px] sm:text-[17px] px-10 sm:px-14 py-4 sm:py-5 rounded-full no-underline hover:bg-black/5 transition-colors hover:-translate-y-0.5 transition-all">お問い合わせ</a>
+      <a href="#contact-form" className="inline-flex items-center justify-center bg-[#41ac86] hover:bg-[#2f8063] text-white font-bold text-[15px] sm:text-[17px] px-10 sm:px-14 py-4 sm:py-5 rounded-full no-underline transition-colors shadow-[0_4px_16px_rgba(65,172,134,0.3)] hover:shadow-[0_10px_28px_rgba(65,172,134,0.4)] hover:-translate-y-0.5 transition-all">営業のプロに相談する</a>
+      <a href="#document-request" className="inline-flex items-center justify-center border-2 border-black text-black font-bold text-[15px] sm:text-[17px] px-10 sm:px-14 py-4 sm:py-5 rounded-full no-underline hover:bg-black/5 transition-colors hover:-translate-y-0.5 transition-all">30秒で簡単 資料ダウンロード</a>
+      </div>
+      </div>
+      </section>
+      <section className="py-10 sm:py-14 px-5 sm:px-10 bg-white">
+      <div className="max-w-[1100px] mx-auto text-center">
+      <p className="text-[13px] sm:text-[15px] tracking-[0.2em] font-black text-[#41ac86] mb-3">INDUSTRIES</p>
+      <h2 className="text-[22px] sm:text-[30px] lg:text-[36px] font-black text-black leading-[1.3] mb-8">幅広い業種に対応しています</h2>
+      <div className="flex flex-wrap justify-center gap-2 sm:gap-3">
+      {["IT・SaaS", "人材", "不動産", "製造業", "建設", "金融・保険", "通信", "EC・小売", "飲食", "医療・介護", "教育", "物流", "エネルギー", "士業", "広告・メディア", "その他BtoB全般"].map((industry, i) => (
+      <span key={i} className="inline-flex items-center px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-[#f7f7f7] text-[13px] sm:text-[14px] font-bold text-[#333] border border-[#e5e5e5]">{industry}</span>
+      ))}
       </div>
       </div>
       </section>
@@ -202,8 +198,8 @@ export default function Section1() {
       </div>
       </div>
       <div className="fade-in flex flex-col sm:flex-row gap-3 justify-center mt-12 sm:mt-16 visible">
-      <a href="#contact-form" className="inline-flex items-center justify-center bg-[#41ac86] hover:bg-[#2f8063] text-white font-bold text-[15px] sm:text-[17px] px-10 sm:px-14 py-4 sm:py-5 rounded-full no-underline transition-colors shadow-[0_4px_16px_rgba(65,172,134,0.3)]">無料相談する</a>
-      <a href="#document-request" className="inline-flex items-center justify-center border-2 border-black text-black font-bold text-[15px] sm:text-[17px] px-10 sm:px-14 py-4 sm:py-5 rounded-full no-underline hover:bg-black/5 transition-colors">お問い合わせ</a>
+      <a href="#contact-form" className="inline-flex items-center justify-center bg-[#41ac86] hover:bg-[#2f8063] text-white font-bold text-[15px] sm:text-[17px] px-10 sm:px-14 py-4 sm:py-5 rounded-full no-underline transition-colors shadow-[0_4px_16px_rgba(65,172,134,0.3)]">営業のプロに相談する</a>
+      <a href="#document-request" className="inline-flex items-center justify-center border-2 border-black text-black font-bold text-[15px] sm:text-[17px] px-10 sm:px-14 py-4 sm:py-5 rounded-full no-underline hover:bg-black/5 transition-colors">30秒で簡単 資料ダウンロード</a>
       </div>
       <div className="fade-in mt-14 sm:mt-20 bg-white text-black overflow-hidden relative border border-[#eee] visible">
       <div className="pointer-events-none absolute inset-0 opacity-[0.06]" style={{"background": "radial-gradient(circle at 85% 20%, rgb(65, 172, 134) 0%, transparent 50%)"}}>
@@ -213,7 +209,7 @@ export default function Section1() {
       <div id="service-intro" className="fade-in text-center mb-2 scroll-mt-[80px] visible">
       <p className="text-[22px] sm:text-[28px] lg:text-[32px] font-black text-[#41ac86] leading-[1.3] mb-3">TELEMOは
       </p>
-      <p className="text-[18px] sm:text-[22px] lg:text-[26px] font-bold text-black leading-[1.6]"><span className="inline-block bg-[#41ac86] text-white px-3 py-1 rounded-[6px] text-[16px] sm:text-[20px] font-bold mr-1">トークツリー設計</span>から<span className="inline-block bg-[#41ac86] text-white px-3 py-1 rounded-[6px] text-[16px] sm:text-[20px] font-bold mx-1">13,200コール実行</span>まで行う
+      <p className="text-[18px] sm:text-[22px] lg:text-[26px] font-bold text-black leading-[1.6]"><span className="inline-block bg-[#41ac86] text-white px-3 py-1 rounded-[6px] text-[16px] sm:text-[20px] font-bold mr-1">営業トーク設計</span>から<span className="inline-block bg-[#41ac86] text-white px-3 py-1 rounded-[6px] text-[16px] sm:text-[20px] font-bold mx-1">13,200コール実行</span>まで行う
       </p>
       <p className="text-[26px] sm:text-[34px] lg:text-[40px] font-black text-black leading-[1.3] mt-2">「営業代行サービス」
       </p>
@@ -280,7 +276,7 @@ export default function Section1() {
       </h3>
       <p className="text-[15px] sm:text-[18px] lg:text-[20px] text-[#333] leading-[1.95] font-medium mb-5">営業代行とは、<span className="font-black text-black">貴社の代わりに新規開拓の営業活動を行うサービス</span>のことです。
       </p>
-      <p className="text-[14px] sm:text-[17px] text-[#333] leading-[1.95] font-medium mb-6 sm:mb-8">ターゲットリストの作成、トークスクリプトの設計、テレアポ・商談打診までを一気通貫で代行。<br className="hidden sm:inline" />「営業人員を雇う余裕はないが、売上は伸ばしたい」企業の <span className="font-black text-[#41ac86]">最短の解</span> として、多くの会社が導入しています。
+      <p className="text-[14px] sm:text-[17px] text-[#333] leading-[1.95] font-medium mb-6 sm:mb-8">ターゲットリストの作成、営業トーク台本の設計、テレアポ・商談打診までを一気通貫で代行。<br className="hidden sm:inline" />「営業人員を雇う余裕はないが、売上は伸ばしたい」企業の <span className="font-black text-[#41ac86]">最短の解</span> として、多くの会社が導入しています。
       </p>
       <div className="pt-5 sm:pt-6 border-t border-[#eee]">
       <p className="text-[14px] sm:text-[17px] lg:text-[18px] font-bold text-[#333] leading-[1.8]">ただし、営業代行なら何でも良いわけではありません。<br className="hidden sm:inline" /><span className="font-black text-black">選び方を間違えると、高額な費用だけ取られて成果が出ないことも。</span>
@@ -386,7 +382,7 @@ export default function Section1() {
       </p>
       <p className="text-[14px] sm:text-[17px] lg:text-[18px] text-[#333] leading-[1.95] font-medium"><span className="font-black text-black">15年以上の営業実績を持つチームが、現場ベースでトーク設計</span>しています。
       </p>
-      <p className="mt-3 text-[14px] sm:text-[17px] lg:text-[18px] text-[#333] leading-[1.95] font-medium">現場で鍛え上げたトークツリー・KPI・改善ロジックに、AIの実行力と分析力を乗せる。<br />月間13,200コール——人で換算すると約3人分。
+      <p className="mt-3 text-[14px] sm:text-[17px] lg:text-[18px] text-[#333] leading-[1.95] font-medium">現場で鍛え上げた営業トーク・KPI・改善ロジックに、AIの実行力と分析力を乗せる。<br />月間13,200コール——人で換算すると約3人分。
       </p>
       <p className="mt-3 text-[14px] sm:text-[17px] lg:text-[18px] text-[#333] leading-[1.95] font-medium">「人が設計し、AIが動かし、人が磨く」—— この順番でしか、売れる営業は再現できません。
       </p>
@@ -407,7 +403,7 @@ export default function Section1() {
       <div className="flex items-start gap-5 sm:gap-8">
       <span className="text-[36px] sm:text-[48px] font-black text-[#41ac86] leading-none shrink-0" style={{"fontFamily": "\"M PLUS 1p\", sans-serif"}}>1.</span>
       <div>
-      <h5 className="text-[20px] sm:text-[26px] font-black text-black leading-[1.4] mb-3"><span className="relative inline-block"><span className="relative z-10">プロが設計した</span><span className="absolute bottom-[2px] left-0 w-full h-[6px] bg-[#41ac86]/20"></span></span> トークツリー</h5>
+      <h5 className="text-[20px] sm:text-[26px] font-black text-black leading-[1.4] mb-3"><span className="relative inline-block"><span className="relative z-10">プロが設計した</span><span className="absolute bottom-[2px] left-0 w-full h-[6px] bg-[#41ac86]/20"></span></span> 営業トーク</h5>
       <p className="text-[14px] sm:text-[17px] text-[#555] leading-[1.9]">営業歴15年のプロが、無駄のない会話構成を設計。余計な前置き・曖昧な質問は一切排除。トップ営業マンの"間・語尾・テンション"を徹底研究し、自然で説得力のある会話を実現します。</p>
       </div>
       </div>
@@ -515,7 +511,7 @@ export default function Section1() {
       </div>
       </div>
       <div className="fade-in text-center mt-4 visible">
-      <a href="#contact-form" className="btn-accent text-center text-[14px]">まずは10〜15分だけ話しましょう
+      <a href="#contact-form" className="btn-accent text-center text-[14px]">営業のプロに相談する
       </a>
       </div>
       </div>
@@ -705,7 +701,7 @@ export default function Section1() {
       </div>
       </div>
       <div className="fade-in text-center visible">
-      <a href="#contact-form" className="btn-accent text-center">まずは10〜15分だけ話しましょう
+      <a href="#contact-form" className="btn-accent text-center">営業のプロに相談する
       </a>
       </div>
       </div>
@@ -721,7 +717,7 @@ export default function Section1() {
       <div className="px-6 py-4 flex items-center gap-3 transition-all duration-300" style={{"background": "rgb(65, 172, 134)"}}><span className="text-[36px] sm:text-[42px] font-bold text-white leading-none">01</span><span className="text-[14px] sm:text-[15px] font-bold text-white/80 tracking-[0.1em]">STEP</span>
       </div>
       <div className="bg-[#f2fbf7] border border-[#e5e0d8] border-t-0 px-6 py-6 sm:py-8 flex-1">
-      <h3 className="text-[19px] sm:text-[22px] font-bold text-[#333] mb-4 leading-[1.4]">無料相談 (10~15分)
+      <h3 className="text-[19px] sm:text-[22px] font-bold text-[#333] mb-4 leading-[1.4]">営業のプロに相談
       </h3>
       <p className="text-[14px] sm:text-[16px] text-[#666] leading-[1.8] m-0 whitespace-pre-line">現状の営業体制や課題をヒアリング。
       TELEMOが合うかどうか正直にお伝えします。
@@ -775,7 +771,7 @@ export default function Section1() {
       </div>
       </div>
       <div className="fade-in mt-14 sm:mt-16 visible">
-      <a href="#contact-form" className="inline-block px-6 py-4 sm:px-14 sm:py-5 text-white font-bold text-[15px] sm:text-[20px] rounded-full no-underline hover:scale-[1.05] whitespace-nowrap" style={{"background": "rgb(65, 172, 134)", "boxShadow": "rgba(65, 172, 134, 0.3) 0px 8px 20px", "animation": "2s ease-in-out 0s infinite normal none running flow-cta-pulse"}}>まずは10〜15分だけ話しましょう
+      <a href="#contact-form" className="inline-block px-6 py-4 sm:px-14 sm:py-5 text-white font-bold text-[15px] sm:text-[20px] rounded-full no-underline hover:scale-[1.05] whitespace-nowrap" style={{"background": "rgb(65, 172, 134)", "boxShadow": "rgba(65, 172, 134, 0.3) 0px 8px 20px", "animation": "2s ease-in-out 0s infinite normal none running flow-cta-pulse"}}>営業のプロに相談する
       </a>
       </div>
       </div><style dangerouslySetInnerHTML={{ __html: `
@@ -785,7 +781,7 @@ export default function Section1() {
         }
       ` }} />
       <div className="fade-in text-center mt-14 sm:mt-16 visible">
-      <a href="#contact-form" className="inline-flex items-center justify-center bg-[#41ac86] hover:bg-[#2f8063] text-white font-bold text-[15px] sm:text-[17px] px-10 sm:px-14 py-4 sm:py-5 rounded-full no-underline transition-colors shadow-[0_4px_16px_rgba(65,172,134,0.3)]">まずは無料相談する</a>
+      <a href="#contact-form" className="inline-flex items-center justify-center bg-[#41ac86] hover:bg-[#2f8063] text-white font-bold text-[15px] sm:text-[17px] px-10 sm:px-14 py-4 sm:py-5 rounded-full no-underline transition-colors shadow-[0_4px_16px_rgba(65,172,134,0.3)]">営業のプロに相談する</a>
       </div>
       </section>
       <FounderSection />
@@ -819,7 +815,7 @@ export default function Section1() {
       <p className="fade-in text-[15px] sm:text-[17px] text-white/70 leading-[1.8] mb-8 visible">採用コスト・離職リスク・教育コスト——<br className="hidden sm:inline" />これらを数字で可視化し、TELEMO導入の効果を正直にお伝えします。<br className="hidden sm:inline" />合わなければ、それでOKです。
       </p>
       <div className="fade-in flex flex-col sm:flex-row gap-4 visible">
-      <a href="#contact-form" className="inline-flex items-center justify-center bg-[#41ac86] text-white text-[16px] sm:text-[18px] font-bold h-[60px] sm:h-[68px] px-10 sm:px-14 rounded-[96px] no-underline hover:bg-[#2f8063] transition-colors">無料相談を予約する
+      <a href="#contact-form" className="inline-flex items-center justify-center bg-[#41ac86] text-white text-[16px] sm:text-[18px] font-bold h-[60px] sm:h-[68px] px-10 sm:px-14 rounded-[96px] no-underline hover:bg-[#2f8063] transition-colors">営業のプロに相談する
       </a>
       <a href="#document-request" className="inline-flex items-center justify-center border-2 border-white/30 text-white text-[14px] sm:text-[16px] font-bold h-[60px] sm:h-[68px] px-8 sm:px-12 rounded-[96px] no-underline hover:bg-white/10 transition-colors">まずは無料で相談する
       </a>
@@ -901,9 +897,9 @@ export default function Section1() {
       <p className="fade-in text-[#41ac86] font-black mb-10 visible" style={{"textShadow": "rgba(0, 0, 0, 0.9) 0px 1px 8px", "fontSize": "clamp(13px, 4vw, 20px)"}}><span className="whitespace-nowrap">現状の営業コストと比較した</span><br className="sm:hidden" /><span className="whitespace-nowrap">"削減インパクト"をその場で算出します</span>
       </p>
       <div className="fade-in flex flex-col sm:flex-row gap-3 justify-center visible">
-      <a href="#contact-form" className="inline-flex items-center justify-center bg-[#41ac86] hover:bg-[#2f8063] text-white font-bold text-[15px] sm:text-[17px] px-8 sm:px-10 py-4 sm:py-5 rounded-full no-underline transition-colors shadow-[0_8px_24px_rgba(0,0,0,0.5)]">まずは10〜15分だけ話しましょう
+      <a href="#contact-form" className="inline-flex items-center justify-center bg-[#41ac86] hover:bg-[#2f8063] text-white font-bold text-[15px] sm:text-[17px] px-8 sm:px-10 py-4 sm:py-5 rounded-full no-underline transition-colors shadow-[0_8px_24px_rgba(0,0,0,0.5)]">営業のプロに相談する
       </a>
-      <a href="#document-request" className="inline-flex items-center justify-center bg-white/10 hover:bg-white/20 backdrop-blur-sm border-2 border-white text-white font-bold text-[15px] sm:text-[17px] px-8 sm:px-10 py-4 sm:py-5 rounded-full no-underline transition-colors">無料相談
+      <a href="#document-request" className="inline-flex items-center justify-center bg-white/10 hover:bg-white/20 backdrop-blur-sm border-2 border-white text-white font-bold text-[15px] sm:text-[17px] px-8 sm:px-10 py-4 sm:py-5 rounded-full no-underline transition-colors">30秒で簡単 資料ダウンロード
       </a>
       </div>
       </div>
