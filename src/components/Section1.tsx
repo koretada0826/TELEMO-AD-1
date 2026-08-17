@@ -841,7 +841,7 @@ export default function Section1() {
       <div className="fade-in text-center mt-12 visible">
       <p className="text-[14px] text-[#999] mb-4">その他のご質問は、お気軽にお問い合わせください。
       </p>
-      <a href="#contact-form" className="btn-accent text-center text-[14px]">お問い合わせはこちら
+      <a href="#contact-form" className="btn-accent text-center text-[14px]">営業のプロに相談する
       </a>
       </div>
       </div>
@@ -920,7 +920,7 @@ export default function Section1() {
       <div className="fade-in text-center mb-8 visible">
       <p className="text-[12px] text-[#41ac86] tracking-[0.25em] font-bold mb-3">CONTACT
       </p>
-      <h2 className="text-[28px] sm:text-[36px] lg:text-[40px] font-black text-black leading-[1.3] tracking-[0.02em] mb-3">無料相談・お問い合わせ
+      <h2 className="text-[28px] sm:text-[36px] lg:text-[40px] font-black text-black leading-[1.3] tracking-[0.02em] mb-3">営業のプロに相談する
       </h2>
       <p className="text-[14px] sm:text-[15px] text-[#4d4d4d] leading-[1.9]">サービス内容・料金・導入について、お気軽にご相談ください。<br className="hidden sm:block" />下記フォームにご入力ください（所要1分）。
       </p>
