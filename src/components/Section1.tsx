@@ -36,7 +36,9 @@ export default function Section1() {
       </div>
       <div className="flex flex-col justify-center">
       {/* 音声プレイヤー（大きく目立つデザイン） */}
-      <div className="bg-[#41ac86] rounded-[20px] p-6 sm:p-8 text-white">
+      <div className="bg-[#41ac86] rounded-[20px] p-6 sm:p-8 text-white relative overflow-hidden">
+      <div className="absolute inset-0 rounded-[20px] animate-pulse" style={{"boxShadow": "0 0 30px rgba(65, 172, 134, 0.5), 0 0 60px rgba(65, 172, 134, 0.3)", "animation": "pulse-glow 2s ease-in-out infinite"}}></div>
+      <style dangerouslySetInnerHTML={{"__html": "@keyframes pulse-glow { 0%, 100% { box-shadow: 0 0 20px rgba(65,172,134,0.3); } 50% { box-shadow: 0 0 40px rgba(65,172,134,0.6), 0 0 80px rgba(65,172,134,0.3); } }"}} />
       <div className="flex items-center gap-3 mb-2">
       <span className="inline-flex items-center justify-center w-[12px] h-[12px] rounded-full bg-white animate-pulse"></span>
       <p className="text-[18px] sm:text-[22px] font-black">実際の受注コールを聴く</p>
@@ -50,26 +52,25 @@ export default function Section1() {
       </div>
       </div>
 
-      <div className="flex flex-col sm:flex-row gap-4 justify-center mt-4">
-      <a href="#contact-form" className="inline-flex items-center justify-center bg-[#41ac86] hover:bg-[#2f8063] text-white font-bold text-[16px] sm:text-[18px] w-full sm:w-[320px] h-[60px] sm:h-[72px] rounded-full no-underline transition-all hover:-translate-y-0.5 shadow-[0_4px_16px_rgba(65,172,134,0.3)] hover:shadow-[0_10px_28px_rgba(65,172,134,0.4)]">営業のプロに相談する</a>
-      <a href="#document-request" className="inline-flex items-center justify-center border-2 border-[#333] text-[#333] font-bold text-[16px] sm:text-[18px] w-full sm:w-[320px] h-[60px] sm:h-[72px] rounded-full no-underline transition-all hover:-translate-y-0.5 hover:bg-[#333]/5">30秒で簡単 資料ダウンロード</a>
+      <div className="flex justify-center mt-4">
+      <a href="#contact-form" className="inline-flex items-center justify-center bg-[#41ac86] hover:bg-[#2f8063] text-white font-bold text-[16px] sm:text-[18px] w-full sm:w-[400px] h-[60px] sm:h-[72px] rounded-full no-underline transition-all hover:-translate-y-0.5 shadow-[0_4px_16px_rgba(65,172,134,0.3)] hover:shadow-[0_10px_28px_rgba(65,172,134,0.4)]">営業のプロに相談する</a>
       </div>
 
       <div className="mt-12 sm:mt-16 grid grid-cols-3 gap-4 sm:gap-6 max-w-[960px] mx-auto">
       <div className="bg-[#f7f7f7] rounded-[16px] py-8 sm:py-10 px-4 text-center flex flex-col items-center justify-center">
       <div className="flex items-baseline justify-center"><span className="text-[44px] sm:text-[64px] font-black text-[#41ac86] leading-none" style={{"fontFamily": "\"M PLUS 1p\", sans-serif"}}>100</span><span className="text-[18px] sm:text-[24px] font-black text-[#41ac86]">%</span></div>
       <p className="text-[13px] sm:text-[16px] font-bold text-[#555] mt-3">全通話開示</p>
-      <p className="text-[11px] sm:text-[12px] text-[#999] mt-1">何を話したか全て確認可能</p>
+      <p className="text-[11px] sm:text-[12px] text-[#999] mt-1">誰に・何を話したか、全部見える</p>
       </div>
       <div className="bg-[#f7f7f7] rounded-[16px] py-8 sm:py-10 px-4 text-center flex flex-col items-center justify-center">
       <div className="flex items-baseline justify-center"><span className="text-[36px] sm:text-[56px] font-black text-[#41ac86] leading-none" style={{"fontFamily": "\"M PLUS 1p\", sans-serif"}}>13,200</span></div>
       <p className="text-[13px] sm:text-[16px] font-bold text-[#555] mt-3">コール/月</p>
-      <p className="text-[11px] sm:text-[12px] text-[#999] mt-1">営業マン約3人分の稼働量</p>
+      <p className="text-[11px] sm:text-[12px] text-[#999] mt-1">人を雇うと月50万円以上かかる量</p>
       </div>
       <div className="bg-[#f7f7f7] rounded-[16px] py-8 sm:py-10 px-4 text-center flex flex-col items-center justify-center">
       <div className="flex items-baseline justify-center"><span className="text-[44px] sm:text-[64px] font-black text-[#41ac86] leading-none" style={{"fontFamily": "\"M PLUS 1p\", sans-serif"}}>24</span><span className="text-[16px] sm:text-[22px] font-black text-[#41ac86]">時間</span></div>
       <p className="text-[13px] sm:text-[16px] font-bold text-[#555] mt-3">365日稼働</p>
-      <p className="text-[11px] sm:text-[12px] text-[#999] mt-1">休まず、ブレず、辞めない</p>
+      <p className="text-[11px] sm:text-[12px] text-[#999] mt-1">土日も深夜も。辞めない営業マン</p>
       </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6 mt-14 sm:mt-20 mb-0">
@@ -85,7 +86,7 @@ export default function Section1() {
       </p>
       <h2 className="text-[18px] sm:text-[22px] lg:text-[24px] font-black leading-[1.3] mb-3 whitespace-nowrap" style={{"fontFamily": "\"M PLUS 1p\", \"Noto Sans JP\", sans-serif"}}>そもそも営業代行って何？
       </h2>
-      <p className="text-[14px] sm:text-[15px] leading-[1.8] mb-4 text-[#4d4d4d] flex-1">採用コスト・リスクゼロで、月13,200コールの営業力を手に入れる方法をご紹介します。</p>
+      <p className="text-[14px] sm:text-[15px] leading-[1.8] mb-4 text-[#4d4d4d] flex-1">月13,200コールの営業力をリスクゼロで。</p>
       <div className="flex items-center justify-between pt-3 border-t border-black/15"><span className="text-[13px] sm:text-[15px] font-black">初めての方向けに見る</span><span className="inline-flex items-center justify-center w-[38px] h-[38px] rounded-full transition-all duration-300 bg-black text-white group-hover:bg-[#41ac86] group-hover:scale-110"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden={true}><path d="M3 9 H14 M10 5 L14 9 L10 13" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"></path></svg></span>
       </div>
       </div>
@@ -102,15 +103,15 @@ export default function Section1() {
       </p>
       <h2 className="text-[18px] sm:text-[22px] lg:text-[24px] font-black leading-[1.3] mb-3 whitespace-nowrap" style={{"fontFamily": "\"M PLUS 1p\", \"Noto Sans JP\", sans-serif"}}>「成果ゼロ」で悩んでいませんか
       </h2>
-      <p className="text-[14px] sm:text-[15px] leading-[1.8] mb-4 text-white/75 flex-1">全コール録音開示・月額35万円。「前の営業代行で失敗した」方ほど違いがわかります。</p>
+      <p className="text-[14px] sm:text-[15px] leading-[1.8] mb-4 text-white/75 flex-1">全コール開示・月額35万円。失敗経験がある方ほど違いがわかります。</p>
       <div className="flex items-center justify-between pt-3 border-t border-white/15"><span className="text-[13px] sm:text-[15px] font-black">経験者向けに見る</span><span className="inline-flex items-center justify-center w-[38px] h-[38px] rounded-full transition-all duration-300 bg-[#41ac86] text-white group-hover:scale-110"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden={true}><path d="M3 9 H14 M10 5 L14 9 L10 13" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"></path></svg></span>
       </div>
       </div>
       </a>
       </div>
-      <div className="fade-in flex flex-col sm:flex-row gap-3 justify-center mt-10 sm:mt-12 visible">
+      <div className="fade-in flex justify-center mt-10 sm:mt-12 visible">
       <a href="#contact-form" className="inline-flex items-center justify-center bg-[#41ac86] hover:bg-[#2f8063] text-white font-bold text-[15px] sm:text-[17px] px-10 sm:px-14 py-4 sm:py-5 rounded-full no-underline transition-colors shadow-[0_4px_16px_rgba(65,172,134,0.3)] hover:shadow-[0_10px_28px_rgba(65,172,134,0.4)] hover:-translate-y-0.5 transition-all">営業のプロに相談する</a>
-      <a href="#document-request" className="inline-flex items-center justify-center border-2 border-black text-black font-bold text-[15px] sm:text-[17px] px-10 sm:px-14 py-4 sm:py-5 rounded-full no-underline hover:bg-black/5 transition-colors hover:-translate-y-0.5 transition-all">30秒で簡単 資料ダウンロード</a>
+
       </div>
       </div>
       </section>
@@ -220,9 +221,9 @@ export default function Section1() {
       </div>
       </div>
       </div>
-      <div className="fade-in flex flex-col sm:flex-row gap-3 justify-center mt-12 sm:mt-16 visible">
+      <div className="fade-in flex justify-center mt-12 sm:mt-16 visible">
       <a href="#contact-form" className="inline-flex items-center justify-center bg-[#41ac86] hover:bg-[#2f8063] text-white font-bold text-[15px] sm:text-[17px] px-10 sm:px-14 py-4 sm:py-5 rounded-full no-underline transition-colors shadow-[0_4px_16px_rgba(65,172,134,0.3)]">営業のプロに相談する</a>
-      <a href="#document-request" className="inline-flex items-center justify-center border-2 border-black text-black font-bold text-[15px] sm:text-[17px] px-10 sm:px-14 py-4 sm:py-5 rounded-full no-underline hover:bg-black/5 transition-colors">30秒で簡単 資料ダウンロード</a>
+
       </div>
       <div className="fade-in mt-14 sm:mt-20 bg-white text-black overflow-hidden relative border border-[#eee] visible">
       <div className="pointer-events-none absolute inset-0 opacity-[0.06]" style={{"background": "radial-gradient(circle at 85% 20%, rgb(65, 172, 134) 0%, transparent 50%)"}}>
@@ -840,7 +841,7 @@ export default function Section1() {
       <div className="fade-in flex flex-col sm:flex-row gap-4 visible">
       <a href="#contact-form" className="inline-flex items-center justify-center bg-[#41ac86] text-white text-[16px] sm:text-[18px] font-bold h-[60px] sm:h-[68px] px-10 sm:px-14 rounded-[96px] no-underline hover:bg-[#2f8063] transition-colors">営業のプロに相談する
       </a>
-      <a href="#document-request" className="inline-flex items-center justify-center border-2 border-white/30 text-white text-[14px] sm:text-[16px] font-bold h-[60px] sm:h-[68px] px-8 sm:px-12 rounded-[96px] no-underline hover:bg-white/10 transition-colors">まずは無料で相談する
+      <a href="#document-request" className="inline-flex items-center justify-center border-2 border-white/30 text-white text-[14px] sm:text-[16px] font-bold h-[60px] sm:h-[68px] px-8 sm:px-12 rounded-[96px] no-underline hover:bg-white/10 transition-colors">営業のプロに相談する
       </a>
       </div>
       </div>
@@ -919,11 +920,10 @@ export default function Section1() {
       </p>
       <p className="fade-in text-[#41ac86] font-black mb-10 visible" style={{"textShadow": "rgba(0, 0, 0, 0.9) 0px 1px 8px", "fontSize": "clamp(13px, 4vw, 20px)"}}><span className="whitespace-nowrap">現状の営業コストと比較した</span><br className="sm:hidden" /><span className="whitespace-nowrap">"削減インパクト"をその場で算出します</span>
       </p>
-      <div className="fade-in flex flex-col sm:flex-row gap-3 justify-center visible">
+      <div className="fade-in flex justify-center visible">
       <a href="#contact-form" className="inline-flex items-center justify-center bg-[#41ac86] hover:bg-[#2f8063] text-white font-bold text-[15px] sm:text-[17px] px-8 sm:px-10 py-4 sm:py-5 rounded-full no-underline transition-colors shadow-[0_8px_24px_rgba(0,0,0,0.5)]">営業のプロに相談する
       </a>
-      <a href="#document-request" className="inline-flex items-center justify-center bg-white/10 hover:bg-white/20 backdrop-blur-sm border-2 border-white text-white font-bold text-[15px] sm:text-[17px] px-8 sm:px-10 py-4 sm:py-5 rounded-full no-underline transition-colors">30秒で簡単 資料ダウンロード
-      </a>
+
       </div>
       </div>
       </section></main>
