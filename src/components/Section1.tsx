@@ -2,6 +2,7 @@ import DiagnosisQuiz from "./DiagnosisQuiz";
 import AudioPlayer from "./AudioPlayer";
 import FAQ from "./FAQ";
 import DocumentRequestForm from "./DocumentRequestForm";
+import FounderSection from "./FounderSection";
 
 export default function Section1() {
   return (
@@ -787,109 +788,7 @@ export default function Section1() {
       <a href="#contact-form" className="inline-flex items-center justify-center bg-[#41ac86] hover:bg-[#2f8063] text-white font-bold text-[15px] sm:text-[17px] px-10 sm:px-14 py-4 sm:py-5 rounded-full no-underline transition-colors shadow-[0_4px_16px_rgba(65,172,134,0.3)]">まずは無料相談する</a>
       </div>
       </section>
-      <section className="py-14 sm:py-20 px-5 sm:px-10 bg-white">
-      <div className="max-w-[1100px] mx-auto">
-
-      {/* ===== ヒーロー: 写真＋プロフィール ===== */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 mb-10 sm:mb-14 overflow-hidden rounded-[16px] bg-[#f7f7f7]">
-      <div className="relative">
-      <div className="absolute top-0 left-0 w-[8px] sm:w-[10px] h-full bg-[#e8b828] z-10"></div>
-      <img src="/img/aoki.png" alt="青木 一平" className="w-full h-full object-cover min-h-[300px] sm:min-h-[400px]" />
-      </div>
-      <div className="p-8 sm:p-10 lg:p-12 flex flex-col justify-center">
-      <h2 className="text-[32px] sm:text-[40px] lg:text-[48px] font-black text-black leading-[1.2] mb-6" style={{"fontFamily": "\"M PLUS 1p\", \"Noto Sans JP\", sans-serif"}}>TELEMOを<br />つくったひと。</h2>
-      <p className="text-[12px] sm:text-[13px] text-[#888] tracking-[0.1em] mb-1">アオキ イッペイ</p>
-      <p className="text-[28px] sm:text-[36px] font-black text-black leading-[1.2]">青木 一平</p>
-      <p className="text-[13px] mt-2 mb-5"><span className="font-black text-[#c08030]">出身：神奈川県横浜市</span></p>
-      <p className="text-[14px] sm:text-[15px] text-[#555] leading-[2]">玉川学園中学部・高等部を卒業後、自由奔放に、遊び呆ける。気づけば、あっという間に25歳。<br /><span className="bg-[#fff3b0] px-1 font-black text-black">「このままでは人生終わる！」</span><br />と突然焦りはじめ、株式会社光通信へ中途入社。そこでなぜか、営業マンとして強烈に開花。</p>
-      </div>
-      </div>
-
-      {/* ===== 2列: 開花 ＋ 実績 ===== */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-      <div className="border-l-4 border-black bg-[#f7f7f7] rounded-r-[16px] p-6 sm:p-8">
-      <h3 className="text-[20px] sm:text-[24px] font-black text-black leading-[1.4] mb-4">営業マンとして、強烈に開花。</h3>
-      <p className="text-[14px] sm:text-[15px] text-[#555] leading-[2] mb-4">個人営業として実績を残し、責任者としても営業組織を率い、最終的には統括部長へ昇進。</p>
-      <p className="text-[14px] sm:text-[15px] leading-[2]"><span className="bg-[#fff3b0] px-1 font-bold text-black">数字も鋭さも、当時はかなり尖ってました。</span><br /><span className="bg-[#fff3b0] px-1 font-bold text-black">当時の&quot;光戦士&quot;で、</span><br /><span className="bg-[#fff3b0] px-1 font-bold text-black">僕を知らない人は、たぶんあんまりいないと思いますw</span><br /><span className="text-[#555]">……たぶん。</span></p>
-      </div>
-      <div className="border-l-4 border-black bg-[#f7f7f7] rounded-r-[16px] p-6 sm:p-8">
-      <h3 className="text-[20px] sm:text-[24px] font-black text-black leading-[1.4] mb-4">とにかく、電話でめちゃくちゃ売ってきました。</h3>
-      <p className="text-[14px] sm:text-[15px] text-[#555] leading-[2] mb-5">営業マンとしてだけではなく、コールセンターの責任者として、さまざまな営業手法・商材を経験。</p>
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3 mb-5">
-      <div className="bg-white rounded-[8px] p-3 text-center border border-[#e5e5e5]">
-      <p className="text-[10px] font-bold text-[#888] mb-1">電子電話帳営業</p>
-      <p className="text-[12px] font-bold text-black">フレッツ光</p>
-      <p className="text-[20px] sm:text-[24px] font-black text-[#41ac86]" style={{"fontFamily": "\"M PLUS 1p\", sans-serif"}}>1,500<span className="text-[11px] text-[#555]">件</span></p>
-      <p className="text-[10px] text-[#888]">単月販売</p>
-      </div>
-      <div className="bg-white rounded-[8px] p-3 text-center border border-[#e5e5e5]">
-      <p className="text-[10px] font-bold text-[#888] mb-1">アライアンス営業</p>
-      <p className="text-[12px] font-bold text-black">フレッツ光</p>
-      <p className="text-[20px] sm:text-[24px] font-black text-[#41ac86]" style={{"fontFamily": "\"M PLUS 1p\", sans-serif"}}>2,000<span className="text-[11px] text-[#555]">件</span></p>
-      <p className="text-[10px] text-[#888]">単月販売</p>
-      </div>
-      <div className="bg-white rounded-[8px] p-3 text-center border border-[#e5e5e5]">
-      <p className="text-[10px] font-bold text-[#888] mb-1">CRM営業</p>
-      <p className="text-[12px] font-bold text-black">U-NEXT</p>
-      <p className="text-[20px] sm:text-[24px] font-black text-[#41ac86]" style={{"fontFamily": "\"M PLUS 1p\", sans-serif"}}>1,500<span className="text-[11px] text-[#555]">件</span></p>
-      <p className="text-[10px] text-[#888]">単月販売</p>
-      </div>
-      <div className="bg-white rounded-[8px] p-3 text-center border border-[#e5e5e5]">
-      <p className="text-[10px] font-bold text-[#888] mb-1">CRM営業</p>
-      <p className="text-[12px] font-bold text-black">WiMAX</p>
-      <p className="text-[20px] sm:text-[24px] font-black text-[#41ac86]" style={{"fontFamily": "\"M PLUS 1p\", sans-serif"}}>2,000<span className="text-[11px] text-[#555]">件</span></p>
-      <p className="text-[10px] text-[#888]">単月販売</p>
-      </div>
-      </div>
-      <p className="text-[14px] sm:text-[15px] text-[#555] leading-[2]">電話帳も、アライアンスも、CRMも、全部、実際にやってきました。その後、株式会社Everエフォートを設立。現在も自社でコールセンターを運営し、法人回線・電気などのtoB商材を、全国の企業様へ販売しています。</p>
-      <p className="text-[14px] sm:text-[15px] font-black text-black leading-[2] mt-3">つまり、昔の実績だけを語っているわけではありません。今も、現場で売っています。</p>
-      </div>
-      </div>
-
-      {/* ===== TELEMOが生まれた ===== */}
-      <div className="border-l-4 border-black bg-[#f7f7f7] rounded-r-[16px] p-6 sm:p-8 lg:p-10 mb-4">
-      <h3 className="text-[20px] sm:text-[24px] font-black text-black leading-[1.4] mb-5">そして、TELEMOが生まれました。</h3>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
-      <div>
-      <p className="text-[14px] sm:text-[15px] text-[#555] leading-[2]">TELEMOは、「AIが流行っているから、AIサービスをつくろう！」と始めたものではありません。これだけ電話営業をやってきた私たちが、今も実際に営業現場を運営する中で、</p>
-      <p className="text-[14px] sm:text-[15px] font-black text-black leading-[2] mt-3">「もっと営業を効率化できないか？」<br />「人だけに頼らず、営業を仕組みにできないか？」</p>
-      <p className="text-[14px] sm:text-[15px] text-[#555] leading-[2] mt-3">と考え、自分たちのコールセンターで使うためにつくったシステムが始まりです。</p>
-      </div>
-      <div>
-      <p className="text-[14px] sm:text-[15px] text-[#555] leading-[2]">実際の現場で使い、営業マンたちと試行錯誤しながら改善を繰り返す。その中で、</p>
-      <div className="flex items-start gap-4 my-4">
-      <div className="flex-1">
-      <p className="text-[15px] sm:text-[17px] font-black text-[#41ac86] leading-[1.6]">「あれ？これ、他の業種でも使えるんじゃない？」</p>
-      </div>
-      <div className="shrink-0">
-      <svg className="text-[#999]" width="56" height="56" viewBox="0 0 56 56" fill="none"><circle cx="28" cy="24" r="12" stroke="currentColor" strokeWidth="2" /><path d="M18 24 C18 18 22 14 28 14 C34 14 38 18 38 24" stroke="currentColor" strokeWidth="2" /><rect x="12" y="20" width="5" height="9" rx="2.5" stroke="currentColor" strokeWidth="2" /><rect x="39" y="20" width="5" height="9" rx="2.5" stroke="currentColor" strokeWidth="2" /><path d="M44 29 C44 29 44 35 38 37" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /><circle cx="34" cy="40" r="4" stroke="currentColor" strokeWidth="2" /><circle cx="34" cy="40" r="1.5" fill="currentColor" /></svg>
-      </div>
-      </div>
-      <p className="text-[14px] sm:text-[15px] text-[#555] leading-[2]">となり、サービスとして本格的に開発。<br />2026年4月、TELEMOとして販売を開始しました。</p>
-      </div>
-      </div>
-      </div>
-
-      {/* ===== 締めメッセージ ===== */}
-      <div className="border border-[#e5e5e5] bg-[#f7f7f7] rounded-[16px] p-6 sm:p-8 lg:p-10">
-      <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-6 sm:gap-10 items-start">
-      <div>
-      <h4 className="text-[20px] sm:text-[24px] lg:text-[28px] font-black text-black leading-[1.5] mb-4">「AIを知っている」だけでは、営業AIはつくれない。</h4>
-      <p className="text-[14px] sm:text-[15px] text-[#555] leading-[2]">電話帳営業。アライアンス営業。CRM営業。そして現在のtoB営業。<br />さまざまな営業手法で、実際に何千件という販売を経験してきました。<br />そして今も、自分たちのコールセンターで<br /><span className="text-[#41ac86] font-black">&quot;現場で販売を知る&quot;</span>私たちだからこそ、提供できるサービスがある。</p>
-      </div>
-      <div className="bg-white border-2 border-[#e5e5e5] rounded-[12px] p-5 sm:p-6 min-w-[260px] sm:min-w-[300px]">
-      <p className="text-[13px] text-[#888] mb-2">TELEMOは、<br />人をなくすためのAIではありません。</p>
-      <p className="text-[16px] sm:text-[18px] font-black text-black leading-[1.7]">営業マンが、営業現場のためにつくった。<br />営業を、もっと強くするための仕組みです。</p>
-      </div>
-      </div>
-      <div className="flex items-center justify-between mt-6 pt-5 border-t border-[#ddd]">
-      <p className="text-[14px] text-[#41ac86]">TELEMO<span className="text-[#555]">をつくったひと</span>　<span className="font-black text-black text-[18px] sm:text-[20px]">アオキ イッペイ</span></p>
-      <img src="/img/logo.png" alt="TELEMO" className="h-[28px] sm:h-[32px] w-auto" />
-      </div>
-      </div>
-
-      </div>
-      </section>
+      <FounderSection />
       <section id="faq" className="py-16 sm:py-24 px-5 sm:px-10 bg-white">
       <div className="max-w-[1240px] mx-auto">
       <p className="fade-in text-[13px] sm:text-[14px] text-[#41ac86] tracking-[0.2em] font-bold mb-3 text-center visible">FAQ
