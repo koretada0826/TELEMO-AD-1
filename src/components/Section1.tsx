@@ -14,15 +14,27 @@ export default function Section1() {
       <p className="fade-in text-[15px] sm:text-[18px] tracking-[0.08em] font-black text-[#41ac86] mb-8 visible">元・光通信 統括部長がつくった営業AI</p>
       <h1 className="fade-in text-black visible" style={{"fontFamily": "\"M PLUS 1p\", \"Noto Sans JP\", sans-serif", "fontWeight": "900", "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontSize": "clamp(28px, 5vw, 56px)"}}>営業会社がつくった<br /><span className="relative inline-block">AI営業システム<span className="absolute bottom-[2px] left-0 w-full h-[6px] sm:h-[8px] bg-[#41ac86]/30"></span></span></h1>
       <p className="fade-in mt-8 sm:mt-10 text-[17px] sm:text-[22px] lg:text-[26px] font-bold text-[#333] leading-[1.6] visible">光通信で数千人の営業組織を率いた男が、<br className="hidden sm:inline" />15年の現場経験をAIに詰め込んだ営業代行</p>
+      {/* 青木さんミニプロフィール */}
+      <div className="fade-in mt-8 flex items-center gap-4 bg-[#f7f7f7] rounded-[12px] p-4 visible">
+      <img src="/img/aoki.png" alt="青木一平" className="w-[56px] h-[56px] sm:w-[64px] sm:h-[64px] rounded-full object-cover shrink-0" />
+      <div>
+      <p className="text-[14px] sm:text-[16px] font-black text-black leading-[1.4]">青木 一平<span className="text-[11px] sm:text-[12px] font-bold text-[#888] ml-2">TELEMO開発者</span></p>
+      <p className="text-[12px] sm:text-[13px] text-[#555] leading-[1.6] mt-1">元・株式会社光通信 統括部長。営業組織を率い、単月2,000件の販売実績。現在もコールセンターを運営中。</p>
+      </div>
+      </div>
       </div>
       <div className="flex flex-col justify-center">
-      <div className="bg-[#f7f7f7] rounded-[20px] p-6 sm:p-8 border-2 border-[#41ac86]/30">
-      <div className="flex items-center gap-3 mb-3">
-      <span className="inline-flex items-center justify-center w-[10px] h-[10px] rounded-full bg-[#41ac86] animate-pulse"></span>
-      <p className="text-[16px] sm:text-[20px] font-black text-black">実際の受注コールを聴いてみてください</p>
+      {/* 音声プレイヤー（大きく目立つデザイン） */}
+      <div className="bg-[#41ac86] rounded-[20px] p-6 sm:p-8 text-white">
+      <div className="flex items-center gap-3 mb-2">
+      <span className="inline-flex items-center justify-center w-[12px] h-[12px] rounded-full bg-white animate-pulse"></span>
+      <p className="text-[18px] sm:text-[22px] font-black">実際の受注コールを聴く</p>
       </div>
+      <p className="text-[13px] sm:text-[14px] text-white/80 mb-4">AIが営業したらどうなる？実際の音声をお聴きください</p>
+      <div className="bg-white rounded-[12px] p-3 sm:p-4">
       <AudioPlayer src="/demo-call.m4a" autoPlay />
-      <p className="mt-3 text-[12px] text-[#888]">※ 光通信出身のプロが設計した営業トークによる実際の受注コール音声です</p>
+      </div>
+      <p className="mt-3 text-[11px] text-white/60">※ 光通信出身のプロが設計した営業トークによる実際の受注コール</p>
       </div>
       </div>
       </div>
@@ -160,7 +172,7 @@ export default function Section1() {
       <div className="flex-1 min-w-0">
       <p className="text-[11px] sm:text-[12px] font-black text-[#41ac86] tracking-[0.2em] mb-1">契約の縛り
       </p>
-      <p className="text-[15px] sm:text-[19px] lg:text-[22px] font-black text-black leading-[1.45]"><span>契約は6ヶ月・自動更新。<br className="sm:hidden" /></span><span>合理的なPDCA設計。</span>
+      <p className="text-[15px] sm:text-[19px] lg:text-[22px] font-black text-black leading-[1.45]"><span>契約は6ヶ月・自動更新。<br className="sm:hidden" /></span><span>合理的な改善サイクル。</span>
       </p>
       </div>
       <div className="hidden md:flex shrink-0 flex-col gap-1 pl-6 border-l border-[#eee] min-w-[180px]"><span className="inline-flex items-center gap-1.5 text-[12px] lg:text-[13px] text-[#333] font-bold"><svg className="w-3 h-3 text-[#41ac86]" viewBox="0 0 12 12" fill="none" aria-hidden={true}><path d="M2 6 L5 9 L10 3" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"></path></svg>6ヶ月契約</span><span className="inline-flex items-center gap-1.5 text-[12px] lg:text-[13px] text-[#333] font-bold"><svg className="w-3 h-3 text-[#41ac86]" viewBox="0 0 12 12" fill="none" aria-hidden={true}><path d="M2 6 L5 9 L10 3" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"></path></svg>自動更新</span><span className="inline-flex items-center gap-1.5 text-[12px] lg:text-[13px] text-[#333] font-bold"><svg className="w-3 h-3 text-[#41ac86]" viewBox="0 0 12 12" fill="none" aria-hidden={true}><path d="M2 6 L5 9 L10 3" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"></path></svg>解約料ゼロ</span>
@@ -180,7 +192,7 @@ export default function Section1() {
       <div className="flex-1 min-w-0">
       <p className="text-[11px] sm:text-[12px] font-black text-[#41ac86] tracking-[0.2em] mb-1">ブランド毀損
       </p>
-      <p className="text-[15px] sm:text-[19px] lg:text-[22px] font-black text-black leading-[1.45]"><span>15年のプロがスクリプト設計。<br className="sm:hidden" /></span><span>毎日の録音で品質管理。</span>
+      <p className="text-[15px] sm:text-[19px] lg:text-[22px] font-black text-black leading-[1.45]"><span>15年のプロが営業トーク設計。<br className="sm:hidden" /></span><span>毎日の録音で品質管理。</span>
       </p>
       </div>
       <div className="hidden md:flex shrink-0 flex-col gap-1 pl-6 border-l border-[#eee] min-w-[180px]"><span className="inline-flex items-center gap-1.5 text-[12px] lg:text-[13px] text-[#333] font-bold"><svg className="w-3 h-3 text-[#41ac86]" viewBox="0 0 12 12" fill="none" aria-hidden={true}><path d="M2 6 L5 9 L10 3" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"></path></svg>プロ設計</span><span className="inline-flex items-center gap-1.5 text-[12px] lg:text-[13px] text-[#333] font-bold"><svg className="w-3 h-3 text-[#41ac86]" viewBox="0 0 12 12" fill="none" aria-hidden={true}><path d="M2 6 L5 9 L10 3" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"></path></svg>毎日レビュー</span><span className="inline-flex items-center gap-1.5 text-[12px] lg:text-[13px] text-[#333] font-bold"><svg className="w-3 h-3 text-[#41ac86]" viewBox="0 0 12 12" fill="none" aria-hidden={true}><path d="M2 6 L5 9 L10 3" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"></path></svg>ブランド保全</span>
@@ -276,7 +288,7 @@ export default function Section1() {
       </h3>
       <p className="text-[15px] sm:text-[18px] lg:text-[20px] text-[#333] leading-[1.95] font-medium mb-5">営業代行とは、<span className="font-black text-black">貴社の代わりに新規開拓の営業活動を行うサービス</span>のことです。
       </p>
-      <p className="text-[14px] sm:text-[17px] text-[#333] leading-[1.95] font-medium mb-6 sm:mb-8">ターゲットリストの作成、営業トーク台本の設計、テレアポ・商談打診までを一気通貫で代行。<br className="hidden sm:inline" />「営業人員を雇う余裕はないが、売上は伸ばしたい」企業の <span className="font-black text-[#41ac86]">最短の解</span> として、多くの会社が導入しています。
+      <p className="text-[14px] sm:text-[17px] text-[#333] leading-[1.95] font-medium mb-6 sm:mb-8">営業先リストの作成、営業トークの設計から電話営業・商談の打診までをまるごと代行。<br className="hidden sm:inline" />「営業人員を雇う余裕はないが、売上は伸ばしたい」企業の <span className="font-black text-[#41ac86]">最短の解</span> として、多くの会社が導入しています。
       </p>
       <div className="pt-5 sm:pt-6 border-t border-[#eee]">
       <p className="text-[14px] sm:text-[17px] lg:text-[18px] font-bold text-[#333] leading-[1.8]">ただし、営業代行なら何でも良いわけではありません。<br className="hidden sm:inline" /><span className="font-black text-black">選び方を間違えると、高額な費用だけ取られて成果が出ないことも。</span>
@@ -382,7 +394,7 @@ export default function Section1() {
       </p>
       <p className="text-[14px] sm:text-[17px] lg:text-[18px] text-[#333] leading-[1.95] font-medium"><span className="font-black text-black">15年以上の営業実績を持つチームが、現場ベースでトーク設計</span>しています。
       </p>
-      <p className="mt-3 text-[14px] sm:text-[17px] lg:text-[18px] text-[#333] leading-[1.95] font-medium">現場で鍛え上げた営業トーク・KPI・改善ロジックに、AIの実行力と分析力を乗せる。<br />月間13,200コール——人で換算すると約3人分。
+      <p className="mt-3 text-[14px] sm:text-[17px] lg:text-[18px] text-[#333] leading-[1.95] font-medium">現場で鍛え上げた営業トーク・目標数値・改善の仕組みに、AIの実行力と分析力を乗せる。<br />月間13,200コール——人で換算すると約3人分。
       </p>
       <p className="mt-3 text-[14px] sm:text-[17px] lg:text-[18px] text-[#333] leading-[1.95] font-medium">「人が設計し、AIが動かし、人が磨く」—— この順番でしか、売れる営業は再現できません。
       </p>
@@ -734,7 +746,7 @@ export default function Section1() {
       <div className="bg-[#f2fbf7] border border-[#e5e0d8] border-t-0 px-6 py-6 sm:py-8 flex-1">
       <h3 className="text-[19px] sm:text-[22px] font-bold text-[#333] mb-4 leading-[1.4]">ご提案・お見積り
       </h3>
-      <p className="text-[14px] sm:text-[16px] text-[#666] leading-[1.8] m-0 whitespace-pre-line">ターゲットリスト・スクリプト・KPIを設計。
+      <p className="text-[14px] sm:text-[16px] text-[#666] leading-[1.8] m-0 whitespace-pre-line">営業先リスト・営業トーク・目標数値を設計。
       ご納得いただけた場合のみ契約へ。
       </p>
       </div>
@@ -765,7 +777,7 @@ export default function Section1() {
       <h3 className="text-[19px] sm:text-[22px] font-bold text-[#333] mb-4 leading-[1.4]">レポート・改善
       </h3>
       <p className="text-[14px] sm:text-[16px] text-[#666] leading-[1.8] m-0 whitespace-pre-line">全コールログをリアルタイム共有。
-      データをもとにスクリプトやリストを継続改善。
+      データをもとに営業トークやリストを継続改善。
       </p>
       </div>
       </div>
