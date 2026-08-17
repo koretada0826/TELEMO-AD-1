@@ -120,7 +120,7 @@ export default function Section1() {
       <p className="text-[13px] sm:text-[15px] tracking-[0.2em] font-black text-[#41ac86] mb-3">SERVICES</p>
       <h2 className="text-[22px] sm:text-[30px] lg:text-[36px] font-black text-black leading-[1.3]">対応サービス一覧</h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+      <div className="flex flex-col gap-8">
       <div>
       <div className="flex items-center gap-3 mb-5">
       <span className="inline-flex items-center justify-center px-4 py-1.5 rounded-full bg-[#41ac86] text-white text-[13px] sm:text-[14px] font-black tracking-[0.05em]">BtoC 向け</span>
