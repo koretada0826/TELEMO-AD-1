@@ -114,14 +114,35 @@ export default function Section1() {
       </div>
       </div>
       </section>
-      <section className="py-10 sm:py-14 px-5 sm:px-10 bg-white">
-      <div className="max-w-[1100px] mx-auto text-center">
-      <p className="text-[13px] sm:text-[15px] tracking-[0.2em] font-black text-[#41ac86] mb-3">INDUSTRIES</p>
-      <h2 className="text-[22px] sm:text-[30px] lg:text-[36px] font-black text-black leading-[1.3] mb-8">幅広い業種に対応しています</h2>
-      <div className="flex flex-wrap justify-center gap-2 sm:gap-3">
-      {["IT・SaaS", "人材", "不動産", "製造業", "建設", "金融・保険", "通信", "EC・小売", "飲食", "医療・介護", "教育", "物流", "エネルギー", "士業", "広告・メディア", "その他BtoB全般"].map((industry, i) => (
-      <span key={i} className="inline-flex items-center px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-[#f7f7f7] text-[13px] sm:text-[14px] font-bold text-[#333] border border-[#e5e5e5]">{industry}</span>
+      <section className="py-10 sm:py-16 px-5 sm:px-10 bg-white">
+      <div className="max-w-[1100px] mx-auto">
+      <div className="text-center mb-10">
+      <p className="text-[13px] sm:text-[15px] tracking-[0.2em] font-black text-[#41ac86] mb-3">SERVICES</p>
+      <h2 className="text-[22px] sm:text-[30px] lg:text-[36px] font-black text-black leading-[1.3]">対応サービス一覧</h2>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+      <div>
+      <div className="flex items-center gap-3 mb-5">
+      <span className="inline-flex items-center justify-center px-4 py-1.5 rounded-full bg-[#41ac86] text-white text-[13px] sm:text-[14px] font-black tracking-[0.05em]">BtoC 向け</span>
+      <span className="flex-1 h-[1px] bg-[#e5e5e5]"></span>
+      </div>
+      <div className="flex flex-wrap gap-2">
+      {["移動通信回線", "固定通信回線", "太陽光パネル", "蓄電池", "買取り"].map((s, i) => (
+      <span key={i} className="inline-flex items-center px-4 py-2 rounded-[8px] bg-[#f7f7f7] text-[13px] sm:text-[14px] font-bold text-[#333] border border-[#e5e5e5]">{s}</span>
       ))}
+      </div>
+      </div>
+      <div>
+      <div className="flex items-center gap-3 mb-5">
+      <span className="inline-flex items-center justify-center px-4 py-1.5 rounded-full bg-[#222] text-white text-[13px] sm:text-[14px] font-black tracking-[0.05em]">BtoB 向け</span>
+      <span className="flex-1 h-[1px] bg-[#e5e5e5]"></span>
+      </div>
+      <div className="flex flex-wrap gap-2">
+      {["営業代行", "SEO対策", "MEO対策", "集客（飲食・美容院等）", "DX化", "M&A", "人材紹介", "人材派遣", "新卒採用紹介", "エンジニア紹介", "AIツール", "SNS運用", "飲食デリバリー", "携帯キャリア", "移動通信回線", "固定通信回線", "太陽光パネル", "蓄電池"].map((s, i) => (
+      <span key={i} className="inline-flex items-center px-4 py-2 rounded-[8px] bg-[#f7f7f7] text-[13px] sm:text-[14px] font-bold text-[#333] border border-[#e5e5e5]">{s}</span>
+      ))}
+      </div>
+      </div>
       </div>
       </div>
       </section>
