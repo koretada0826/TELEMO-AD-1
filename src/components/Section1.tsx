@@ -11,9 +11,8 @@ export default function Section1() {
       <div className="relative z-10 max-w-[1240px] mx-auto px-5 sm:px-8 lg:px-10 w-full">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center mb-14 sm:mb-20">
       <div className="text-left">
-      <p className="fade-in text-[15px] sm:text-[18px] tracking-[0.08em] font-black text-[#41ac86] mb-8 visible">元・光通信 統括部長がつくった営業AI</p>
       <h1 className="fade-in text-black visible" style={{"fontFamily": "\"M PLUS 1p\", \"Noto Sans JP\", sans-serif", "fontWeight": "900", "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontSize": "clamp(28px, 5vw, 56px)"}}>営業会社がつくった<br /><span className="relative inline-block">AI営業システム<span className="absolute bottom-[2px] left-0 w-full h-[6px] sm:h-[8px] bg-[#41ac86]/30"></span></span></h1>
-      <p className="fade-in mt-8 sm:mt-10 text-[17px] sm:text-[22px] lg:text-[26px] font-bold text-[#333] leading-[1.6] visible">光通信で数千人の営業組織を率いた男が、<br className="hidden sm:inline" />15年の現場経験をAIに詰め込んだ営業代行</p>
+      <p className="fade-in mt-8 sm:mt-10 text-[17px] sm:text-[22px] lg:text-[26px] font-bold text-[#333] leading-[1.6] visible">光通信で営業組織を率いた男が、<br className="hidden sm:inline" />15年の現場経験をAIに詰め込んだ営業代行</p>
       {/* 青木さんプロフィール帯 */}
       <div className="fade-in mt-10 bg-[#f7f7f7] rounded-[16px] p-5 sm:p-6 visible">
       <div className="flex items-start gap-5">
@@ -25,7 +24,7 @@ export default function Section1() {
       </div>
       <p className="text-[13px] sm:text-[15px] font-bold text-[#41ac86] mb-2">元・株式会社光通信 統括部長</p>
       <div className="flex flex-wrap gap-x-4 gap-y-1 text-[12px] sm:text-[13px] text-[#555]">
-      <span className="flex items-center gap-1"><span className="text-[#41ac86] font-black">&#10003;</span> 数千人規模の営業組織を統括</span>
+      <span className="flex items-center gap-1"><span className="text-[#41ac86] font-black">&#10003;</span> 光通信で営業組織を統括</span>
       <span className="flex items-center gap-1"><span className="text-[#41ac86] font-black">&#10003;</span> 単月2,000件の販売実績</span>
       <span className="flex items-center gap-1"><span className="text-[#41ac86] font-black">&#10003;</span> 電話帳・アライアンス・CRM全て経験</span>
       <span className="flex items-center gap-1"><span className="text-[#41ac86] font-black">&#10003;</span> 現在も自社コールセンター運営中</span>
