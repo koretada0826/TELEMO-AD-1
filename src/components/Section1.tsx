@@ -7,11 +7,11 @@ import FounderSection from "./FounderSection";
 export default function Section1() {
   return (
       <main>
-      <section className="relative bg-white pt-[72px] sm:pt-[100px] lg:pt-[130px] pb-10 sm:pb-20 overflow-hidden">
+      <section className="relative bg-white pt-[66px] sm:pt-[80px] lg:pt-[100px] pb-6 sm:pb-14 overflow-hidden">
       <div className="relative z-10 max-w-[1240px] mx-auto px-5 sm:px-8 lg:px-10 w-full">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-16 items-center mb-8 sm:mb-16">
       <div className="text-left">
-      <h1 className="fade-in text-black visible" style={{"fontFamily": "\"M PLUS 1p\", \"Noto Sans JP\", sans-serif", "fontWeight": "900", "lineHeight": "1.25", "letterSpacing": "-0.03em", "fontSize": "clamp(28px, 6.5vw, 56px)"}}>営業マン1人分の予算で、<br /><span className="relative inline-block">3人分のアポを量産。<span className="absolute bottom-[2px] left-0 w-full h-[6px] sm:h-[8px] bg-[#41ac86]/30"></span></span></h1>
+      <h1 className="fade-in text-black visible" style={{"fontFamily": "\"M PLUS 1p\", \"Noto Sans JP\", sans-serif", "fontWeight": "900", "lineHeight": "1.25", "letterSpacing": "-0.03em", "fontSize": "clamp(28px, 6.5vw, 56px)"}}>1人分の予算で、<br /><span className="relative inline-block">3人分のアポを量産。<span className="absolute bottom-[2px] left-0 w-full h-[6px] sm:h-[8px] bg-[#41ac86]/30"></span></span></h1>
       <p className="fade-in mt-3 sm:mt-6 text-[18px] sm:text-[22px] lg:text-[26px] font-bold text-[#333] leading-[1.5] visible">人件費<span className="text-[#41ac86] font-black">1/3</span>、アポ数<span className="text-[#41ac86] font-black">3倍</span>。<br />月<span className="text-[#41ac86] font-black">13,200</span>コールのAI営業代行。</p>
       {/* 青木さんプロフィール帯 */}
       <div className="fade-in mt-5 sm:mt-8 bg-[#f7f7f7] rounded-[12px] sm:rounded-[16px] p-4 sm:p-6 visible">
@@ -56,21 +56,21 @@ export default function Section1() {
       <a href="#contact-form" className="inline-flex items-center justify-center bg-[#41ac86] hover:bg-[#2f8063] text-white font-bold text-[16px] sm:text-[18px] w-full sm:w-[400px] h-[56px] sm:h-[72px] rounded-full no-underline transition-all hover:-translate-y-0.5 shadow-[0_4px_16px_rgba(65,172,134,0.3)] hover:shadow-[0_10px_28px_rgba(65,172,134,0.4)]">営業のプロに相談する</a>
       </div>
 
-      <div className="mt-8 sm:mt-14 grid grid-cols-3 gap-2 sm:gap-6 max-w-[960px] mx-auto">
-      <div className="bg-[#f7f7f7] rounded-[10px] sm:rounded-[16px] py-4 sm:py-8 px-3 sm:px-6 text-center flex flex-col items-center justify-center">
-      <p className="text-[12px] sm:text-[17px] font-black text-black leading-[1.4] mb-3">何を話したか、<br className="hidden sm:inline" />全部わかる。</p>
-      <div className="flex items-baseline justify-center"><span className="text-[40px] sm:text-[56px] font-black text-[#41ac86] leading-none" style={{"fontFamily": "\"M PLUS 1p\", sans-serif"}}>100</span><span className="text-[16px] sm:text-[22px] font-black text-[#41ac86]">%</span></div>
-      <p className="text-[15px] sm:text-[16px] text-[#888] mt-2">全通話 録音・開示</p>
+      <div className="mt-6 sm:mt-14 grid grid-cols-3 gap-2 sm:gap-6 max-w-[960px] mx-auto">
+      <div className="bg-[#f7f7f7] rounded-[10px] sm:rounded-[16px] py-4 sm:py-8 px-2 sm:px-6 text-center">
+      <p className="text-[11px] sm:text-[17px] font-black text-black leading-[1.3] mb-2 sm:mb-3">全部見える</p>
+      <div className="flex items-baseline justify-center"><span className="text-[28px] sm:text-[56px] font-black text-[#41ac86] leading-none" style={{"fontFamily": "\"M PLUS 1p\", sans-serif"}}>100</span><span className="text-[12px] sm:text-[22px] font-black text-[#41ac86]">%</span></div>
+      <p className="text-[10px] sm:text-[15px] text-[#888] mt-1 sm:mt-2">全通話開示</p>
       </div>
-      <div className="bg-[#f7f7f7] rounded-[10px] sm:rounded-[16px] py-4 sm:py-8 px-3 sm:px-6 text-center flex flex-col items-center justify-center">
-      <p className="text-[12px] sm:text-[17px] font-black text-black leading-[1.4] mb-3">営業マン3人分を、<br className="hidden sm:inline" />1人分の予算で。</p>
-      <div className="flex items-baseline justify-center"><span className="text-[34px] sm:text-[48px] font-black text-[#41ac86] leading-none" style={{"fontFamily": "\"M PLUS 1p\", sans-serif"}}>13,200</span><span className="text-[12px] sm:text-[14px] font-bold text-[#555] ml-1">コール/月</span></div>
-      <p className="text-[15px] sm:text-[16px] text-[#888] mt-2">月額35万円</p>
+      <div className="bg-[#f7f7f7] rounded-[10px] sm:rounded-[16px] py-4 sm:py-8 px-2 sm:px-6 text-center">
+      <p className="text-[11px] sm:text-[17px] font-black text-black leading-[1.3] mb-2 sm:mb-3">3人分の稼働</p>
+      <div className="flex items-baseline justify-center"><span className="text-[22px] sm:text-[48px] font-black text-[#41ac86] leading-none" style={{"fontFamily": "\"M PLUS 1p\", sans-serif"}}>13,200</span></div>
+      <p className="text-[10px] sm:text-[15px] text-[#888] mt-1 sm:mt-2">コール/月</p>
       </div>
-      <div className="bg-[#f7f7f7] rounded-[10px] sm:rounded-[16px] py-4 sm:py-8 px-3 sm:px-6 text-center flex flex-col items-center justify-center">
-      <p className="text-[12px] sm:text-[17px] font-black text-black leading-[1.4] mb-3">土日も深夜も、<br className="hidden sm:inline" />勝手に営業してくれる。</p>
-      <div className="flex items-baseline justify-center"><span className="text-[40px] sm:text-[56px] font-black text-[#41ac86] leading-none" style={{"fontFamily": "\"M PLUS 1p\", sans-serif"}}>24</span><span className="text-[16px] sm:text-[22px] font-black text-[#41ac86]">時間</span></div>
-      <p className="text-[15px] sm:text-[16px] text-[#888] mt-2">365日稼働</p>
+      <div className="bg-[#f7f7f7] rounded-[10px] sm:rounded-[16px] py-4 sm:py-8 px-2 sm:px-6 text-center">
+      <p className="text-[11px] sm:text-[17px] font-black text-black leading-[1.3] mb-2 sm:mb-3">止まらない</p>
+      <div className="flex items-baseline justify-center"><span className="text-[28px] sm:text-[56px] font-black text-[#41ac86] leading-none" style={{"fontFamily": "\"M PLUS 1p\", sans-serif"}}>24</span><span className="text-[12px] sm:text-[22px] font-black text-[#41ac86]">時間</span></div>
+      <p className="text-[10px] sm:text-[15px] text-[#888] mt-1 sm:mt-2">365日稼働</p>
       </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6 mt-14 sm:mt-20 mb-0">
@@ -153,18 +153,18 @@ export default function Section1() {
       <div className="fade-in text-center mb-6 sm:mb-8 visible">
       <h2 className="text-[22px] sm:text-[30px] lg:text-[36px] font-black text-black leading-[1.3]">こんなお悩み、ありませんか？</h2>
       </div>
-      <div className="grid grid-cols-3 gap-3 sm:gap-5">
-      <div className="bg-white rounded-[12px] p-5 sm:p-7 text-center">
-      <svg className="mx-auto mb-3 text-[#999]" width="36" height="36" viewBox="0 0 36 36" fill="none"><circle cx="12" cy="10" r="4" stroke="currentColor" strokeWidth="2" /><circle cx="24" cy="10" r="4" stroke="currentColor" strokeWidth="2" /><circle cx="12" cy="24" r="4" stroke="currentColor" strokeWidth="2" /><circle cx="24" cy="24" r="4" stroke="currentColor" strokeWidth="2" /></svg>
-      <p className="text-[16px] sm:text-[18px] font-bold text-black leading-[1.6]">成果が出ないのに<br /><span className="font-black underline decoration-[#41ac86] decoration-2 underline-offset-4">高額な費用</span>だけ取られる</p>
+      <div className="grid grid-cols-3 gap-2 sm:gap-5">
+      <div className="bg-white rounded-[10px] sm:rounded-[12px] p-3 sm:p-7 text-center">
+      <svg className="mx-auto mb-2 sm:mb-3 text-[#999]" width="28" height="28" viewBox="0 0 36 36" fill="none"><circle cx="12" cy="10" r="4" stroke="currentColor" strokeWidth="2" /><circle cx="24" cy="10" r="4" stroke="currentColor" strokeWidth="2" /><circle cx="12" cy="24" r="4" stroke="currentColor" strokeWidth="2" /><circle cx="24" cy="24" r="4" stroke="currentColor" strokeWidth="2" /></svg>
+      <p className="text-[12px] sm:text-[18px] font-bold text-black leading-[1.5]"><span className="font-black underline decoration-[#41ac86] decoration-2 underline-offset-4">高額</span>なのに<br />成果が出ない</p>
       </div>
-      <div className="bg-white rounded-[12px] p-5 sm:p-7 text-center">
-      <svg className="mx-auto mb-3 text-[#999]" width="36" height="36" viewBox="0 0 36 36" fill="none"><rect x="8" y="5" width="20" height="26" rx="2" stroke="currentColor" strokeWidth="2" /><line x1="13" y1="13" x2="23" y2="13" stroke="currentColor" strokeWidth="1.5" /><line x1="13" y1="18" x2="23" y2="18" stroke="currentColor" strokeWidth="1.5" /><line x1="13" y1="23" x2="19" y2="23" stroke="currentColor" strokeWidth="1.5" /></svg>
-      <p className="text-[16px] sm:text-[18px] font-bold text-black leading-[1.6]">何をしているか<br />営業<span className="font-black underline decoration-[#41ac86] decoration-2 underline-offset-4">内容が見えない</span></p>
+      <div className="bg-white rounded-[10px] sm:rounded-[12px] p-3 sm:p-7 text-center">
+      <svg className="mx-auto mb-2 sm:mb-3 text-[#999]" width="28" height="28" viewBox="0 0 36 36" fill="none"><rect x="8" y="5" width="20" height="26" rx="2" stroke="currentColor" strokeWidth="2" /><line x1="13" y1="13" x2="23" y2="13" stroke="currentColor" strokeWidth="1.5" /><line x1="13" y1="18" x2="23" y2="18" stroke="currentColor" strokeWidth="1.5" /><line x1="13" y1="23" x2="19" y2="23" stroke="currentColor" strokeWidth="1.5" /></svg>
+      <p className="text-[12px] sm:text-[18px] font-bold text-black leading-[1.5]">営業内容が<br /><span className="font-black underline decoration-[#41ac86] decoration-2 underline-offset-4">見えない</span></p>
       </div>
-      <div className="bg-white rounded-[12px] p-5 sm:p-7 text-center">
-      <svg className="mx-auto mb-3 text-[#999]" width="36" height="36" viewBox="0 0 36 36" fill="none"><path d="M6 28 L12 16 L18 22 L24 10 L30 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
-      <p className="text-[16px] sm:text-[18px] font-bold text-black leading-[1.6]">中々 <span className="font-black underline decoration-[#41ac86] decoration-2 underline-offset-4">成果</span> が<br />上がらない</p>
+      <div className="bg-white rounded-[10px] sm:rounded-[12px] p-3 sm:p-7 text-center">
+      <svg className="mx-auto mb-2 sm:mb-3 text-[#999]" width="28" height="28" viewBox="0 0 36 36" fill="none"><path d="M6 28 L12 16 L18 22 L24 10 L30 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
+      <p className="text-[12px] sm:text-[18px] font-bold text-black leading-[1.5]"><span className="font-black underline decoration-[#41ac86] decoration-2 underline-offset-4">成果</span>が<br />上がらない</p>
       </div>
       </div>
       <div className="flex justify-center mt-4 sm:mt-6">
@@ -179,21 +179,21 @@ export default function Section1() {
       <p className="text-[16px] sm:text-[20px] font-bold text-white/80 mb-2">TELEMOは、</p>
       <h3 className="text-[22px] sm:text-[32px] lg:text-[40px] font-black text-white leading-[1.3]">そんな営業課題を<span className="relative inline-block"><span className="relative z-10">早く</span><span className="absolute bottom-[3px] left-0 w-full h-[4px] bg-white/40"></span></span>・<span className="relative inline-block"><span className="relative z-10">着実に</span><span className="absolute bottom-[3px] left-0 w-full h-[4px] bg-white/40"></span></span>解決します。</h3>
       </div>
-      <div className="grid grid-cols-3 gap-3 sm:gap-5">
-      <div className="bg-white rounded-[12px] p-5 sm:p-7 text-center">
-      <svg className="mx-auto mb-2 text-[#41ac86]" width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M4 14 L11 21 L24 6" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" /></svg>
-      <p className="text-[18px] sm:text-[22px] font-black text-black mb-1"><span className="relative inline-block"><span className="relative z-10">全通話100%開示</span><span className="absolute bottom-[2px] left-0 w-full h-[4px] bg-[#41ac86]/20"></span></span></p>
-      <p className="text-[14px] sm:text-[15px] text-[#555]">誰に何を話したか即確認可</p>
+      <div className="grid grid-cols-3 gap-2 sm:gap-5">
+      <div className="bg-white rounded-[10px] sm:rounded-[12px] p-3 sm:p-7 text-center">
+      <svg className="mx-auto mb-2 text-[#41ac86]" width="24" height="24" viewBox="0 0 28 28" fill="none"><path d="M4 14 L11 21 L24 6" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" /></svg>
+      <p className="text-[13px] sm:text-[22px] font-black text-black mb-1">全通話開示</p>
+      <p className="text-[10px] sm:text-[15px] text-[#555]">何を話したか<br className="sm:hidden" />即確認</p>
       </div>
-      <div className="bg-white rounded-[12px] p-5 sm:p-7 text-center">
-      <svg className="mx-auto mb-2 text-[#41ac86]" width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M4 14 L11 21 L24 6" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" /></svg>
-      <p className="text-[18px] sm:text-[22px] font-black text-black mb-1"><span className="relative inline-block"><span className="relative z-10">プロが設計</span><span className="absolute bottom-[2px] left-0 w-full h-[4px] bg-[#41ac86]/20"></span></span></p>
-      <p className="text-[14px] sm:text-[15px] text-[#555]">営業歴15年のプロがトーク設計</p>
+      <div className="bg-white rounded-[10px] sm:rounded-[12px] p-3 sm:p-7 text-center">
+      <svg className="mx-auto mb-2 text-[#41ac86]" width="24" height="24" viewBox="0 0 28 28" fill="none"><path d="M4 14 L11 21 L24 6" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" /></svg>
+      <p className="text-[13px] sm:text-[22px] font-black text-black mb-1">プロが設計</p>
+      <p className="text-[10px] sm:text-[15px] text-[#555]">営業歴15年の<br className="sm:hidden" />プロが設計</p>
       </div>
-      <div className="bg-white rounded-[12px] p-5 sm:p-7 text-center">
-      <svg className="mx-auto mb-2 text-[#41ac86]" width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M4 14 L11 21 L24 6" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" /></svg>
-      <p className="text-[18px] sm:text-[22px] font-black text-black mb-1"><span className="relative inline-block"><span className="relative z-10">月額35万円</span><span className="absolute bottom-[2px] left-0 w-full h-[4px] bg-[#41ac86]/20"></span></span></p>
-      <p className="text-[14px] sm:text-[15px] text-[#555]">採用1人分でリスクゼロの営業力</p>
+      <div className="bg-white rounded-[10px] sm:rounded-[12px] p-3 sm:p-7 text-center">
+      <svg className="mx-auto mb-2 text-[#41ac86]" width="24" height="24" viewBox="0 0 28 28" fill="none"><path d="M4 14 L11 21 L24 6" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" /></svg>
+      <p className="text-[13px] sm:text-[22px] font-black text-black mb-1">月額35万円</p>
+      <p className="text-[10px] sm:text-[15px] text-[#555]">採用1人分で<br className="sm:hidden" />リスクゼロ</p>
       </div>
       </div>
       </div>
