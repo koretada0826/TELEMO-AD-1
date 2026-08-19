@@ -20,10 +20,10 @@ export default function Section1() {
       <div className="flex-1">
       <div className="flex items-center gap-2 mb-1">
       <p className="text-[18px] sm:text-[22px] font-black text-black">青木 一平</p>
-      <span className="text-[11px] sm:text-[12px] font-bold text-white bg-[#41ac86] px-2 py-0.5 rounded">開発者</span>
+      <span className="text-[13px] sm:text-[14px] font-bold text-white bg-[#41ac86] px-2 py-0.5 rounded">開発者</span>
       </div>
-      <p className="text-[13px] sm:text-[15px] font-bold text-[#41ac86] mb-2">元・株式会社光通信 統括部長</p>
-      <div className="flex flex-wrap gap-x-4 gap-y-1 text-[12px] sm:text-[13px] text-[#555]">
+      <p className="text-[14px] sm:text-[16px] font-bold text-[#41ac86] mb-2">元・株式会社光通信 統括部長</p>
+      <div className="flex flex-wrap gap-x-4 gap-y-1 text-[14px] sm:text-[15px] text-[#555]">
       <span className="flex items-center gap-1"><span className="text-[#41ac86] font-black">&#10003;</span> 光通信で営業組織を統括</span>
       <span className="flex items-center gap-1"><span className="text-[#41ac86] font-black">&#10003;</span> 単月2,000件の販売実績</span>
       <span className="flex items-center gap-1"><span className="text-[#41ac86] font-black">&#10003;</span> 電話帳・アライアンス・CRM全て経験</span>
@@ -47,7 +47,7 @@ export default function Section1() {
       <AudioPlayer src="/demo-call.m4a" autoPlay />
       </div>
       <p className="mt-3 text-[13px] sm:text-[14px] text-white/80">※ 光通信出身のプロが設計した営業トークによる実際の受注コール</p>
-      <p className="mt-1 text-[12px] sm:text-[13px] text-white/60">🔊 再生ボタンを押すと音声が流れます。音量にご注意ください。</p>
+      <p className="mt-1 text-[13px] sm:text-[14px] text-white/70">🔊 再生ボタンを押すと音声が流れます。音量にご注意ください。</p>
       </div>
       </div>
       </div>
@@ -60,17 +60,17 @@ export default function Section1() {
       <div className="bg-[#f7f7f7] rounded-[10px] sm:rounded-[16px] py-4 sm:py-8 px-3 sm:px-6 text-center flex flex-col items-center justify-center">
       <p className="text-[12px] sm:text-[17px] font-black text-black leading-[1.4] mb-3">何を話したか、<br className="hidden sm:inline" />全部わかる。</p>
       <div className="flex items-baseline justify-center"><span className="text-[40px] sm:text-[56px] font-black text-[#41ac86] leading-none" style={{"fontFamily": "\"M PLUS 1p\", sans-serif"}}>100</span><span className="text-[16px] sm:text-[22px] font-black text-[#41ac86]">%</span></div>
-      <p className="text-[12px] sm:text-[13px] text-[#888] mt-2">全通話 録音・開示</p>
+      <p className="text-[14px] sm:text-[15px] text-[#888] mt-2">全通話 録音・開示</p>
       </div>
       <div className="bg-[#f7f7f7] rounded-[10px] sm:rounded-[16px] py-4 sm:py-8 px-3 sm:px-6 text-center flex flex-col items-center justify-center">
       <p className="text-[12px] sm:text-[17px] font-black text-black leading-[1.4] mb-3">営業マン3人分を、<br className="hidden sm:inline" />1人分の予算で。</p>
       <div className="flex items-baseline justify-center"><span className="text-[34px] sm:text-[48px] font-black text-[#41ac86] leading-none" style={{"fontFamily": "\"M PLUS 1p\", sans-serif"}}>13,200</span><span className="text-[12px] sm:text-[14px] font-bold text-[#555] ml-1">コール/月</span></div>
-      <p className="text-[12px] sm:text-[13px] text-[#888] mt-2">月額35万円</p>
+      <p className="text-[14px] sm:text-[15px] text-[#888] mt-2">月額35万円</p>
       </div>
       <div className="bg-[#f7f7f7] rounded-[10px] sm:rounded-[16px] py-4 sm:py-8 px-3 sm:px-6 text-center flex flex-col items-center justify-center">
       <p className="text-[12px] sm:text-[17px] font-black text-black leading-[1.4] mb-3">土日も深夜も、<br className="hidden sm:inline" />勝手に営業してくれる。</p>
       <div className="flex items-baseline justify-center"><span className="text-[40px] sm:text-[56px] font-black text-[#41ac86] leading-none" style={{"fontFamily": "\"M PLUS 1p\", sans-serif"}}>24</span><span className="text-[16px] sm:text-[22px] font-black text-[#41ac86]">時間</span></div>
-      <p className="text-[12px] sm:text-[13px] text-[#888] mt-2">365日稼働</p>
+      <p className="text-[14px] sm:text-[15px] text-[#888] mt-2">365日稼働</p>
       </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6 mt-14 sm:mt-20 mb-0">
@@ -80,7 +80,7 @@ export default function Section1() {
       <div className="absolute top-0 left-0 w-full h-[4px] bg-[#41ac86] origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500" aria-hidden={true}>
       </div>
       <div className="relative h-full flex flex-col p-5 sm:p-7 lg:p-8">
-      <div className="flex items-center gap-3 mb-3 sm:mb-4"><span className="text-[11px] sm:text-[12px] font-black tracking-[0.25em] text-[#41ac86]">NEWCOMER</span><span className="flex-1 h-[1px] bg-black/15"></span><span className="text-[11px] font-black text-black/50">01</span>
+      <div className="flex items-center gap-3 mb-3 sm:mb-4"><span className="text-[13px] sm:text-[14px] font-black tracking-[0.25em] text-[#41ac86]">NEWCOMER</span><span className="flex-1 h-[1px] bg-black/15"></span><span className="text-[11px] font-black text-black/50">01</span>
       </div>
       <p className="text-[12px] sm:text-[13px] font-bold tracking-[0.05em] mb-2 text-[#666]">初めての方
       </p>
@@ -97,7 +97,7 @@ export default function Section1() {
       <div className="absolute top-0 left-0 w-full h-[4px] bg-[#41ac86] origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500" aria-hidden={true}>
       </div>
       <div className="relative h-full flex flex-col p-5 sm:p-7 lg:p-8">
-      <div className="flex items-center gap-3 mb-3 sm:mb-4"><span className="text-[11px] sm:text-[12px] font-black tracking-[0.25em] text-[#41ac86]">EXPERIENCED</span><span className="flex-1 h-[1px] bg-white/20"></span><span className="text-[11px] font-black text-white/50">02</span>
+      <div className="flex items-center gap-3 mb-3 sm:mb-4"><span className="text-[13px] sm:text-[14px] font-black tracking-[0.25em] text-[#41ac86]">EXPERIENCED</span><span className="flex-1 h-[1px] bg-white/20"></span><span className="text-[11px] font-black text-white/50">02</span>
       </div>
       <p className="text-[12px] sm:text-[13px] font-bold tracking-[0.05em] mb-2 text-white/70">利用経験がある方
       </p>
@@ -129,7 +129,7 @@ export default function Section1() {
       </div>
       <div className="flex flex-wrap gap-2">
       {["移動通信回線", "固定通信回線", "太陽光パネル", "蓄電池", "買取り"].map((s, i) => (
-      <span key={i} className="inline-flex items-center px-4 py-2 rounded-[8px] bg-[#f7f7f7] text-[13px] sm:text-[14px] font-bold text-[#333] border border-[#e5e5e5]">{s}</span>
+      <span key={i} className="inline-flex items-center px-4 py-2 rounded-[8px] bg-[#f7f7f7] text-[15px] sm:text-[16px] font-bold text-[#333] border border-[#e5e5e5]">{s}</span>
       ))}
       </div>
       </div>
@@ -140,7 +140,7 @@ export default function Section1() {
       </div>
       <div className="flex flex-wrap gap-2">
       {["営業代行", "SEO対策", "MEO対策", "集客（飲食・美容院等）", "DX化", "M&A", "人材紹介", "人材派遣", "新卒採用紹介", "エンジニア紹介", "AIツール", "SNS運用", "飲食デリバリー", "携帯キャリア", "移動通信回線", "固定通信回線", "太陽光パネル", "蓄電池"].map((s, i) => (
-      <span key={i} className="inline-flex items-center px-4 py-2 rounded-[8px] bg-[#f7f7f7] text-[13px] sm:text-[14px] font-bold text-[#333] border border-[#e5e5e5]">{s}</span>
+      <span key={i} className="inline-flex items-center px-4 py-2 rounded-[8px] bg-[#f7f7f7] text-[15px] sm:text-[16px] font-bold text-[#333] border border-[#e5e5e5]">{s}</span>
       ))}
       </div>
       </div>
@@ -203,7 +203,7 @@ export default function Section1() {
 <div className="flex flex-col gap-3 sm:gap-4">
       <div className="fade-in flex items-center gap-4 sm:gap-6 bg-white border-2 border-black p-4 sm:p-6 visible" style={{"transitionDelay": "0s", "boxShadow": "rgb(65, 172, 134) 6px 6px 0px 0px"}}><span className="shrink-0 inline-flex w-[48px] h-[48px] sm:w-[60px] sm:h-[60px] rounded-full bg-[#41ac86] items-center justify-center text-white text-[16px] sm:text-[20px] font-black">01</span>
       <div className="flex-1 min-w-0">
-      <p className="text-[11px] sm:text-[12px] font-black text-[#41ac86] tracking-[0.2em] mb-1">契約の縛り
+      <p className="text-[13px] sm:text-[14px] font-black text-[#41ac86] tracking-[0.2em] mb-1">契約の縛り
       </p>
       <p className="text-[15px] sm:text-[19px] lg:text-[22px] font-black text-black leading-[1.45]"><span>契約は6ヶ月・自動更新。<br className="sm:hidden" /></span><span>合理的な改善サイクル。</span>
       </p>
@@ -213,7 +213,7 @@ export default function Section1() {
       </div>
       <div className="fade-in flex items-center gap-4 sm:gap-6 bg-white border-2 border-black p-4 sm:p-6 visible" style={{"transitionDelay": "0.06s", "boxShadow": "rgb(65, 172, 134) 6px 6px 0px 0px"}}><span className="shrink-0 inline-flex w-[48px] h-[48px] sm:w-[60px] sm:h-[60px] rounded-full bg-[#41ac86] items-center justify-center text-white text-[16px] sm:text-[20px] font-black">02</span>
       <div className="flex-1 min-w-0">
-      <p className="text-[11px] sm:text-[12px] font-black text-[#41ac86] tracking-[0.2em] mb-1">ブラックボックス
+      <p className="text-[13px] sm:text-[14px] font-black text-[#41ac86] tracking-[0.2em] mb-1">ブラックボックス
       </p>
       <p className="text-[15px] sm:text-[19px] lg:text-[22px] font-black text-black leading-[1.45]"><span>全録音を100%開示。<br className="sm:hidden" /></span><span>誰に何を話したか即確認可。</span>
       </p>
@@ -223,7 +223,7 @@ export default function Section1() {
       </div>
       <div className="fade-in flex items-center gap-4 sm:gap-6 bg-white border-2 border-black p-4 sm:p-6 visible" style={{"transitionDelay": "0.12s", "boxShadow": "rgb(65, 172, 134) 6px 6px 0px 0px"}}><span className="shrink-0 inline-flex w-[48px] h-[48px] sm:w-[60px] sm:h-[60px] rounded-full bg-[#41ac86] items-center justify-center text-white text-[16px] sm:text-[20px] font-black">03</span>
       <div className="flex-1 min-w-0">
-      <p className="text-[11px] sm:text-[12px] font-black text-[#41ac86] tracking-[0.2em] mb-1">ブランド毀損
+      <p className="text-[13px] sm:text-[14px] font-black text-[#41ac86] tracking-[0.2em] mb-1">ブランド毀損
       </p>
       <p className="text-[15px] sm:text-[19px] lg:text-[22px] font-black text-black leading-[1.45]"><span>15年のプロが営業トーク設計。<br className="sm:hidden" /></span><span>毎日の録音で品質管理。</span>
       </p>
@@ -233,7 +233,7 @@ export default function Section1() {
       </div>
       <div className="fade-in flex items-center gap-4 sm:gap-6 bg-white border-2 border-black p-4 sm:p-6 visible" style={{"transitionDelay": "0.18s", "boxShadow": "rgb(65, 172, 134) 6px 6px 0px 0px"}}><span className="shrink-0 inline-flex w-[48px] h-[48px] sm:w-[60px] sm:h-[60px] rounded-full bg-[#41ac86] items-center justify-center text-white text-[16px] sm:text-[20px] font-black">04</span>
       <div className="flex-1 min-w-0">
-      <p className="text-[11px] sm:text-[12px] font-black text-[#41ac86] tracking-[0.2em] mb-1">営業知見ゼロ
+      <p className="text-[13px] sm:text-[14px] font-black text-[#41ac86] tracking-[0.2em] mb-1">営業知見ゼロ
       </p>
       <p className="text-[15px] sm:text-[19px] lg:text-[22px] font-black text-black leading-[1.45]"><span>15年のプロが設計から実行。<br className="sm:hidden" /></span><span>現場を知る人間が動かす。</span>
       </p>
@@ -420,7 +420,7 @@ export default function Section1() {
       <p className="mt-3 text-[14px] sm:text-[17px] lg:text-[18px] text-[#333] leading-[1.95] font-medium">営業を知らない人間が設計した仕組みでは、結局<span className="font-black">成果に繋がらない</span>のです。
       </p>
       </div>
-      <div className="flex items-center gap-3 my-6 sm:my-8"><span className="h-[2px] flex-1 bg-[#41ac86]/30"></span><span className="text-[11px] sm:text-[12px] font-black text-[#41ac86] tracking-[0.3em]">TELEMO</span><span className="h-[2px] flex-1 bg-[#41ac86]/30"></span>
+      <div className="flex items-center gap-3 my-6 sm:my-8"><span className="h-[2px] flex-1 bg-[#41ac86]/30"></span><span className="text-[13px] sm:text-[14px] font-black text-[#41ac86] tracking-[0.3em]">TELEMO</span><span className="h-[2px] flex-1 bg-[#41ac86]/30"></span>
       </div>
       <div className="mb-7 sm:mb-9">
       <p className="text-[15px] sm:text-[18px] lg:text-[20px] font-black text-black leading-[1.7] mb-3">TELEMOは、違います。
@@ -837,7 +837,7 @@ export default function Section1() {
       </p>
       <FAQ />
       <div className="fade-in text-center mt-12 visible">
-      <p className="text-[14px] text-[#999] mb-4">その他のご質問は、お気軽にお問い合わせください。
+      <p className="text-[15px] text-[#999] mb-4">その他のご質問は、お気軽にお問い合わせください。
       </p>
       <a href="#contact-form" className="btn-accent text-center text-[14px]">営業のプロに相談する
       </a>
