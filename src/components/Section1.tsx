@@ -7,16 +7,16 @@ import FounderSection from "./FounderSection";
 export default function Section1() {
   return (
       <main>
-      <section className="relative bg-white pt-[90px] sm:pt-[110px] lg:pt-[130px] pb-16 sm:pb-24 overflow-hidden">
+      <section className="relative bg-white pt-[72px] sm:pt-[100px] lg:pt-[130px] pb-10 sm:pb-20 overflow-hidden">
       <div className="relative z-10 max-w-[1240px] mx-auto px-5 sm:px-8 lg:px-10 w-full">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center mb-14 sm:mb-20">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-16 items-center mb-8 sm:mb-16">
       <div className="text-left">
-      <h1 className="fade-in text-black visible" style={{"fontFamily": "\"M PLUS 1p\", \"Noto Sans JP\", sans-serif", "fontWeight": "900", "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontSize": "clamp(28px, 5vw, 56px)"}}>営業会社がつくった<br /><span className="relative inline-block">AI営業システム<span className="absolute bottom-[2px] left-0 w-full h-[6px] sm:h-[8px] bg-[#41ac86]/30"></span></span></h1>
-      <p className="fade-in mt-8 sm:mt-10 text-[17px] sm:text-[22px] lg:text-[26px] font-bold text-[#333] leading-[1.6] visible">光通信で営業組織を率いた男が、<br className="hidden sm:inline" />15年の現場経験をAIに詰め込んだ営業代行</p>
+      <h1 className="fade-in text-black visible" style={{"fontFamily": "\"M PLUS 1p\", \"Noto Sans JP\", sans-serif", "fontWeight": "900", "lineHeight": "1.15", "letterSpacing": "-0.02em", "fontSize": "clamp(26px, 7vw, 56px)"}}>もう、テレアポの<br /><span className="relative inline-block">営業マンはいらない。<span className="absolute bottom-[2px] left-0 w-full h-[6px] sm:h-[8px] bg-[#41ac86]/30"></span></span></h1>
+      <p className="fade-in mt-4 sm:mt-8 text-[15px] sm:text-[22px] lg:text-[26px] font-bold text-[#333] leading-[1.6] visible">光通信で営業組織を率いたプロが設計した<br className="hidden sm:inline" />AI営業代行で、月100件のアポを狙えます。</p>
       {/* 青木さんプロフィール帯 */}
-      <div className="fade-in mt-10 bg-[#f7f7f7] rounded-[16px] p-5 sm:p-6 visible">
-      <div className="flex items-start gap-5">
-      <img src="/img/aoki.png" alt="青木一平" className="w-[80px] h-[80px] sm:w-[96px] sm:h-[96px] rounded-full object-cover shrink-0 border-2 border-[#41ac86]" />
+      <div className="fade-in mt-5 sm:mt-8 bg-[#f7f7f7] rounded-[12px] sm:rounded-[16px] p-4 sm:p-6 visible">
+      <div className="flex items-start gap-3 sm:gap-5">
+      <img src="/img/aoki.png" alt="青木一平" className="w-[56px] h-[56px] sm:w-[96px] sm:h-[96px] rounded-full object-cover shrink-0 border-2 border-[#41ac86]" />
       <div className="flex-1">
       <div className="flex items-center gap-2 mb-1">
       <p className="text-[18px] sm:text-[22px] font-black text-black">青木 一平</p>
@@ -35,41 +35,42 @@ export default function Section1() {
       </div>
       <div className="flex flex-col justify-center">
       {/* 音声プレイヤー（大きく目立つデザイン） */}
-      <div className="bg-[#41ac86] rounded-[20px] p-6 sm:p-8 text-white relative overflow-hidden">
-      <div className="absolute inset-0 rounded-[20px] animate-pulse" style={{"boxShadow": "0 0 30px rgba(65, 172, 134, 0.5), 0 0 60px rgba(65, 172, 134, 0.3)", "animation": "pulse-glow 2s ease-in-out infinite"}}></div>
+      <div className="bg-[#41ac86] rounded-[16px] sm:rounded-[20px] p-5 sm:p-8 text-white relative overflow-hidden">
+      <div className="absolute inset-0 rounded-[20px] pointer-events-none" style={{"animation": "pulse-glow 2s ease-in-out infinite"}}></div>
       <style dangerouslySetInnerHTML={{"__html": "@keyframes pulse-glow { 0%, 100% { box-shadow: 0 0 20px rgba(65,172,134,0.3); } 50% { box-shadow: 0 0 40px rgba(65,172,134,0.6), 0 0 80px rgba(65,172,134,0.3); } }"}} />
       <div className="flex items-center gap-3 mb-2">
       <span className="inline-flex items-center justify-center w-[12px] h-[12px] rounded-full bg-white animate-pulse"></span>
       <p className="text-[18px] sm:text-[22px] font-black">実際の受注コールを聴く</p>
       </div>
-      <p className="text-[13px] sm:text-[14px] text-white/80 mb-4">AIが営業したらどうなる？実際の音声をお聴きください</p>
+      <p className="text-[15px] sm:text-[18px] font-bold text-white/90 mb-4">AIが営業したらどうなる？実際の音声をお聴きください</p>
       <div className="bg-white rounded-[12px] p-3 sm:p-4">
       <AudioPlayer src="/demo-call.m4a" autoPlay />
       </div>
-      <p className="mt-3 text-[11px] text-white/60">※ 光通信出身のプロが設計した営業トークによる実際の受注コール</p>
+      <p className="mt-3 text-[13px] sm:text-[14px] text-white/80">※ 光通信出身のプロが設計した営業トークによる実際の受注コール</p>
+      <p className="mt-1 text-[12px] sm:text-[13px] text-white/60">🔊 再生ボタンを押すと音声が流れます。音量にご注意ください。</p>
       </div>
       </div>
       </div>
 
       <div className="flex justify-center mt-4">
-      <a href="#contact-form" className="inline-flex items-center justify-center bg-[#41ac86] hover:bg-[#2f8063] text-white font-bold text-[16px] sm:text-[18px] w-full sm:w-[400px] h-[60px] sm:h-[72px] rounded-full no-underline transition-all hover:-translate-y-0.5 shadow-[0_4px_16px_rgba(65,172,134,0.3)] hover:shadow-[0_10px_28px_rgba(65,172,134,0.4)]">営業のプロに相談する</a>
+      <a href="#contact-form" className="inline-flex items-center justify-center bg-[#41ac86] hover:bg-[#2f8063] text-white font-bold text-[16px] sm:text-[18px] w-full sm:w-[400px] h-[56px] sm:h-[72px] rounded-full no-underline transition-all hover:-translate-y-0.5 shadow-[0_4px_16px_rgba(65,172,134,0.3)] hover:shadow-[0_10px_28px_rgba(65,172,134,0.4)]">営業のプロに相談する</a>
       </div>
 
-      <div className="mt-12 sm:mt-16 grid grid-cols-3 gap-4 sm:gap-6 max-w-[960px] mx-auto">
-      <div className="bg-[#f7f7f7] rounded-[16px] py-8 sm:py-10 px-4 text-center flex flex-col items-center justify-center">
-      <div className="flex items-baseline justify-center"><span className="text-[44px] sm:text-[64px] font-black text-[#41ac86] leading-none" style={{"fontFamily": "\"M PLUS 1p\", sans-serif"}}>100</span><span className="text-[18px] sm:text-[24px] font-black text-[#41ac86]">%</span></div>
-      <p className="text-[13px] sm:text-[16px] font-bold text-[#555] mt-3">全通話開示</p>
-      <p className="text-[11px] sm:text-[12px] text-[#999] mt-1">誰に・何を話したか、全部見える</p>
+      <div className="mt-8 sm:mt-14 grid grid-cols-3 gap-2 sm:gap-6 max-w-[960px] mx-auto">
+      <div className="bg-[#f7f7f7] rounded-[10px] sm:rounded-[16px] py-4 sm:py-8 px-3 sm:px-6 text-center flex flex-col items-center justify-center">
+      <p className="text-[12px] sm:text-[17px] font-black text-black leading-[1.4] mb-3">何を話したか、<br className="hidden sm:inline" />全部わかる。</p>
+      <div className="flex items-baseline justify-center"><span className="text-[40px] sm:text-[56px] font-black text-[#41ac86] leading-none" style={{"fontFamily": "\"M PLUS 1p\", sans-serif"}}>100</span><span className="text-[16px] sm:text-[22px] font-black text-[#41ac86]">%</span></div>
+      <p className="text-[12px] sm:text-[13px] text-[#888] mt-2">全通話 録音・開示</p>
       </div>
-      <div className="bg-[#f7f7f7] rounded-[16px] py-8 sm:py-10 px-4 text-center flex flex-col items-center justify-center">
-      <div className="flex items-baseline justify-center"><span className="text-[36px] sm:text-[56px] font-black text-[#41ac86] leading-none" style={{"fontFamily": "\"M PLUS 1p\", sans-serif"}}>13,200</span></div>
-      <p className="text-[13px] sm:text-[16px] font-bold text-[#555] mt-3">コール/月</p>
-      <p className="text-[11px] sm:text-[12px] text-[#999] mt-1">人を雇うと月50万円以上かかる量</p>
+      <div className="bg-[#f7f7f7] rounded-[10px] sm:rounded-[16px] py-4 sm:py-8 px-3 sm:px-6 text-center flex flex-col items-center justify-center">
+      <p className="text-[12px] sm:text-[17px] font-black text-black leading-[1.4] mb-3">営業マン3人分を、<br className="hidden sm:inline" />1人分の予算で。</p>
+      <div className="flex items-baseline justify-center"><span className="text-[34px] sm:text-[48px] font-black text-[#41ac86] leading-none" style={{"fontFamily": "\"M PLUS 1p\", sans-serif"}}>13,200</span><span className="text-[12px] sm:text-[14px] font-bold text-[#555] ml-1">コール/月</span></div>
+      <p className="text-[12px] sm:text-[13px] text-[#888] mt-2">月額35万円</p>
       </div>
-      <div className="bg-[#f7f7f7] rounded-[16px] py-8 sm:py-10 px-4 text-center flex flex-col items-center justify-center">
-      <div className="flex items-baseline justify-center"><span className="text-[44px] sm:text-[64px] font-black text-[#41ac86] leading-none" style={{"fontFamily": "\"M PLUS 1p\", sans-serif"}}>24</span><span className="text-[16px] sm:text-[22px] font-black text-[#41ac86]">時間</span></div>
-      <p className="text-[13px] sm:text-[16px] font-bold text-[#555] mt-3">365日稼働</p>
-      <p className="text-[11px] sm:text-[12px] text-[#999] mt-1">土日も深夜も。辞めない営業マン</p>
+      <div className="bg-[#f7f7f7] rounded-[10px] sm:rounded-[16px] py-4 sm:py-8 px-3 sm:px-6 text-center flex flex-col items-center justify-center">
+      <p className="text-[12px] sm:text-[17px] font-black text-black leading-[1.4] mb-3">土日も深夜も、<br className="hidden sm:inline" />勝手に営業してくれる。</p>
+      <div className="flex items-baseline justify-center"><span className="text-[40px] sm:text-[56px] font-black text-[#41ac86] leading-none" style={{"fontFamily": "\"M PLUS 1p\", sans-serif"}}>24</span><span className="text-[16px] sm:text-[22px] font-black text-[#41ac86]">時間</span></div>
+      <p className="text-[12px] sm:text-[13px] text-[#888] mt-2">365日稼働</p>
       </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6 mt-14 sm:mt-20 mb-0">
@@ -824,9 +825,6 @@ export default function Section1() {
       50% { transform: scale(1.05); box-shadow: 0 12px 32px rgba(65, 172, 134, 0.5); }
         }
       ` }} />
-      <div className="fade-in text-center mt-14 sm:mt-16 visible">
-      <a href="#contact-form" className="inline-flex items-center justify-center bg-[#41ac86] hover:bg-[#2f8063] text-white font-bold text-[15px] sm:text-[17px] px-10 sm:px-14 py-4 sm:py-5 rounded-full no-underline transition-colors shadow-[0_4px_16px_rgba(65,172,134,0.3)]">営業のプロに相談する</a>
-      </div>
       </section>
       <FounderSection />
       <section id="faq" className="py-16 sm:py-24 px-5 sm:px-10 bg-white">
@@ -858,10 +856,8 @@ export default function Section1() {
       </h2>
       <p className="fade-in text-[15px] sm:text-[17px] text-white/70 leading-[1.8] mb-8 visible">採用コスト・離職リスク・教育コスト——<br className="hidden sm:inline" />これらを数字で可視化し、TELEMO導入の効果を正直にお伝えします。<br className="hidden sm:inline" />合わなければ、それでOKです。
       </p>
-      <div className="fade-in flex flex-col sm:flex-row gap-4 visible">
+      <div className="fade-in visible">
       <a href="#contact-form" className="inline-flex items-center justify-center bg-[#41ac86] text-white text-[16px] sm:text-[18px] font-bold h-[60px] sm:h-[68px] px-10 sm:px-14 rounded-[96px] no-underline hover:bg-[#2f8063] transition-colors">営業のプロに相談する
-      </a>
-      <a href="#document-request" className="inline-flex items-center justify-center border-2 border-white/30 text-white text-[14px] sm:text-[16px] font-bold h-[60px] sm:h-[68px] px-8 sm:px-12 rounded-[96px] no-underline hover:bg-white/10 transition-colors">営業のプロに相談する
       </a>
       </div>
       </div>
