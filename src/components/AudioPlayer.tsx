@@ -17,20 +17,10 @@ export default function AudioPlayer({ src, autoPlay }: { src: string; autoPlay?:
     if (!autoPlay) return;
     const a = audioRef.current;
     if (!a) return;
-    const tryPlay = () => {
-      void a.play().then(() => setPlaying(true)).catch(() => {
-        const start = () => {
-          void a.play().then(() => setPlaying(true));
-          document.removeEventListener("click", start);
-          document.removeEventListener("touchstart", start);
-          document.removeEventListener("scroll", start);
-        };
-        document.addEventListener("click", start, { once: true });
-        document.addEventListener("touchstart", start, { once: true });
-        document.addEventListener("scroll", start, { once: true });
-      });
-    };
-    tryPlay();
+    void a.play().then(() => setPlaying(true)).catch(() => {
+      // ブラウザが自動再生をブロックした場合は何もしない
+      // ユーザーが再生ボタンを押せば再生される
+    });
   }, [autoPlay]);
 
   const toggle = () => {

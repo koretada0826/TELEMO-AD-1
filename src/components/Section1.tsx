@@ -7,23 +7,23 @@ import FounderSection from "./FounderSection";
 export default function Section1() {
   return (
       <main>
-      <section className="relative bg-white pt-[66px] sm:pt-[80px] lg:pt-[100px] pb-6 sm:pb-14 overflow-hidden">
-      <div className="relative z-10 max-w-[1240px] mx-auto px-5 sm:px-8 lg:px-10 w-full">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-16 items-center mb-8 sm:mb-16">
-      <div className="text-left">
-      <h1 className="fade-in text-black visible" style={{"fontFamily": "\"M PLUS 1p\", \"Noto Sans JP\", sans-serif", "fontWeight": "900", "lineHeight": "1.25", "letterSpacing": "-0.03em", "fontSize": "clamp(28px, 6.5vw, 56px)"}}>1人分の予算で、<br /><span className="relative inline-block">3人分のアポを量産。<span className="absolute bottom-[2px] left-0 w-full h-[6px] sm:h-[8px] bg-[#41ac86]/30"></span></span></h1>
-      <p className="fade-in mt-3 sm:mt-6 text-[18px] sm:text-[22px] lg:text-[26px] font-bold text-[#333] leading-[1.5] visible">人件費<span className="text-[#41ac86] font-black">1/3</span>、アポ数<span className="text-[#41ac86] font-black">3倍</span>。<br />月<span className="text-[#41ac86] font-black">13,200</span>コールのAI営業代行。</p>
+      <section className="relative bg-white pt-[28px] sm:pt-[50px] lg:pt-[88px] pb-4 sm:pb-14 overflow-hidden">
+      <div className="relative z-10 max-w-[1240px] mx-auto px-4 sm:px-8 lg:px-10 w-full">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 sm:gap-6 lg:gap-16 items-center mb-4 sm:mb-16">
+      <div className="text-left pt-1 sm:pt-0">
+      <h1 className="fade-in text-black visible" style={{"fontFamily": "\"M PLUS 1p\", \"Noto Sans JP\", sans-serif", "fontWeight": "900", "lineHeight": "1.25", "letterSpacing": "-0.03em", "fontSize": "clamp(28px, 6.5vw, 56px)"}}>1人分の予算で<br /><span className="relative inline-block">営業機会を3倍に。<span className="absolute bottom-[2px] left-0 w-full h-[6px] sm:h-[8px] bg-[#41ac86]/30"></span></span></h1>
+      <p className="fade-in mt-3 sm:mt-6 text-[19px] sm:text-[23px] lg:text-[28px] font-bold text-[#333] leading-[1.5] visible">人件費<span className="text-[#41ac86] font-black">1/3</span>、アポ数<span className="text-[#41ac86] font-black">3倍</span>。<br />月<span className="text-[#41ac86] font-black">13,200</span>コールのAI営業代行。</p>
       {/* 青木さんプロフィール帯 */}
-      <div className="fade-in mt-5 sm:mt-8 bg-[#f7f7f7] rounded-[12px] sm:rounded-[16px] p-4 sm:p-6 visible">
+      <div className="fade-in mt-3 sm:mt-8 bg-[#f7f7f7] rounded-[12px] sm:rounded-[16px] p-4 sm:p-6 visible">
       <div className="flex items-start gap-3 sm:gap-5">
       <img src="/img/aoki.png" alt="青木一平" className="w-[56px] h-[56px] sm:w-[96px] sm:h-[96px] rounded-full object-cover shrink-0 border-2 border-[#41ac86]" />
       <div className="flex-1">
       <div className="flex items-center gap-2 mb-1">
-      <p className="text-[18px] sm:text-[22px] font-black text-black">青木 一平</p>
+      <p className="text-[20px] sm:text-[24px] font-black text-black">青木 一平</p>
       <span className="text-[13px] sm:text-[14px] font-bold text-white bg-[#41ac86] px-2 py-0.5 rounded">開発者</span>
       </div>
       <p className="text-[15px] sm:text-[17px] font-bold text-[#41ac86] mb-2">元・株式会社光通信 統括部長</p>
-      <div className="flex flex-wrap gap-x-4 gap-y-1 text-[15px] sm:text-[16px] text-[#555]">
+      <div className="flex flex-wrap gap-x-4 gap-y-1 text-[16px] sm:text-[17px] text-[#555]">
       <span className="flex items-center gap-1"><span className="text-[#41ac86] font-black">&#10003;</span> 光通信で営業組織を統括</span>
       <span className="flex items-center gap-1"><span className="text-[#41ac86] font-black">&#10003;</span> 単月2,000件の販売実績</span>
       <span className="flex items-center gap-1"><span className="text-[#41ac86] font-black">&#10003;</span> 電話帳・アライアンス・CRM全て経験</span>
@@ -40,14 +40,14 @@ export default function Section1() {
       <style dangerouslySetInnerHTML={{"__html": "@keyframes pulse-glow { 0%, 100% { box-shadow: 0 0 20px rgba(65,172,134,0.3); } 50% { box-shadow: 0 0 40px rgba(65,172,134,0.6), 0 0 80px rgba(65,172,134,0.3); } }"}} />
       <div className="flex items-center gap-3 mb-2">
       <span className="inline-flex items-center justify-center w-[12px] h-[12px] rounded-full bg-white animate-pulse"></span>
-      <p className="text-[18px] sm:text-[22px] font-black">実際の受注コールを聴く</p>
+      <p className="text-[20px] sm:text-[24px] font-black">実際の受注コールを聴く</p>
       </div>
-      <p className="text-[15px] sm:text-[18px] font-bold text-white/90 mb-4">AIが営業したらどうなる？実際の音声をお聴きください</p>
+      <p className="text-[16px] sm:text-[19px] font-bold text-white/90 mb-4">AIが営業したらどうなる？実際の音声をお聴きください</p>
       <div className="bg-white rounded-[12px] p-3 sm:p-4">
       <AudioPlayer src="/demo-call.m4a" autoPlay />
       </div>
-      <p className="mt-3 text-[13px] sm:text-[14px] text-white/80">※ 光通信出身のプロが設計した営業トークによる実際の受注コール</p>
-      <p className="mt-1 text-[13px] sm:text-[14px] text-white/70">🔊 再生ボタンを押すと音声が流れます。音量にご注意ください。</p>
+      <p className="mt-3 text-[14px] sm:text-[15px] text-white/80">※ 光通信出身のプロが設計した営業トークによる実際の受注コール</p>
+      <p className="mt-1 text-[14px] sm:text-[15px] text-white/70">🔊 再生ボタンを押すと音声が流れます。音量にご注意ください。</p>
       </div>
       </div>
       </div>
@@ -58,19 +58,19 @@ export default function Section1() {
 
       <div className="mt-6 sm:mt-14 grid grid-cols-3 gap-2 sm:gap-6 max-w-[960px] mx-auto">
       <div className="bg-[#f7f7f7] rounded-[10px] sm:rounded-[16px] py-4 sm:py-8 px-2 sm:px-6 text-center">
-      <p className="text-[11px] sm:text-[17px] font-black text-black leading-[1.3] mb-2 sm:mb-3">全部見える</p>
+      <p className="text-[13px] sm:text-[17px] font-black text-black leading-[1.3] mb-2 sm:mb-3">全部見える</p>
       <div className="flex items-baseline justify-center"><span className="text-[28px] sm:text-[56px] font-black text-[#41ac86] leading-none" style={{"fontFamily": "\"M PLUS 1p\", sans-serif"}}>100</span><span className="text-[12px] sm:text-[22px] font-black text-[#41ac86]">%</span></div>
-      <p className="text-[10px] sm:text-[15px] text-[#888] mt-1 sm:mt-2">全通話開示</p>
+      <p className="text-[12px] sm:text-[15px] text-[#888] mt-1 sm:mt-2">全通話開示</p>
       </div>
       <div className="bg-[#f7f7f7] rounded-[10px] sm:rounded-[16px] py-4 sm:py-8 px-2 sm:px-6 text-center">
-      <p className="text-[11px] sm:text-[17px] font-black text-black leading-[1.3] mb-2 sm:mb-3">3人分の稼働</p>
+      <p className="text-[13px] sm:text-[17px] font-black text-black leading-[1.3] mb-2 sm:mb-3">3人分の稼働</p>
       <div className="flex items-baseline justify-center"><span className="text-[22px] sm:text-[48px] font-black text-[#41ac86] leading-none" style={{"fontFamily": "\"M PLUS 1p\", sans-serif"}}>13,200</span></div>
-      <p className="text-[10px] sm:text-[15px] text-[#888] mt-1 sm:mt-2">コール/月</p>
+      <p className="text-[12px] sm:text-[15px] text-[#888] mt-1 sm:mt-2">コール/月</p>
       </div>
       <div className="bg-[#f7f7f7] rounded-[10px] sm:rounded-[16px] py-4 sm:py-8 px-2 sm:px-6 text-center">
-      <p className="text-[11px] sm:text-[17px] font-black text-black leading-[1.3] mb-2 sm:mb-3">止まらない</p>
+      <p className="text-[13px] sm:text-[17px] font-black text-black leading-[1.3] mb-2 sm:mb-3">止まらない</p>
       <div className="flex items-baseline justify-center"><span className="text-[28px] sm:text-[56px] font-black text-[#41ac86] leading-none" style={{"fontFamily": "\"M PLUS 1p\", sans-serif"}}>24</span><span className="text-[12px] sm:text-[22px] font-black text-[#41ac86]">時間</span></div>
-      <p className="text-[10px] sm:text-[15px] text-[#888] mt-1 sm:mt-2">365日稼働</p>
+      <p className="text-[12px] sm:text-[15px] text-[#888] mt-1 sm:mt-2">365日稼働</p>
       </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6 mt-14 sm:mt-20 mb-0">
@@ -129,7 +129,7 @@ export default function Section1() {
       </div>
       <div className="flex flex-wrap gap-2">
       {["移動通信回線", "固定通信回線", "太陽光パネル", "蓄電池", "買取り"].map((s, i) => (
-      <span key={i} className="inline-flex items-center px-4 py-2 rounded-[8px] bg-[#f7f7f7] text-[15px] sm:text-[16px] font-bold text-[#333] border border-[#e5e5e5]">{s}</span>
+      <span key={i} className="inline-flex items-center px-4 py-2 rounded-[8px] bg-[#f7f7f7] text-[16px] sm:text-[17px] font-bold text-[#333] border border-[#e5e5e5]">{s}</span>
       ))}
       </div>
       </div>
@@ -140,7 +140,7 @@ export default function Section1() {
       </div>
       <div className="flex flex-wrap gap-2">
       {["営業代行", "SEO対策", "MEO対策", "集客（飲食・美容院等）", "DX化", "M&A", "人材紹介", "人材派遣", "新卒採用紹介", "エンジニア紹介", "AIツール", "SNS運用", "飲食デリバリー", "携帯キャリア", "移動通信回線", "固定通信回線", "太陽光パネル", "蓄電池"].map((s, i) => (
-      <span key={i} className="inline-flex items-center px-4 py-2 rounded-[8px] bg-[#f7f7f7] text-[15px] sm:text-[16px] font-bold text-[#333] border border-[#e5e5e5]">{s}</span>
+      <span key={i} className="inline-flex items-center px-4 py-2 rounded-[8px] bg-[#f7f7f7] text-[16px] sm:text-[17px] font-bold text-[#333] border border-[#e5e5e5]">{s}</span>
       ))}
       </div>
       </div>
@@ -156,15 +156,15 @@ export default function Section1() {
       <div className="grid grid-cols-3 gap-2 sm:gap-5">
       <div className="bg-white rounded-[10px] sm:rounded-[12px] p-3 sm:p-7 text-center">
       <svg className="mx-auto mb-2 sm:mb-3 text-[#999]" width="28" height="28" viewBox="0 0 36 36" fill="none"><circle cx="12" cy="10" r="4" stroke="currentColor" strokeWidth="2" /><circle cx="24" cy="10" r="4" stroke="currentColor" strokeWidth="2" /><circle cx="12" cy="24" r="4" stroke="currentColor" strokeWidth="2" /><circle cx="24" cy="24" r="4" stroke="currentColor" strokeWidth="2" /></svg>
-      <p className="text-[12px] sm:text-[18px] font-bold text-black leading-[1.5]"><span className="font-black underline decoration-[#41ac86] decoration-2 underline-offset-4">高額</span>なのに<br />成果が出ない</p>
+      <p className="text-[14px] sm:text-[18px] font-bold text-black leading-[1.5]"><span className="font-black underline decoration-[#41ac86] decoration-2 underline-offset-4">高額</span>なのに<br />成果が出ない</p>
       </div>
       <div className="bg-white rounded-[10px] sm:rounded-[12px] p-3 sm:p-7 text-center">
       <svg className="mx-auto mb-2 sm:mb-3 text-[#999]" width="28" height="28" viewBox="0 0 36 36" fill="none"><rect x="8" y="5" width="20" height="26" rx="2" stroke="currentColor" strokeWidth="2" /><line x1="13" y1="13" x2="23" y2="13" stroke="currentColor" strokeWidth="1.5" /><line x1="13" y1="18" x2="23" y2="18" stroke="currentColor" strokeWidth="1.5" /><line x1="13" y1="23" x2="19" y2="23" stroke="currentColor" strokeWidth="1.5" /></svg>
-      <p className="text-[12px] sm:text-[18px] font-bold text-black leading-[1.5]">営業内容が<br /><span className="font-black underline decoration-[#41ac86] decoration-2 underline-offset-4">見えない</span></p>
+      <p className="text-[14px] sm:text-[18px] font-bold text-black leading-[1.5]">営業内容が<br /><span className="font-black underline decoration-[#41ac86] decoration-2 underline-offset-4">見えない</span></p>
       </div>
       <div className="bg-white rounded-[10px] sm:rounded-[12px] p-3 sm:p-7 text-center">
       <svg className="mx-auto mb-2 sm:mb-3 text-[#999]" width="28" height="28" viewBox="0 0 36 36" fill="none"><path d="M6 28 L12 16 L18 22 L24 10 L30 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
-      <p className="text-[12px] sm:text-[18px] font-bold text-black leading-[1.5]"><span className="font-black underline decoration-[#41ac86] decoration-2 underline-offset-4">成果</span>が<br />上がらない</p>
+      <p className="text-[14px] sm:text-[18px] font-bold text-black leading-[1.5]"><span className="font-black underline decoration-[#41ac86] decoration-2 underline-offset-4">成果</span>が<br />上がらない</p>
       </div>
       </div>
       <div className="flex justify-center mt-4 sm:mt-6">
@@ -182,18 +182,18 @@ export default function Section1() {
       <div className="grid grid-cols-3 gap-2 sm:gap-5">
       <div className="bg-white rounded-[10px] sm:rounded-[12px] p-3 sm:p-7 text-center">
       <svg className="mx-auto mb-2 text-[#41ac86]" width="24" height="24" viewBox="0 0 28 28" fill="none"><path d="M4 14 L11 21 L24 6" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" /></svg>
-      <p className="text-[13px] sm:text-[22px] font-black text-black mb-1">全通話開示</p>
-      <p className="text-[10px] sm:text-[15px] text-[#555]">何を話したか<br className="sm:hidden" />即確認</p>
+      <p className="text-[15px] sm:text-[22px] font-black text-black mb-1">全通話開示</p>
+      <p className="text-[12px] sm:text-[15px] text-[#555]">何を話したか<br className="sm:hidden" />即確認</p>
       </div>
       <div className="bg-white rounded-[10px] sm:rounded-[12px] p-3 sm:p-7 text-center">
       <svg className="mx-auto mb-2 text-[#41ac86]" width="24" height="24" viewBox="0 0 28 28" fill="none"><path d="M4 14 L11 21 L24 6" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" /></svg>
-      <p className="text-[13px] sm:text-[22px] font-black text-black mb-1">プロが設計</p>
-      <p className="text-[10px] sm:text-[15px] text-[#555]">営業歴15年の<br className="sm:hidden" />プロが設計</p>
+      <p className="text-[15px] sm:text-[22px] font-black text-black mb-1">プロが設計</p>
+      <p className="text-[12px] sm:text-[15px] text-[#555]">営業歴15年の<br className="sm:hidden" />プロが設計</p>
       </div>
       <div className="bg-white rounded-[10px] sm:rounded-[12px] p-3 sm:p-7 text-center">
       <svg className="mx-auto mb-2 text-[#41ac86]" width="24" height="24" viewBox="0 0 28 28" fill="none"><path d="M4 14 L11 21 L24 6" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" /></svg>
-      <p className="text-[13px] sm:text-[22px] font-black text-black mb-1">月額35万円</p>
-      <p className="text-[10px] sm:text-[15px] text-[#555]">採用1人分で<br className="sm:hidden" />リスクゼロ</p>
+      <p className="text-[15px] sm:text-[22px] font-black text-black mb-1">月額35万円</p>
+      <p className="text-[12px] sm:text-[15px] text-[#555]">採用1人分で<br className="sm:hidden" />リスクゼロ</p>
       </div>
       </div>
       </div>
@@ -254,7 +254,7 @@ export default function Section1() {
       <div id="service-intro" className="fade-in text-center mb-2 scroll-mt-[80px] visible">
       <p className="text-[22px] sm:text-[28px] lg:text-[32px] font-black text-[#41ac86] leading-[1.3] mb-3">TELEMOは
       </p>
-      <p className="text-[18px] sm:text-[22px] lg:text-[26px] font-bold text-black leading-[1.6]"><span className="inline-block bg-[#41ac86] text-white px-3 py-1 rounded-[6px] text-[16px] sm:text-[20px] font-bold mr-1">営業トーク設計</span>から<span className="inline-block bg-[#41ac86] text-white px-3 py-1 rounded-[6px] text-[16px] sm:text-[20px] font-bold mx-1">13,200コール実行</span>まで行う
+      <p className="text-[19px] sm:text-[23px] lg:text-[28px] font-bold text-black leading-[2]"><span className="inline-block bg-[#41ac86] text-white px-3 py-1 rounded-[6px] text-[16px] sm:text-[20px] font-bold">営業トーク設計</span> から<br className="sm:hidden" /><span className="inline-block bg-[#41ac86] text-white px-3 py-1 rounded-[6px] text-[16px] sm:text-[20px] font-bold mt-1 sm:mt-0 sm:ml-1">13,200コール実行</span> まで行う
       </p>
       <p className="text-[26px] sm:text-[34px] lg:text-[40px] font-black text-black leading-[1.3] mt-2">「営業代行サービス」
       </p>

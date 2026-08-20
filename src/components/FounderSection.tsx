@@ -1,181 +1,146 @@
 export default function FounderSection() {
   return (
-    <section data-section="founder" style={{ background: "#fff", padding: "36px 40px 0", maxWidth: 1024, margin: "0 auto" }}>
+    <section data-section="founder" className="bg-white px-4 sm:px-8 lg:px-10 py-8 sm:py-10 max-w-[1024px] mx-auto">
 
       {/* ===== HERO: 写真 + プロフィール ===== */}
-      <div style={{ display: "grid", gridTemplateColumns: "490px 1fr", gap: 0, marginBottom: 18 }}>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-0 mb-4 sm:mb-5">
         {/* 左: 写真 */}
-        <div style={{ position: "relative" }}>
-          <div style={{ position: "absolute", top: 0, left: 0, width: 8, height: "100%", background: "#e8b828", zIndex: 2 }} />
+        <div className="relative">
+          <div className="absolute top-0 left-0 w-[6px] sm:w-[8px] h-full bg-[#e8b828] z-10" />
           <img
             src="/img/aoki.png"
             alt="青木 一平"
-            style={{ width: "100%", height: 450, objectFit: "cover", objectPosition: "center top", display: "block" }}
+            className="w-full h-[280px] sm:h-[350px] md:h-[450px] object-cover object-top block"
           />
         </div>
         {/* 右: プロフィール */}
-        <div style={{ background: "#f5f5f5", padding: "24px 30px 20px" }}>
-          <h2 style={{ fontSize: 48, fontWeight: 900, lineHeight: 1.15, letterSpacing: "-0.02em", margin: "0 0 8px", fontFamily: '"M PLUS 1p", "Noto Sans JP", sans-serif' }}>
-            TELEMO<br />をつくったひと。
+        <div className="bg-[#f5f5f5] p-5 sm:p-6 md:p-8">
+          <h2 className="text-[28px] sm:text-[36px] md:text-[48px] font-black leading-[1.15] tracking-[-0.02em] mb-2 sm:mb-3" style={{fontFamily: '"M PLUS 1p", "Noto Sans JP", sans-serif'}}>
+            TELEMOを<br />つくったひと。
           </h2>
-          <p style={{ fontSize: 12, color: "#888", letterSpacing: "0.1em", margin: "0 0 2px" }}>アオキ イッペイ</p>
-          <p style={{ fontSize: 34, fontWeight: 900, margin: "0 0 3px", fontFamily: '"M PLUS 1p", sans-serif' }}>青木 一平</p>
-          <p style={{ fontSize: 12, fontWeight: 800, color: "#c08030", margin: "0 0 12px" }}>出身：神奈川県横浜市</p>
-          <p style={{ fontSize: 13, color: "#444", lineHeight: 1.85, margin: 0 }}>
-            玉川学園中学部・高等部を卒業後、<br />
-            自由奔放に、遊び呆ける。<br />
-            気づけば、あっという間に25歳。<br />
-            <span style={{ background: "#fff3b0", fontWeight: 800, color: "#111", padding: "1px 2px" }}>「このままでは人生終わる！」</span><br />
-            と突然焦りはじめ、株式会社光通信へ中途入社。<br />
-            そこでなぜか、営業マンとして強烈に開花。
+          <p className="text-[11px] sm:text-[12px] text-[#888] tracking-[0.1em] mb-0.5">アオキ イッペイ</p>
+          <p className="text-[24px] sm:text-[28px] md:text-[34px] font-black mb-1" style={{fontFamily: '"M PLUS 1p", sans-serif'}}>青木 一平</p>
+          <p className="text-[11px] sm:text-[12px] font-bold text-[#c08030] mb-3 sm:mb-4">出身：神奈川県横浜市</p>
+          <p className="text-[12px] sm:text-[13px] text-[#444] leading-[1.85]">
+            玉川学園中学部・高等部を卒業後、自由奔放に、遊び呆ける。気づけば、あっという間に25歳。
+            <br /><span className="bg-[#fff3b0] font-bold text-[#111] px-0.5">「このままでは人生終わる！」</span>
+            <br />と突然焦りはじめ、株式会社光通信へ中途入社。そこでなぜか、営業マンとして強烈に開花。
           </p>
         </div>
       </div>
 
       {/* ===== 2列: 開花 + 実績 ===== */}
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, marginBottom: 12 }}>
-
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 mb-3 sm:mb-4">
         {/* 左カラム: 開花 */}
-        <div style={{ borderLeft: "4px solid #222", background: "#f5f5f5", padding: "16px 20px 14px" }}>
-          <h3 style={{ fontSize: 19, fontWeight: 900, margin: "0 0 10px", lineHeight: 1.3 }}>営業マンとして、強烈に開花。</h3>
-          <p style={{ fontSize: 13, color: "#444", lineHeight: 1.9, margin: "0 0 8px" }}>
-            個人営業として実績を残し、<br />
-            責任者としても営業組織を率い、<br />
-            最終的には統括部長へ昇進。
+        <div className="border-l-4 border-[#222] bg-[#f5f5f5] p-4 sm:p-5">
+          <h3 className="text-[16px] sm:text-[19px] font-black mb-2 sm:mb-3 leading-[1.3]">営業マンとして、強烈に開花。</h3>
+          <p className="text-[12px] sm:text-[13px] text-[#444] leading-[1.9] mb-2">
+            個人営業として実績を残し、責任者としても営業組織を率い、最終的には統括部長へ昇進。
           </p>
-          <p style={{ fontSize: 13, lineHeight: 1.9, margin: 0 }}>
-            <span style={{ background: "#fff3b0", fontWeight: 700, color: "#111", padding: "1px 2px" }}>数字も鋭さも、当時はかなり尖ってました。</span><br />
-            <span style={{ background: "#fff3b0", fontWeight: 700, color: "#111", padding: "1px 2px" }}>当時の&quot;光戦士&quot;で、</span><br />
-            <span style={{ background: "#fff3b0", fontWeight: 700, color: "#111", padding: "1px 2px" }}>僕を知らない人は、たぶんあんまりいないと思いますw</span><br />
-            <span style={{ color: "#555" }}>……たぶん。</span>
+          <p className="text-[12px] sm:text-[13px] leading-[1.9]">
+            <span className="bg-[#fff3b0] font-bold text-[#111] px-0.5">数字も鋭さも、当時はかなり尖ってました。</span><br />
+            <span className="bg-[#fff3b0] font-bold text-[#111] px-0.5">当時の&quot;光戦士&quot;で、</span><br />
+            <span className="bg-[#fff3b0] font-bold text-[#111] px-0.5">僕を知らない人は、たぶんあんまりいないと思いますw</span><br />
+            <span className="text-[#555]">……たぶん。</span>
           </p>
         </div>
 
         {/* 右カラム: 実績 */}
-        <div style={{ borderLeft: "4px solid #222", background: "#f5f5f5", padding: "16px 20px 14px" }}>
-          <h3 style={{ fontSize: 19, fontWeight: 900, margin: "0 0 8px", lineHeight: 1.3 }}>とにかく、電話でめちゃくちゃ売ってきました。</h3>
-          <p style={{ fontSize: 12, color: "#444", lineHeight: 1.8, margin: "0 0 10px" }}>
-            営業マンとしてだけではなく、コールセンターの責任者として、<br />さまざまな営業手法・商材を経験。
+        <div className="border-l-4 border-[#222] bg-[#f5f5f5] p-4 sm:p-5">
+          <h3 className="text-[16px] sm:text-[19px] font-black mb-2 sm:mb-3 leading-[1.3]">とにかく、電話でめちゃくちゃ売ってきました。</h3>
+          <p className="text-[11px] sm:text-[12px] text-[#444] leading-[1.8] mb-3">
+            営業マンとしてだけではなく、コールセンターの責任者として、さまざまな営業手法・商材を経験。
           </p>
 
           {/* 実績カード4枚 */}
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 6, marginBottom: 10 }}>
+          <div className="grid grid-cols-4 gap-1 sm:gap-1.5 mb-3">
             {[
               { type: "電子電話帳営業", product: "フレッツ光", num: "1,500" },
               { type: "アライアンス営業", product: "フレッツ光", num: "2,000" },
               { type: "CRM営業", product: "U-NEXT", num: "1,500" },
               { type: "CRM営業", product: "WiMAX", num: "2,000" },
             ].map((c, i) => (
-              <div key={i} style={{ border: "1px solid #ddd", background: "#fff", textAlign: "center" }}>
-                <div style={{ background: "#222", color: "#fff", fontSize: 9, fontWeight: 700, padding: "3px 0", letterSpacing: "0.05em" }}>{c.type}</div>
-                <div style={{ padding: "6px 4px 5px" }}>
-                  <p style={{ fontSize: 11, fontWeight: 700, margin: "0 0 1px" }}>{c.product}</p>
-                  <p style={{ margin: "0 0 0px" }}>
-                    <span style={{ fontSize: 11, color: "#555" }}>単月</span>
+              <div key={i} className="border border-[#ddd] bg-white text-center">
+                <div className="bg-[#222] text-white text-[7px] sm:text-[9px] font-bold py-0.5 sm:py-1 tracking-[0.03em]">{c.type}</div>
+                <div className="py-1 sm:py-1.5 px-0.5">
+                  <p className="text-[9px] sm:text-[11px] font-bold mb-0">{c.product}</p>
+                  <p className="text-[8px] sm:text-[11px] text-[#555]">単月</p>
+                  <p className="text-[18px] sm:text-[26px] font-black text-[#41ac86] leading-none" style={{fontFamily: '"M PLUS 1p", sans-serif'}}>
+                    {c.num}<span className="text-[8px] sm:text-[11px] text-[#555] font-bold">件</span>
                   </p>
-                  <p style={{ fontSize: 26, fontWeight: 900, color: "#41ac86", lineHeight: 1, margin: "2px 0 0", fontFamily: '"M PLUS 1p", sans-serif' }}>
-                    {c.num}<span style={{ fontSize: 11, color: "#555", fontWeight: 700 }}>件</span>
-                  </p>
-                  <p style={{ fontSize: 10, color: "#888", margin: "2px 0 0" }}>販売</p>
+                  <p className="text-[8px] sm:text-[10px] text-[#888]">販売</p>
                 </div>
               </div>
             ))}
           </div>
 
-          <p style={{ fontSize: 12, color: "#444", lineHeight: 1.85, margin: "0 0 6px" }}>
-            電話帳も、アライアンスも、CRMも、<br />
-            全部、実際にやってきました。<br />
-            その後、株式会社Everエフォートを設立。<br />
-            現在も自社でコールセンターを運営し、法人回線・電気などのtoB商材を、<br />
-            全国の企業様へ販売しています。
+          <p className="text-[11px] sm:text-[12px] text-[#444] leading-[1.85] mb-1.5">
+            電話帳も、アライアンスも、CRMも、全部、実際にやってきました。その後、株式会社Everエフォートを設立。現在も自社でコールセンターを運営し、法人回線・電気などのtoB商材を、全国の企業様へ販売しています。
           </p>
-          <p style={{ fontSize: 12, fontWeight: 800, color: "#111", lineHeight: 1.85, margin: 0 }}>
+          <p className="text-[11px] sm:text-[12px] font-bold text-[#111] leading-[1.85]">
             つまり、昔の実績だけを語っているわけではありません。今も、現場で売っています。
           </p>
         </div>
       </div>
 
       {/* ===== TELEMOが生まれた ===== */}
-      <div style={{ borderLeft: "4px solid #222", background: "#f5f5f5", padding: "16px 20px 14px", marginBottom: 12 }}>
-        <h3 style={{ fontSize: 20, fontWeight: 900, margin: "0 0 10px", lineHeight: 1.3 }}>そして、TELEMOが生まれました。</h3>
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24 }}>
+      <div className="border-l-4 border-[#222] bg-[#f5f5f5] p-4 sm:p-5 mb-3 sm:mb-4">
+        <h3 className="text-[16px] sm:text-[20px] font-black mb-2 sm:mb-3 leading-[1.3]">そして、TELEMOが生まれました。</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
           <div>
-            <p style={{ fontSize: 12, color: "#444", lineHeight: 1.9, margin: "0 0 8px" }}>
-              TELEMOは、<br />
-              「AIが流行っているから、AIサービスをつくろう！」<br />
-              と始めたものではありません。<br />
-              これだけ電話営業をやってきた私たちが、<br />
-              今も実際に営業現場を運営する中で、
+            <p className="text-[12px] sm:text-[12px] text-[#444] leading-[1.9] mb-2">
+              TELEMOは、「AIが流行っているから、AIサービスをつくろう！」と始めたものではありません。これだけ電話営業をやってきた私たちが、今も実際に営業現場を運営する中で、
             </p>
-            <p style={{ fontSize: 12, fontWeight: 800, color: "#111", lineHeight: 1.9, margin: "0 0 6px" }}>
+            <p className="text-[12px] sm:text-[12px] font-bold text-[#111] leading-[1.9] mb-2">
               「もっと営業を効率化できないか？」<br />
               「人だけに頼らず、営業を仕組みにできないか？」
             </p>
-            <p style={{ fontSize: 12, color: "#444", lineHeight: 1.9, margin: 0 }}>
-              と考え、<br />自分たちのコールセンターで使うためにつくったシステムが始まりです。
+            <p className="text-[12px] sm:text-[12px] text-[#444] leading-[1.9]">
+              と考え、自分たちのコールセンターで使うためにつくったシステムが始まりです。
             </p>
           </div>
-          <div style={{ position: "relative" }}>
-            <p style={{ fontSize: 12, color: "#444", lineHeight: 1.9, margin: "0 0 6px" }}>
-              実際の現場で使い、<br />
-              営業マンたちと試行錯誤しながら改善を繰り返す。<br />
-              その中で、
+          <div>
+            <p className="text-[12px] text-[#444] leading-[1.9] mb-1.5">
+              実際の現場で使い、営業マンたちと試行錯誤しながら改善を繰り返す。その中で、
             </p>
-            <p style={{ fontSize: 13, fontWeight: 800, color: "#41ac86", lineHeight: 1.7, margin: "0 0 6px" }}>
+            <p className="text-[13px] font-bold text-[#41ac86] leading-[1.7] mb-1.5">
               「あれ？これ、他の業種でも使えるんじゃない？」
             </p>
-            {/* ヘッドセットアイコン */}
-            <svg style={{ position: "absolute", right: 0, top: 50, color: "#999" }} width="44" height="44" viewBox="0 0 44 44" fill="none">
-              <circle cx="22" cy="18" r="10" stroke="currentColor" strokeWidth="1.5" />
-              <path d="M14 18 C14 12 17 9 22 9 C27 9 30 12 30 18" stroke="currentColor" strokeWidth="1.5" />
-              <rect x="9" y="15" width="4" height="8" rx="2" stroke="currentColor" strokeWidth="1.5" />
-              <rect x="31" y="15" width="4" height="8" rx="2" stroke="currentColor" strokeWidth="1.5" />
-              <path d="M35 23 C35 23 35 28 30 30" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-              <circle cx="27" cy="33" r="3.5" stroke="currentColor" strokeWidth="1.5" />
-              <circle cx="27" cy="33" r="1.2" fill="currentColor" />
-            </svg>
-            <p style={{ fontSize: 12, color: "#444", lineHeight: 1.9, margin: 0 }}>
-              となり、サービスとして本格的に開発。<br />
-              2026年4月、TELEMOとして販売を開始しました。
+            <p className="text-[12px] text-[#444] leading-[1.9]">
+              となり、サービスとして本格的に開発。2026年4月、TELEMOとして販売を開始しました。
             </p>
           </div>
         </div>
       </div>
 
       {/* ===== 締めメッセージ ===== */}
-      <div style={{ borderLeft: "4px solid #222", background: "#f5f5f5", padding: "16px 20px 14px", marginBottom: 16 }}>
-        <h3 style={{ fontSize: 19, fontWeight: 900, margin: "0 0 10px", lineHeight: 1.3 }}>「AIを知っている」だけでは、営業AIはつくれない。</h3>
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 300px", gap: 20 }}>
-          <div>
-            <p style={{ fontSize: 12, color: "#444", lineHeight: 1.9, margin: 0 }}>
-              電話帳営業。アライアンス営業。CRM営業。<br />
-              そして現在のtoB営業。<br />
-              さまざまな営業手法で、実際に何千件という販売を経験してきました。<br />
-              そして今も、自分たちのコールセンターで<br />
-              <span style={{ color: "#41ac86", fontWeight: 800 }}>&quot;現場で販売を知る&quot;</span>私たちだからこそ、提供できるサービスがある。
+      <div className="border border-[#e5e5e5] bg-[#f5f5f5] rounded-[8px] sm:rounded-[16px] p-4 sm:p-5 mb-4 sm:mb-5">
+        <h3 className="text-[15px] sm:text-[19px] font-black mb-2 sm:mb-3 leading-[1.3]">「AIを知っている」だけでは、営業AIはつくれない。</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-[1fr_260px] gap-3 sm:gap-5">
+          <p className="text-[12px] text-[#444] leading-[1.9]">
+            電話帳営業。アライアンス営業。CRM営業。そして現在のtoB営業。さまざまな営業手法で、実際に何千件という販売を経験してきました。そして今も、自分たちのコールセンターで
+            <span className="text-[#41ac86] font-bold">&quot;現場で販売を知る&quot;</span>私たちだからこそ、提供できるサービスがある。
+          </p>
+          <div className="bg-white border border-[#ddd] rounded-[4px] p-3 sm:p-4">
+            <p className="text-[11px] sm:text-[12px] text-[#888] leading-[1.8] mb-1.5">
+              TELEMOは、人をなくすためのAIではありません。
             </p>
-          </div>
-          <div style={{ background: "#fff", border: "1px solid #ddd", borderRadius: 4, padding: "14px 16px" }}>
-            <p style={{ fontSize: 12, color: "#888", lineHeight: 1.8, margin: "0 0 6px" }}>
-              TELEMOは、<br />人をなくすためのAIではありません。
-            </p>
-            <p style={{ fontSize: 14, fontWeight: 900, color: "#111", lineHeight: 1.7, margin: 0 }}>
-              営業マンが、営業現場のためにつくった。<br />
-              営業を、もっと強くするための仕組みです。
+            <p className="text-[13px] sm:text-[14px] font-black text-[#111] leading-[1.7]">
+              営業マンが、営業現場のためにつくった。営業を、もっと強くするための仕組みです。
             </p>
           </div>
         </div>
       </div>
 
       {/* ===== Footer ===== */}
-      <div style={{ borderTop: "1px solid #ddd", padding: "14px 0 16px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-        <p style={{ fontSize: 14, margin: 0 }}>
-          <span style={{ color: "#41ac86", fontWeight: 700, fontStyle: "italic" }}>TELEMO</span>
-          <span style={{ color: "#888", fontSize: 12 }}>をつくったひと</span>
+      <div className="border-t border-[#ddd] pt-3 sm:pt-4 pb-2 flex items-center justify-between">
+        <p className="text-[12px] sm:text-[14px]">
+          <span className="text-[#41ac86] font-bold italic">TELEMO</span>
+          <span className="text-[#888] text-[10px] sm:text-[12px]">をつくったひと</span>
           {"　"}
-          <span style={{ fontWeight: 900, fontSize: 20, color: "#111" }}>アオキ イッペイ</span>
+          <span className="font-black text-[16px] sm:text-[20px] text-[#111]">アオキ イッペイ</span>
         </p>
-        <img src="/img/logo.png" alt="TELEMO" style={{ height: 24 }} />
+        <img src="/img/logo.png" alt="TELEMO" className="h-[18px] sm:h-[24px] w-auto" />
       </div>
 
     </section>
